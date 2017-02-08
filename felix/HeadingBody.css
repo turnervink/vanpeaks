@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Main header on jumbotron*/
+h1 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #ffffff;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px #000000;
+  display: inline-block;
+  clear: both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* header for hikes*/
+h2 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #2C783D;
+}
+
+
+h3 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #2C783D;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #2C783D;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #2C783D;
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #2C783D;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: bold;
+}
+
+.sampleImg {
+  width: 150px;
+  height: 80px
+}
