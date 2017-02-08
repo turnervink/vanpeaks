@@ -5,6 +5,10 @@
 h1 {
   text-align: center;
   font-family: 'Overpass', sans-serif;
+  color: #2C783D
+}
+
+#mainHeader {
   color: #ffffff;
   font-size: 4em;
   text-shadow: 1px 1px 1px #000000;
@@ -12,6 +16,19 @@ h1 {
   clear: both;
   overflow: hidden;
   white-space: nowrap;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0;
+}
+
+#minMainHeader {
+  color: #ffffff;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #000000;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+  bottom: 50px;
 }
 
 /* header for hikes*/
@@ -57,4 +74,9 @@ body {
 .sampleImg {
   width: 150px;
   height: 80px
+}
+
+#triImg {
+  padding-left: 20%;
+  padding-right: 20%;
 }
