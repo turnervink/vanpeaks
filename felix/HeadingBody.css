@@ -16,6 +16,7 @@ h1 {
   clear: both;
   overflow: hidden;
   white-space: nowrap;
+  padding-left: 5%;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 0;
@@ -25,8 +26,7 @@ h1 {
   color: #ffffff;
   font-size: 2em;
   text-shadow: 1px 1px 1px #000000;
-  margin-left: 20%;
-  margin-right: 20%;
+  text-align: center;
   position: relative;
   bottom: 50px;
 }
@@ -77,6 +77,8 @@ body {
 }
 
 #triImg {
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 100px;
+
 }
