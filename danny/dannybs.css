@@ -1,0 +1,40 @@
+.container-fluid { background-color: #445B66;
+	color: white;
+	width: 100%;
+	height: 220px;
+	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	border-top: 5px solid black;
+	}
+	
+li.socialmedia { clear: both;
+    display: inline;
+	padding-right: 4px;
+}
+
+.container-fluid p { text-align: center;
+}
+
+ul { list-style-type: none;
+	margin-top: 0;
+}
+
+li { height: 25px;
+}
+
+a:link { text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+	
+a:visited {	text-decoration: none;
+}
+	
+a:hover { text-decoration: underline;
+}
+	
+a:active { text-decoration: underline;
+}
+
+paragraph links: (on white background) blue color font
