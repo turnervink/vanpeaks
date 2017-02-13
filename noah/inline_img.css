@@ -19,9 +19,10 @@
             /*a div with this class containing an image can be nested in a <p> */
             .inline_image_right{
             	float:right;
-                  padding-left:15px;
+                  padding: 10px 0 10px 10px;
             }
             .inline_image_left{
             	float:left;
-                  padding-right:15px;
+                  padding: 10px 10px 10px 0;
+                  
             }
