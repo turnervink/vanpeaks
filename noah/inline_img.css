@@ -1,5 +1,5 @@
             /*correct way to inline image*/
-
+            /*put this class on the div containing the paragraph*/
             .paragraph_container{
             height:480px;
             width:480px;
@@ -16,6 +16,7 @@
             .paragraph_container > p{
             	position:relative;
             }
+            /*a div with this class containing an image can be nested in a <p> */
             .inline_image_right{
             	float:right;
             }
