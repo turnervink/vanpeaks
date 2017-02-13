@@ -1,0 +1,24 @@
+            /*correct way to inline image*/
+
+            .paragraph_container{
+            height:480px;
+            width:480px;
+            border-style:dashed;
+            display:inline-block;
+            vertical-align: middle;
+            }
+            .paragraph_container > div{
+            	display:inline-block;
+            	vertical-align: middle;
+
+            }
+
+            .paragraph_container > p{
+            	position:relative;
+            }
+            .inline_image_right{
+            	float:right;
+            }
+            .inline_image_left{
+            	float:left;
+            }
