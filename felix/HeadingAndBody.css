@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
-#jumboMainHeader {
+.jumboMainHeader {
   color: #FFFFFF;
   font-size: 4em;
   text-shadow: 0.02em 0.02em 0.02em #000000;
   text-align: center;
 }
 
-#jumboMinHeader {
+.jumboMinHeader {
   color: #FFFFFF;
   font-size: 2em;
   text-shadow: 0.02em 0.02em 0.02em #000000;
@@ -19,14 +19,14 @@
 }
 
 /* Hike Heading*/
-#hikeHeading {
+.hikeHeading {
   text-align: center;
   color: #000000;
   font-family: 'Overpass', sans-serif;
   font-weight:bold;
 }
 
-#colouredHeading {
+.colouredHeading {
   text-align: center;
   color: #2C783D;
   font-weight: bold;
