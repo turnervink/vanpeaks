@@ -19,7 +19,9 @@
             /*a div with this class containing an image can be nested in a <p> */
             .inline_image_right{
             	float:right;
+                  padding-left:15px;
             }
             .inline_image_left{
             	float:left;
+                  padding-right:15px;
             }
