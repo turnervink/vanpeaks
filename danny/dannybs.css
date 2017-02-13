@@ -18,6 +18,7 @@ li.socialmedia { clear: both;
 
 ul { list-style-type: none;
 	margin-top: 0;
+	padding-left: 10px;
 }
 
 li { height: 25px;
@@ -27,6 +28,10 @@ a:link { text-decoration: none;
 	font-weight: bold;
 	color: white;
 }
+
+.page p a:link { color: #445B66;
+}
+
 	
 a:visited {	text-decoration: none;
 }
@@ -37,4 +42,3 @@ a:hover { text-decoration: underline;
 a:active { text-decoration: underline;
 }
 
-paragraph links: (on white background) blue color font
