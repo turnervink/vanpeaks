@@ -52,6 +52,10 @@ h6 {
   color: #2C783D;
 }
 
+.hike-heading {
+  text-align: center;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   color: #000000;
@@ -62,12 +66,12 @@ p {
 }
 
 /* Inline image styling */
-.inline_image_right{
+.inline-image-right {
   float:right;
   padding: 10px 0 10px 10px;
   max-width: 250px;
 }
-.inline_image_left{
+.inline-image-left {
   float:left;
   padding: 10px 10px 10px 0;
   max-width: 250px;
@@ -122,6 +126,8 @@ nav ul {
 	border: 3px solid black;
 	list-style-type: none;
 	background-color: rgb(68, 92, 103);
+
+  margin-bottom: 0;
 }
 
 nav li {
