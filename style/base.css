@@ -159,6 +159,14 @@ nav a:active {
 	color: white;
 }
 
+/* About page image */
+.about_img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 1em;
+}
+
 /* Footer styling */
 footer {
   background-color: #445B66;
@@ -168,7 +176,7 @@ footer {
 	padding-top: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-	border-top: 5px solid black;
+	border-top: 3px solid black;
 }
 
 footer li.socialmedia {
