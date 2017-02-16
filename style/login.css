@@ -25,9 +25,9 @@ label {
 
 #loginForm {
   padding-right: 30px;
+  float: right;
 }
 
 #registrationForm {
   padding-left: 30px;
   float: left;
-}
