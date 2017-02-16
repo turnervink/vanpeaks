@@ -106,15 +106,15 @@ nav {
 }
 
 #logo {
-	height: 30px;
+	height: 45px;
 	width: auto;
 }
 
 nav ul {
 	width: 100%;
 
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
 
 	text-align: center;
 	display: inline-block;
@@ -197,7 +197,7 @@ footer ul {
 }
 
 footer li {
-  height: 25px;
+  height: 130%;
 }
 
 footer a {
