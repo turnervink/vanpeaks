@@ -188,7 +188,7 @@ footer ul {
 }
 
 footer li {
-  height: 25px;
+  height: 130%;
 }
 
 footer a {
@@ -221,16 +221,20 @@ footer a:active {
         
 }
 .img_grid{
-        width:75%;
+        width:60%;
         height:100%;
         margin:0 auto;
         
 }
-[class*="col-"] > img{
+[class*="col-"] > a > img{
         width:100%;
         height:100%;
 }
-.row_seperator{
-        width:100%;
-        height:30px;
+/*only use this class if extra space between rows is nessecary*/
+.label_row{
+        width:105%;
+        padding-bottom:20px;
+
 }
+
+
