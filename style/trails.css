@@ -14,10 +14,23 @@ td img:last-child {
 
 table {
   margin: auto;
-  margin-top: 15px;
-  background-color: black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  margin-bottom: 15px;
+  background-color: rgb(68, 92, 103);
+  border-top: 5px solid rgb(68, 92, 103);
+  border-bottom: 5px solid rgb(68, 92, 103);
 
   font-family: "Open Sans", sans-serif;
+}
+
+.user-review {
+  margin-bottom: 25px;
+}
+
+.user-review h3 {
+  margin-top: 0px;
+}
+
+.user-review img {
+  max-width: 250px;
+  float: left;
 }

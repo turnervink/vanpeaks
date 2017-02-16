@@ -1,10 +1,10 @@
 /**//* Import Overpass and Open Sans fonts */
-@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100i,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Add margins to sides of page */
 .page-content {
-  max-width: 75%;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,6 +14,7 @@ h1 {
   font-weight: bold;
   font-family: 'Overpass', sans-serif;
   font-size: 3em;
+  text-align: center;
 }
 
 /* Header for hikes*/
@@ -21,6 +22,7 @@ h2 {
   font-family: 'Overpass', sans-serif;
   font-weight: bold;
   font-size: 2.25em;
+  text-align: center;
 }
 
 h3 {
@@ -31,7 +33,7 @@ h3 {
 
 h4 {
   font-family: 'Overpass', sans-serif;
-  font-size: 1.6em;
+  font-size: 2.25em;
   font-style: italic;
   font-weight: 100;
 }
@@ -52,6 +54,10 @@ h6 {
   color: #2C783D;
 }
 
+.center-heading {
+  text-align: center;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   color: #000000;
@@ -62,11 +68,12 @@ p {
 }
 
 /* Inline image styling */
-.inline_image_right{
+.inline-image-right {
   float:right;
   padding: 10px 0 10px 10px;
   max-width: 250px;
 }
+
 .inline_image_left{
   float:left;
   padding: 10px 10px 10px 0;
@@ -122,6 +129,8 @@ nav ul {
 	border: 3px solid black;
 	list-style-type: none;
 	background-color: rgb(68, 92, 103);
+
+  margin-bottom: 0;
 }
 
 nav li {
@@ -218,13 +227,13 @@ footer a:active {
         height:auto;
         width:100%;
         padding-bottom:20px;
-        
+
 }
 .img_grid{
         width:60%;
         height:100%;
         margin:0 auto;
-        
+
 }
 [class*="col-"] > a > img{
         width:100%;
@@ -236,5 +245,3 @@ footer a:active {
         padding-bottom:20px;
 
 }
-
-

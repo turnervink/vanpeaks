@@ -1,0 +1,25 @@
+/* Import Overpass and Open Sans fonts */
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#content {
+  padding-bottom: 12%;
+  padding-top: 12%;
+}
+
+/* Login Content */
+.field {
+    display: inline-block;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* divider line */
+#border_line {
+  border-left: solid 2px;
+  padding-left: 15px;
+  border-color: #D3D3D3;
+}
