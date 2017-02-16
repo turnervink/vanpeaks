@@ -3,19 +3,9 @@
   height: 175px;
   padding-left: 30px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   padding-top: 5px;
   display: block;
   margin: auto;
-}
-
-/* moves centre image */
-#imageMoveM {
-  margin-left: 50px;
-}
-
-/* moves right image */
-#imageMoveR {
-  margin-left: 100px;
 }
