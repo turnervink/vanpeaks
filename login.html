@@ -10,7 +10,7 @@
 
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="style/base.css">
-	<link rel="stylesheet" href="stlye/login.css">
+	<link rel="stylesheet" href="style/login.css">
 </head>
 <body>
 
@@ -45,30 +45,38 @@
 				<form>
 					<div class="col-xs-3 col-xs-offset-3">
 						<fieldset class="field">
-							<legend>Login</legend>
-								Username:<br>
-							  <input type="text" name="Username"><br>
-						  	Password:<br>
-						  	<input type="text" name="Password">
+							<legend class="h3">Login</legend>
+								<label for="Username">Username: </label><br>
+							  	<input type="text" name="Username"><br>
+						  	<label for="Password">Password: </label><br>
+						  		<input type="text" name="Password">
 								<br><br>
 								<input type="submit" value="Login">
 								<br><br>
 						</fieldset>
 					</div>
+				</form>
 
+				<form>
 					<div class="col-xs-3">
-						<fieldset class="field">
-							<legend>Registeration</legend>
-								E-mail:<br>
-								<input type="text" name="E-mail"><br>
-								Username:<br>
-							  <input type="text" name="Username"><br>
-						  	Password:<br>
-						  	<input type="text" name="Password">
-								<br><br>
-								<input type="submit" value="Register">
-								<br><br>
-						</fieldset>
+						<div id="border">
+							<div class="row">
+								<div class="col-xs-offset-5">
+									<fieldset class="field">
+										<legend class="h3">Registeration</legend>
+											<label for="Email">Email:</label>
+												<input type="text" name="E-mail"><br>
+											<label for="Username">Username:</label>
+										 	 <input type="text" name="Username"><br>
+									  	<label for="Password">Password:</label>
+									  		<input type="text" name="Password">
+											<br><br>
+											<input type="submit" value="Register">
+											<br><br>
+									</fieldset>
+								</div>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
