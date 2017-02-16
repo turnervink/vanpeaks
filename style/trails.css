@@ -21,3 +21,22 @@ table {
 
   font-family: "Open Sans", sans-serif;
 }
+
+/* OPTION B CSS */
+.vertical-table {
+  float: right;
+}
+/* END B */
+
+.user-review {
+  margin-bottom: 25px;
+}
+
+.user-review h3 {
+  margin-top: 0px;
+}
+
+.user-review img {
+  max-width: 250px;
+  float: left;
+}

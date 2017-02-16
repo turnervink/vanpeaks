@@ -1,5 +1,5 @@
 /**//* Import Overpass and Open Sans fonts */
-@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100i,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Add margins to sides of page */
@@ -31,7 +31,7 @@ h3 {
 
 h4 {
   font-family: 'Overpass', sans-serif;
-  font-size: 1.6em;
+  font-size: 2.25em;
   font-style: italic;
   font-weight: 100;
 }
