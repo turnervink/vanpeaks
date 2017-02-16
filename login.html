@@ -42,22 +42,22 @@
 
 		<div class="container">
 			<div class="row">
-				<form>
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
 					<div class="col-xs-3 col-xs-offset-3">
 						<fieldset class="field">
 							<legend class="h3">Login</legend>
 								<label for="Username">Username: </label><br>
-							  	<input type="text" name="Username"><br>
+							  	<input type="text" name="Username" id="Username"><br>
 						  	<label for="Password">Password: </label><br>
-						  		<input type="text" name="Password">
+						  		<input type="password" name="Password" id="Password">
 								<br><br>
-								<input type="submit" value="Login">
+								<input type="submit" value="Login" id="Login">
 								<br><br>
 						</fieldset>
 					</div>
 				</form>
 
-				<form>
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
 					<div class="col-xs-3">
 						<div id="border_line">
 							<div class="row">
@@ -65,11 +65,11 @@
 									<fieldset class="field">
 										<legend class="h3">Registration</legend>
 											<label for="Email">Email:</label>
-												<input type="text" name="E-mail"><br>
+												<input type="text" name="Email" id="Email"><br>
 											<label for="Username">Username:</label>
-										 	 <input type="text" name="Username"><br>
+										 	 <input type="text" name="Username" id="Username"><br>
 									  	<label for="Password">Password:</label>
-									  		<input type="text" name="Password">
+									  		<input type="password" name="Password" id="Password">
 											<br><br>
 											<input type="submit" value="Register">
 											<br><br>
