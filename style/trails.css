@@ -15,18 +15,12 @@ td img:last-child {
 table {
   margin: auto;
   margin-bottom: 15px;
-  background-color: black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  background-color: rgb(68, 92, 103);
+  border-top: 5px solid rgb(68, 92, 103);
+  border-bottom: 5px solid rgb(68, 92, 103);
 
   font-family: "Open Sans", sans-serif;
 }
-
-/* OPTION B CSS */
-.vertical-table {
-  float: right;
-}
-/* END B */
 
 .user-review {
   margin-bottom: 25px;
