@@ -14,7 +14,6 @@ h1 {
   font-weight: bold;
   font-family: 'Overpass', sans-serif;
   font-size: 3em;
-  text-align: center;
 }
 
 /* Header for hikes*/
@@ -22,7 +21,6 @@ h2 {
   font-family: 'Overpass', sans-serif;
   font-weight: bold;
   font-size: 2.25em;
-  text-align: center;
 }
 
 h3 {
