@@ -41,41 +41,46 @@
 
 	<!-- Content -->
 
-
-		<div class="container">
-			<div class="page-content" id="content">
+<!-- Content -->
+	<div class="container">
+		<div class="page-content" id="content">
 			<div class="row">
-
-				<form class="col-xs-6" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-					<div class="">
-						<fieldset class="field">
-							<legend class="h3">Login</legend>
-								<label for="Username">Username: </label><br>
-							  	<input type="text" name="Username" id="userLogin"><br>
-						  	<label for="Password">Password: </label><br>
-						  		<input type="password" name="Password" id="passLogin">
-								<br><br>
-								<input type="submit" value="Login" id="Login">
-								<br><br>
-						</fieldset>
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+					<div class="col-xs-6" id="border_line">
+						<div id="loginForm">
+							<fieldset class="field">
+								<legend class="h3">Login</legend>
+									<label for="Username">Username: </label><br>
+								  	<input type="text" name="Username" id="userLogin"><br>
+							  	<label for="Password">Password: </label><br>
+							  		<input type="password" name="Password" id="passLogin">
+									<br><br>
+									<input type="submit" value="Login" id="Login">
+									<br><br>
+							</fieldset>
+						</div>
 					</div>
 				</form>
 
-				<form class="col-xs-6" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-								<div>
-									<fieldset class="field">
-										<legend class="h3">Registration</legend>
-											<label for="Email">Email:</label><br>
-												<input type="text" name="Email" id="Email"><br>
-											<label for="Username">Username:</label><br>
-										 	 <input type="text" name="userRegister" id="Username"><br>
-									  	<label for="Password">Password:</label><br>
-									  		<input type="password" name="passRegister" id="Password">
-											<br><br>
-											<input type="submit" value="Register">
-											<br><br>
-									</fieldset>
-								</div>
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+					<div class="col-xs-6">
+						<div class="row">
+							<div id="registrationForm">
+								<fieldset class="field">
+									<legend class="h3">Registration</legend>
+										<label for="Email">Email: </label><br>
+											<input type="text" name="Email" id="Email"><br>
+										<label for="Username">Username :</label><br>
+									 	 <input type="text" name="userRegister" id="Username"><br>
+								  	<label for="Password">Password:</label><br>
+								  		<input type="password" name="passRegister" id="Password">
+										<br><br>
+										<input type="submit" value="Register">
+										<br><br>
+								</fieldset>
+							</div>
+						</div>
+					</div>
 				</form>
 
 			</div>

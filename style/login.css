@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 #content {
-  padding-bottom: 12%;
-  padding-top: 12%;
+  padding-bottom: 18%;
+  padding-top: 18%;
 }
 
 /* Login Content */
@@ -18,7 +18,17 @@ label {
 }
 
 /* divider line */
-#register-form {
-  border-left: solid 2px;
+#border_line {
+  border-right: solid 2px;
   border-color: #D3D3D3;
+}
+
+#loginForm {
+  padding-right: 30px;
+  float: right;
+}
+
+#registrationForm {
+  padding-left: 30px;
+  float: left;
 }
