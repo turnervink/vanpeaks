@@ -26,7 +26,7 @@ h2 {
 h3 {
   font-family: 'Overpass', sans-serif;
   font-style: normal;
-  font-weight: 1.6em;
+  font-size: 1.6em;
 }
 
 h4 {
@@ -292,10 +292,6 @@ td {
 
 td img {
   width: 50px;
-}
-
-td img:last-child {
-  padding-right: none;
 }
 
 table {
