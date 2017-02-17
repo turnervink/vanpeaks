@@ -14,7 +14,6 @@ h1 {
   font-weight: bold;
   font-family: 'Overpass', sans-serif;
   font-size: 3em;
-  text-align: center;
 }
 
 /* Header for hikes*/
@@ -22,13 +21,12 @@ h2 {
   font-family: 'Overpass', sans-serif;
   font-weight: bold;
   font-size: 2.25em;
-  text-align: center;
 }
 
 h3 {
   font-family: 'Overpass', sans-serif;
   font-style: normal;
-  font-weight: 1.6em;
+  font-size: 1.6em;
 }
 
 h4 {
@@ -74,7 +72,7 @@ p {
   max-width: 250px;
 }
 
-.inline_image_left{
+.inline-image-left {
   float:left;
   padding: 10px 10px 10px 0;
   max-width: 250px;
@@ -96,14 +94,43 @@ p {
   text-align: center;
 }
 
-#header-image {
-	background-image: url("../images/home_header.jpg");
+.header-image {
 	height: 760px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: table;
 	color: white;
+}
+
+/* Unique header photos for each page */
+#index-header {
+  background-image: url("../images/home_header_2.jpg");
+}
+
+#cascade-falls-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#garibaldi-lake-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#jug-island-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#lynn-peak-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#mt-brunswick-header {
+  background-image: url("../images/mt_brunswick.jpg");
+}
+
+#teapot-hill-header {
+  background-image: url("../images/teapot_hill_2.jpg");
+  background-position: top;
 }
 
 /* Nav styling */
@@ -254,5 +281,83 @@ footer a:active {
 .label_row{
         width:105%;
         padding-bottom:20px;
+}
 
+/* Trail pages styles */
+td {
+  text-align: center;
+  color: white;
+  width: 100px;
+}
+
+td img {
+  width: 50px;
+}
+
+table {
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: rgb(68, 92, 103);
+  border-top: 5px solid rgb(68, 92, 103);
+  border-bottom: 5px solid rgb(68, 92, 103);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.user-review {
+  margin-bottom: 25px;
+}
+
+.user-review h3 {
+  margin-top: 0px;
+}
+
+.user-review img {
+  max-width: 250px;
+  float: left;
+}
+
+/* Prepare styles */
+.imgSize {
+  width: 250px;
+  height: 175px;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: block;
+  margin: auto;
+}
+
+/* Login page styles */
+#content {
+  padding-bottom: 18%;
+  padding-top: 18%;
+}
+
+/* Login Content */
+.field {
+    display: inline-block;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* divider line */
+#border_line {
+  border-right: solid 2px;
+  border-color: #D3D3D3;
+}
+
+#loginForm {
+  padding-right: 30px;
+  float: right;
+}
+
+#registrationForm {
+  padding-left: 30px;
+  float: left;
 }
