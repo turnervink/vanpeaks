@@ -74,7 +74,7 @@ p {
   max-width: 250px;
 }
 
-.inline_image_left{
+.inline-image-left {
   float:left;
   padding: 10px 10px 10px 0;
   max-width: 250px;
@@ -96,14 +96,43 @@ p {
   text-align: center;
 }
 
-#header-image {
-	background-image: url("../images/home_header.jpg");
+.header-image {
 	height: 760px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: table;
 	color: white;
+}
+
+/* Unique header photos for each page */
+#index-header {
+  background-image: url("../images/home_header.jpg");
+}
+
+#cascade-falls-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#garibaldi-lake-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#jug-island-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#lynn-peak-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#mt-brunswick-header {
+  background-image: url("../images/cascade_falls.jpg");
+}
+
+#teapot-hill-header {
+  background-image: url("../images/teapot_hill_2.jpg");
+  background-position: top;
 }
 
 /* Nav styling */
