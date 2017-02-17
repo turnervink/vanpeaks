@@ -18,8 +18,7 @@ label {
 }
 
 /* divider line */
-#border_line {
+#register-form {
   border-left: solid 2px;
-  padding-left: 15px;
   border-color: #D3D3D3;
 }
