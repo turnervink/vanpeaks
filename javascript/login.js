@@ -5,7 +5,23 @@ function $(id) {
     return element;
 }
 /* Check login */
+function checkUserLogin(id) {
+    var user = $(id).value;
+    var text = "";
+    if(user.length == 0) {
+      text = "Please enter your username";
+    }
+    document.getElementById("userLoginWarn").innerHTML = text;
+}
 
+function checkPassLogin(id) {
+    var pass = $(id).value;
+    var text = "";
+    if(pass.length == 0) {
+      text = "Please enter your password"
+    }
+    document.getElementById("passLoginWarn").innerHTML = text;
+}
 
 /* Check Registration */
 function checkEmailRegi(id) {
@@ -17,7 +33,7 @@ function checkEmailRegi(id) {
         text = "Invalid email type";
       }
     } else {
-        text = "Please enter a email";
+        text = "Please enter a new email";
     }
     document.getElementById("emailRegiWarn").innerHTML = text;
 }
@@ -30,7 +46,7 @@ function checkUserRegi(id) {
         text = "Username must to be longer than 5 characters";
       }
     } else {
-      text = "Please enter a username";
+      text = "Please enter a new username";
     }
     document.getElementById("userRegiWarn").innerHTML = text;
 }
@@ -43,7 +59,7 @@ function checkPassRegi(id) {
         text = "Password must to be longer than 6 characters";
       }
     } else {
-      text = "Please enter a password";
+      text = "Please enter a new password";
     }
     document.getElementById("passRegiWarn").innerHTML = text;
 }

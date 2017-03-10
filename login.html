@@ -55,12 +55,13 @@
 							<fieldset class="field">
 								<legend class="h3">Login</legend>
 									<label for="Username">Username: </label><br>
-								  	<input type="text" name="Username" id="userLogin"><br>
+								  	<input type="text" name="Username" id="userLogin" onblur="checkUserLogin('userLogin')">
+										<div id="userLoginWarn"></div>
 							  	<label for="Password">Password: </label><br>
-							  		<input type="password" name="Password" id="passLogin">
-									<br><br>
+							  		<input type="password" name="Password" id="passLogin" onblur="checkPassLogin('passLogin')">
+										<div id="passLoginWarn"></div>
+									<br>
 									<input type="submit" value="Login" id="loginButton">
-									<br><br>
 							</fieldset>
 						</div>
 					</div>
@@ -73,13 +74,13 @@
 								<fieldset class="field">
 									<legend class="h3">Registration</legend>
 										<label for="Email">Email: </label><br>
-											<input type="text" name="Email" id="emailRegister" onchange="checkEmailRegi('emailRegister')">
+											<input type="text" name="Email" id="emailRegister" onblur="checkEmailRegi('emailRegister')">
 											<div id="emailRegiWarn" class="validationText"></div>
 										<label for="Username">Username :</label><br>
-									 	 <input type="text" name="userRegister" id="userRegister" onchange="checkUserRegi('userRegister')">
+									 	 <input type="text" name="userRegister" id="userRegister" onblur="checkUserRegi('userRegister')">
 										 <div id="userRegiWarn" class="validationText"></div>
 								  	<label for="Password">Password:</label><br>
-								  		<input type="password" name="passRegister" id="passRegister" onchange="checkPassRegi('passRegister')">
+								  		<input type="password" name="passRegister" id="passRegister" onblur="checkPassRegi('passRegister')">
 											<div id="passRegiWarn" class="validationText"></div>
 										<br>
 										<input type="submit" value="Register" id="registerButton">
