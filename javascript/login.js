@@ -8,6 +8,20 @@ function $(id) {
 
 
 /* Check Registration */
+function checkEmailRegi(id) {
+    var email = $(id).value;
+    var text = "";
+    if(email.length != 0) {
+      if(email.indexOf('@') > -1) {
+      } else {
+        text = "Invalid email type";
+      }
+    } else {
+        text = "Please enter a email";
+    }
+    document.getElementById("emailRegiWarn").innerHTML = text;
+}
+
 function checkUserRegi(id) {
     var user = $(id).value;
     var text = "";
@@ -32,18 +46,4 @@ function checkPassRegi(id) {
       text = "Please enter a password";
     }
     document.getElementById("passRegiWarn").innerHTML = text;
-}
-
-function checkEmailRegi(id) {
-    var email = $(id).value;
-    var text = "";
-    if(email.length != 0) {
-      if(email.indexOf('@') > -1) {
-      } else {
-        text = "Invalid email type";
-      }
-    } else {
-        text = "Please enter a email";
-    }
-    document.getElementById("emailRegiWarn").innerHTML = text;
 }
