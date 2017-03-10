@@ -10,6 +10,11 @@
 
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="style/base.css">
+
+	<!-- Link JavaScript files -->
+	<script src="./javascript/login.js">
+	</script>
+
 </head>
 <body>
 
@@ -54,7 +59,7 @@
 							  	<label for="Password">Password: </label><br>
 							  		<input type="password" name="Password" id="passLogin">
 									<br><br>
-									<input type="submit" value="Login" id="Login">
+									<input type="submit" value="Login" id="loginButton">
 									<br><br>
 							</fieldset>
 						</div>
@@ -68,13 +73,16 @@
 								<fieldset class="field">
 									<legend class="h3">Registration</legend>
 										<label for="Email">Email: </label><br>
-											<input type="text" name="Email" id="Email"><br>
+											<input type="text" name="Email" id="emailRegister" onchange="checkEmailRegi('emailRegister')">
+											<div id="emailRegiWarn" class="validationText"></div>
 										<label for="Username">Username :</label><br>
-									 	 <input type="text" name="userRegister" id="Username"><br>
+									 	 <input type="text" name="userRegister" id="userRegister" onchange="checkUserRegi('userRegister')">
+										 <div id="userRegiWarn" class="validationText"></div>
 								  	<label for="Password">Password:</label><br>
-								  		<input type="password" name="passRegister" id="Password">
-										<br><br>
-										<input type="submit" value="Register">
+								  		<input type="password" name="passRegister" id="passRegister" onchange="checkPassRegi('passRegister')">
+											<div id="passRegiWarn" class="validationText"></div>
+										<br>
+										<input type="submit" value="Register" id="registerButton">
 										<br><br>
 								</fieldset>
 							</div>
