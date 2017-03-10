@@ -264,15 +264,30 @@ footer a:active {
 .img_grid_container{
         height:auto;
         width:100%;
-        padding-bottom:20px;
+        /*padding-bottom:20px;*/
 
 }
+
+.img_grid_title{
+  padding-left:15.5%;
+}
 .img_grid{
-        width:60%;
+        width:100%;
         height:100%;
         margin:0 auto;
 
 }
+
+.image_border{
+  background-color: #445c67;
+  padding:8px;
+}
+
+.center_image{
+  /*margin-left:5px;
+  margin-right:5px;*/
+}
+
 [class*="col-"] > a > img{
         width:100%;
         height:100%;
@@ -281,7 +296,24 @@ footer a:active {
 .label_row{
         width:105%;
         padding-bottom:20px;
+        /*margin-left:1%;*/
 }
+.view_more_row{
+  margin-bottom:10px;
+}
+
+.label_text{
+  /*text-align: center;*/
+}
+
+.view_more{
+  font-weight:bold;
+
+}
+.view_more:hover{
+  color:grey;
+}
+
 
 /* Trail pages styles */
 td {
@@ -361,3 +393,5 @@ label {
   padding-left: 30px;
   float: left;
 }
+
+
