@@ -95,7 +95,10 @@ function validation() {
     var text = "";
     var valid = false;
     if (checkFormUser && checkFormEmail && checkFormPass1 && checkFormPass2) {
+        valid = true;
     } else {
+        text = "Please fix all errors";
+        valid = false;
     }
     document.getElementById("regiError").innerHTML = text;
     return valid;
