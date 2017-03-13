@@ -28,7 +28,8 @@ function checkEmailRegi(id) {
     var email = $(id).value;
     var text = "";
     if(email.length != 0) {
-      if(email.indexOf('@') > -1) {
+      if((email.indexOf('@') > -1) && (email.indexOf('.') > -1)) {
+          text = "";
       } else {
         text = "Invalid email type";
       }
@@ -43,7 +44,7 @@ function checkUserRegi(id) {
     var text = "";
     if(user.length != 0) {
       if(user.length < 5) {
-        text = "Username must to be longer than 5 characters";
+        text = "Username must be longer than 5 characters";
       }
     } else {
       text = "Please enter a new username";
@@ -51,6 +52,7 @@ function checkUserRegi(id) {
     document.getElementById("userRegiWarn").innerHTML = text;
 }
 
+/* Checks to see if password is longer than 6 characters */
 function checkPassRegi(id) {
     var pass = $(id).value;
     var text = "";
@@ -61,5 +63,18 @@ function checkPassRegi(id) {
     } else {
       text = "Please enter a new password";
     }
-    document.getElementById("passRegiWarn").innerHTML = text;
+    document.getElementById("passRegiWarn2").innerHTML = text;
+}
+
+/* Checks to see if both passwords match */
+function checkPassRegiMatch() {
+   var password1 = document.getElementById('passRegister1');
+   var password2 = document.getElementById('passRegister2');
+   var text = "";
+   if(password1.value == password2.value) {
+     text = "";
+   } else {
+     text = "Passwords do not match.";
+   }
+   document.getElementById("passRegiWarn2").innerHTML = text;
 }
