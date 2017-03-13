@@ -1,7 +1,9 @@
-var checkFormUser = false;
-var checkFormEmail = false;
-var checkFormPass1 = false;
-var checkFormPass2 = false;
+var checkRegiFormUser = false;
+var checkRegiFormEmail = false;
+var checkRegiFormPass1 = false;
+var checkRegiFormPass2 = false;
+var checkLoginFormUser = false;
+var checkLoginFormPass = false;
 
 function $(id) {
     var element = document.getElementById(id);
@@ -13,8 +15,14 @@ function $(id) {
 function checkUserLogin(id) {
     var user = $(id).value;
     var text = "";
+    checkLoginFormUser = true;
     if (user.length == 0) {
         text = "Please enter your username";
+        checkLoginFormUser = false;
+    }
+    else if(user.length < 5) {
+        text = "Invalid username length";
+        checkLoginFormUser = false;
     }
     document.getElementById("userLoginWarn").innerHTML = text;
 }
@@ -22,23 +30,41 @@ function checkUserLogin(id) {
 function checkPassLogin(id) {
     var pass = $(id).value;
     var text = "";
+    checkLoginFormPass = true;
     if (pass.length == 0) {
-        text = "Please enter your password"
+        text = "Please enter your password";
+        checkLoginFormPass = false;
+    }
+    else if (pass.length < 6) {
+        text = "Invalid password length";
+        checkLoginFormPass = false;
     }
     document.getElementById("passLoginWarn").innerHTML = text;
+}
+
+function loginValidation() {
+    var text = "";
+    var valid = false;
+    if (checkLoginFormPass && checkLoginFormUser) {
+      valid = true;
+    } else {
+      text = "Please fix all errors";
+    }
+    document.getElementById("loginError").innerHTML = text;
+    return valid;
 }
 
 /* Check Registration */
 function checkEmailRegi(id) {
     var email = $(id).value;
     var text = "";
-    checkFormEmail = true;
+    checkRegiFormEmail = true;
     if (email.length != 0) {
         if ((email.indexOf('@') > -1) && (email.indexOf('.') > -1)) {
             text = "";
         } else {
             text = "Invalid email type";
-            checkFormEmail = false;
+            checkRegiFormEmail = false;
         }
     } else {
         text = "Please enter a new email";
@@ -49,11 +75,11 @@ function checkEmailRegi(id) {
 function checkUserRegi(id) {
     var user = $(id).value;
     var text = "";
-    checkFormUser = true;
+    checkRegiFormUser = true;
     if (user.length != 0) {
         if (user.length < 5) {
             text = "Username must be longer than 5 characters";
-            checkFormUser = false;
+            checkRegiFormUser = false;
         }
     } else {
         text = "Please enter a new username";
@@ -82,8 +108,8 @@ function checkPassRegiMatch() {
     var text = "";
     if (password1.value == password2.value) {
         text = "";
-        checkFormPass1 = true;
-        checkFormPass2 = true;
+        checkRegiFormPass1 = true;
+        checkRegiFormPass2 = true;
     } else {
         text = "Passwords do not match.";
     }
@@ -91,10 +117,10 @@ function checkPassRegiMatch() {
 }
 
 /* Validates all forms all filled in properly, client-side */
-function validation() {
+function regiValidation() {
     var text = "";
     var valid = false;
-    if (checkFormUser && checkFormEmail && checkFormPass1 && checkFormPass2) {
+    if (checkRegiFormUser && checkRegiFormEmail && checkRegiFormPass1 && checkRegiFormPass2) {
         valid = true;
     } else {
         text = "Please fix all errors";
