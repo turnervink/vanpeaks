@@ -67,12 +67,13 @@
 					</div>
 				</form>
 
-				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validation()">
 					<div class="col-xs-6">
 						<div class="row">
 							<div id="registrationForm">
 								<fieldset class="field">
 									<legend class="h3">Registration</legend>
+											<div id="regiError" class="red"></div>
 										<label for="emailRegister">Email: </label><br>
 											<input type="text" name="emailRegister" id="emailRegister" onblur="checkEmailRegi('emailRegister')" required>
 											<div id="emailRegiWarn" class="red"></div>
@@ -85,6 +86,7 @@
 										<label for="passRegister2">Confirm Password:</label><br>
 											<input type="password" name="passRegister2" id="passRegister2" onblur="checkPassRegi('passRegister2'); checkPassRegiMatch(); return false;" required>
 											<div id="passRegiWarn2" class="red"></div>
+											<div id="passRegiWarn3" class="red"></div>
 										<br>
 										<input type="submit" value="Register" id="registerButton">
 										<br><br>
