@@ -4,16 +4,16 @@
 	<title>VanPeaks - Lynn Peak</title>
 	<meta charset="utf-8">
 
+  <!-- Link base stylesheet -->
+  <link rel="stylesheet" href="../style/base.css">
+  <link rel="stylesheet" href="../style/review_form.css">
+
+  <script src="../jquery/js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="../js/trails.js"></script>
+
   <!-- Link Bootstrap files -->
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
   <script src="../bootstrap/js/bootstrap.js"></script>
-
-  <!-- Link base stylesheet -->
-  <link rel="stylesheet" href="../style/base.css">
-
-  <link rel="stylesheet" href="../style/trails.css">
-
-  <link rel="stylesheet" href="../style/review_form.css">
 
   <script>
 
@@ -24,9 +24,9 @@
                 }
                 return element;
    }
-   function (){
-       var preview = document.querySelector('img'); //selects the query named img
-       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+   function showPicture(){
+       var preview = document.querySelector("#img_display_frame"); //selects the query named img
+       var file    = document.querySelector("#filupload").files[0]; //sames as here
        var reader  = new FileReader();
 
        reader.onloadend = function () {
@@ -40,7 +40,6 @@
        }
   }
 
-  previewFile();  //calls the function named previewFile()
   </script>
 
 </head>
@@ -208,16 +207,45 @@
 					</p>
 				</div>
 
-				<!-- Review submission form -->
+
+				<div class="row">
+					<button class="col-xs-12" id="show">Leave a review</button>
+				</div>
+				<br>
+					<div id="review_form">
+						<form class="col-xs-12" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+							<br>
+							<input required type="text" size="60" id="review_title" name="review_title" placeholder="Title" onblur="warnValidateTitle('review_title')">
+							<br>
+							<br>
+
+							<textarea required rows="10" cols="75" id="review_body" name="review_body" placeholder="Review" ></textarea>
+							<br>
+							<br>
+
+							<input type="file" name="review_pic" id="review_pic" onblur="warnPicture('review_pic')">
+							<br>
+							<label for="review_pic">Image files only</label>
+							<br>
+							<br>
+							
+							<input type="submit" value="Submit">
+							<br>
+							<br>
+						</form>
+					</div>
+
+
+				<!-- Review submission form 
 
 				<div class="container-fluid">
 					<div class="col-xs-4"></div>
 					<div class="col-xs-4">
-						<button id="expand_button" type="button">Click to leave review</button>
+						<button id="show">Click to leave review</button>
 					</div>
 					<div class="col-xs-4"></div>
 				</div>
-
+				<form id="review_form">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-1"></div>
@@ -231,12 +259,13 @@
 					<div class="row">
 						<div class="col-xs-1"></div>
 						<div class="col-xs-1" id="upload_button_container">
-							<input id="img_upload_button" type="file" onchange="previewFile()">
+							<input id="img_upload_button" name="img_upload_button" type="file" onchange="showPicture()">
 						</div>
 						<div class="col-xs-10"></div>
 					</div>
 
 				</div>
+				</form> -->
 				<!-- <div class="row">
 					<h2 class="col-xs-12">Leave a review</h2>
 				</div>
