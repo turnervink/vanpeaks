@@ -19,8 +19,7 @@ function checkUserLogin(id) {
     if (user.length == 0) {
         text = "Please enter your username";
         checkLoginFormUser = false;
-    }
-    else if(user.length < 5) {
+    } else if (user.length < 5) {
         text = "Invalid username length";
         checkLoginFormUser = false;
     }
@@ -34,8 +33,7 @@ function checkPassLogin(id) {
     if (pass.length == 0) {
         text = "Please enter your password";
         checkLoginFormPass = false;
-    }
-    else if (pass.length < 6) {
+    } else if (pass.length < 6) {
         text = "Invalid password length";
         checkLoginFormPass = false;
     }
@@ -46,9 +44,9 @@ function loginValidation() {
     var text = "";
     var valid = false;
     if (checkLoginFormPass && checkLoginFormUser) {
-      valid = true;
+        valid = true;
     } else {
-      text = "Please fix all errors";
+        text = "Please fix all errors";
     }
     document.getElementById("loginError").innerHTML = text;
     return valid;
