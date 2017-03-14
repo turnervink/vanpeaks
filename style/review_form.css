@@ -16,6 +16,14 @@
 	margin-right:0px;
 }
 
+#filupload{
+	padding-top:10px;
+}
+#submit{
+	margin-top:10px;
+}
+
+
 #upload_button_container{
 	padding-left:0px;
 	padding-right:0px;
@@ -30,4 +38,15 @@
 	padding-right:0px;
 	margin-left:0px;
 	margin-right:0px;
+}
+
+#textarea_container{
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.seperator_row{
+	height:3%;
 }

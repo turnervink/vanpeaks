@@ -17,13 +17,13 @@
 
   <script>
 
-   function $(id){
-   	var element = document.getElementById(id);
-                if(element == null){
-                    alert('Programmer error: ' + id + 'does not exist.');
-                }
-                return element;
-   }
+   // function $(id){
+   // 	var element = document.getElementById(id);
+   //              if(element == null){
+   //                  alert('Programmer error: ' + id + 'does not exist.');
+   //              }
+   //              return element;
+   // }
    function showPicture(){
        var preview = document.querySelector("#img_display_frame"); //selects the query named img
        var file    = document.querySelector("#filupload").files[0]; //sames as here
@@ -215,23 +215,61 @@
 					<div id="review_form">
 						<form class="col-xs-12" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 							<br>
-							<input required type="text" size="60" id="review_title" name="review_title" placeholder="Title" onblur="warnValidateTitle('review_title')">
-							<br>
-							<br>
+							<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-3" id="img_frame_container">
 
-							<textarea required rows="10" cols="75" id="review_body" name="review_body" placeholder="Review" ></textarea>
-							<br>
-							<br>
+							<img id="img_display_frame" src="" height="75" alt="image preview">							
+						</div>
 
-							<input type="file" name="review_pic" id="review_pic" onblur="warnPicture('review_pic')">
-							<br>
-							<label for="review_pic">Image files only</label>
-							<br>
-							<br>
+						<div class="col-xs-1"></div>
+						<div class="col-xs-6">
 							
-							<input type="submit" value="Submit">
-							<br>
-							<br>
+							<div class="row">
+								<div class="col-xs-2">
+									<input type="radio" name="rating" id="radrating_0">
+								</div>
+								<div class="col-xs-2">
+									<input type="radio" name="rating" id="radrating_1">
+								</div>
+								<div class="col-xs-2">
+									<input type="radio" name="rating" id="radrating_2">
+								</div>
+								<div class="col-xs-2">
+									<input type="radio" name="rating" id="radrating_3">
+								</div>
+								<div class="col-xs-2">
+									<input type="radio" name="rating" id="radrating_4">
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="seperator_row row"></div>
+							<div class="row">
+								<input type="text" class="col-xs-12">
+							</div>
+
+
+					</div>
+						
+						<div class="col-xs-2"></div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-1" id="upload_button_container">
+							<input id="filupload" name="filupload" type="file" onchange="showPicture()">
+							<button type="submit" id="submit">Submit</button>
+						</div>
+						<div class="col-xs-3"></div>
+						<div class="col-xs-6" id="textarea_container">
+							<textarea rows="5" cols="44">input your review here</textarea>
+						</div>
+						<div class="col-xs-1"></div>
+
+					</div>
+
+				</div>
 						</form>
 					</div>
 
