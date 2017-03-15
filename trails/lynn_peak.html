@@ -209,18 +209,20 @@
 
 
 				<div class="row">
-					<button class="col-xs-12" id="show">Leave a review</button>
+					<div class="col-xs-4"></div>
+					<button class="col-xs-4 button" id="show">Leave a review</button>
+					<div class="col-xs-4"></div>
 				</div>
 				<br>
-					<div id="review_form">
-						<form class="col-xs-12" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+					<div>
+						<form class="col-xs-12" id="review_form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 							<br>
 							<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-1"></div>
 						<div class="col-xs-3" id="img_frame_container">
 
-							<img id="img_display_frame" src="" height="75" alt="image preview">							
+							<img id="img_display_frame" src="../images/reviewimageplaceholder.png" height="75" width="75" alt="">							
 						</div>
 
 						<div class="col-xs-1"></div>
@@ -228,25 +230,25 @@
 							
 							<div class="row">
 								<div class="col-xs-2">
-									<input type="radio" name="rating" id="radrating_0">
+									<label><input type="radio" name="rating" id="radrating_0">1<span><span></span></span></label>
 								</div>
 								<div class="col-xs-2">
-									<input type="radio" name="rating" id="radrating_1">
+									<label><input type="radio" name="rating" id="radrating_1">2<span><span></span></span></label>
 								</div>
 								<div class="col-xs-2">
-									<input type="radio" name="rating" id="radrating_2">
+									<label><input type="radio" name="rating" id="radrating_2">3<span><span></span></span></label>
 								</div>
 								<div class="col-xs-2">
-									<input type="radio" name="rating" id="radrating_3">
+									<label><input type="radio" name="rating" id="radrating_3">4<span><span></span></span></label>
 								</div>
 								<div class="col-xs-2">
-									<input type="radio" name="rating" id="radrating_4">
+									<label><input type="radio" name="rating" id="radrating_4">5<span><span></span></span></label>
 								</div>
 								<div class="col-xs-2"></div>
 							</div>
 							<div class="seperator_row row"></div>
 							<div class="row">
-								<input type="text" class="col-xs-12">
+								<input type="text" id="txtreview" name="txtreview" class="col-xs-12">
 							</div>
 
 
@@ -257,13 +259,18 @@
 
 					<div class="row">
 						<div class="col-xs-1"></div>
-						<div class="col-xs-1" id="upload_button_container">
-							<input id="filupload" name="filupload" type="file" onchange="showPicture()">
-							<button type="submit" id="submit">Submit</button>
+						<div class="col-xs-2" id="form_buttons_container">
+							<div class="row" id="upload_button_container">
+								<input class="filupload_button " id="filupload" name="filupload" type="file" onchange="showPicture()"><label for="filupload" style="color:white;font-weight:normal;">&nbsp;Select Picture</label>
+							</div>
+							<div class="row">
+							<button class="button col-xs-9" type="submit" id="submit">Submit</button>
+							</div><div class="col-xs-3"></div>
 						</div>
-						<div class="col-xs-3"></div>
+						
+						<div class="col-xs-2"></div>
 						<div class="col-xs-6" id="textarea_container">
-							<textarea rows="5" cols="44">input your review here</textarea>
+							<textarea id="txtreview" rows="5" cols="44">input your review here</textarea>
 						</div>
 						<div class="col-xs-1"></div>
 
