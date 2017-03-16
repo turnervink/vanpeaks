@@ -180,31 +180,28 @@
 
 				<!-- Review submission form -->
 				<div class="row">
-					<button class="col-xs-12" id="show">Leave a review</button>
+					<h2 class="col-xs-12">Leave a review</h2>
 				</div>
-				<br>
-					<div id="review_form">
-						<form class="col-xs-12" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-							<br>
-							<input required type="text" size="60" id="review_title" name="review_title" placeholder="Title" onblur="warnValidateTitle('review_title')">
-							<br>
-							<br>
 
-							<textarea required rows="10" cols="75" id="review_body" name="review_body" placeholder="Review" ></textarea>
-							<br>
-							<br>
+				<div class="row">
+					<form class="col-xs-12" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+						<input required type="text" id="reviewer_name" name="reviewer_name" placeholder="Name">
+						<br>
+						<br>
 
-							<input type="file" name="review_pic" id="review_pic" onblur="warnPicture('review_pic')">
-							<br>
-							<label for="review_pic">Image files only</label>
-							<br>
-							<br>
-							
-							<input type="submit" value="Submit">
-							<br>
-							<br>
-						</form>
-					</div>
+						<input required type="text" size="60" id="review_title" name="review_title" placeholder="Title">
+						<br>
+						<br>
+
+						<textarea required rows="10" cols="75" id="review_body" name="review_body" placeholder="Review"></textarea>
+						<br>
+						<br>
+
+						<input type="submit" value="Submit">
+						<br>
+						<br>
+					</form>
+				</div>
 				</div>
 			</div>
 

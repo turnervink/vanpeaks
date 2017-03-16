@@ -196,10 +196,7 @@ nav a:active {
 }
 
 /* About page image */
-.about_img {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center-block {
 	padding: 1em;
 }
 
@@ -364,11 +361,4 @@ label {
 
 #review_form {
 	display: none;
-}
-
-button#show {
-	width: 250px;
-	font-family: 'Overpass', sans-serif;
-    font-weight: bold;
-    font-size: 2.25em;
 }
