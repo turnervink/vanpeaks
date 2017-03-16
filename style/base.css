@@ -302,6 +302,18 @@ footer a:active {
   margin-bottom:10px;
 }
 
+.info_row > div{
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+
+}
+.info_row > p{
+padding-left: 0px;
+  padding-right: 0px;
+}
+
+
 .label_text{
   /*text-align: center;*/
 }
@@ -393,5 +405,6 @@ label {
   padding-left: 30px;
   float: left;
 }
+
 
 
