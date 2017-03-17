@@ -69,7 +69,8 @@
 
 #img_display_frame{
 	border-style: solid;
-	border-width: thin;
+	border-width: thick;
+	border-color: #2C783D;
 	padding-left:0px;
 	padding-right:0px;
 	margin-left:0px;
@@ -79,7 +80,6 @@
 #textarea_container{
 	padding-left:0px;
 	padding-right:0px;
-	margin-left:0px;
 	margin-right:0px;
 }
 
@@ -88,17 +88,4 @@
 }
 
 #img_frame_container{
-	border-color:;
-}
-
-#warnRating {
-	color: red;
-}
-
-#warnTitle {
-	color: red;
-}
-
-#warnText {
-	color: red;
 }
