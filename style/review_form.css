@@ -90,3 +90,15 @@
 #img_frame_container{
 	border-color:;
 }
+
+#warnRating {
+	color: red;
+}
+
+#warnTitle {
+	color: red;
+}
+
+#warnText {
+	color: red;
+}
