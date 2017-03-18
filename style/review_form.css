@@ -1,0 +1,96 @@
+.button{
+	background-color: #2C783D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+#img_frame_container{
+	padding-left:0px;
+	padding-right:0px;
+	margin-right:0px;
+}
+
+#filupload{
+	margin-top:10px;
+}
+#review_form{
+	background-color: #445B66;
+	margin-bottom:20px;
+}
+.filupload_button{
+	width:0.1px;
+	height:0.1px;
+	opacity:0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+}
+.radio_buttons{
+	margin-bottom:2%;
+}
+.radio_buttons > div> label{
+	color:white;
+}
+.inputfile + label{
+	font-size:1.25;
+	color:white;
+	background-color: #2C783D;
+	display:inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover{
+	background-color: red;
+}
+
+#form_buttons_container{
+	margin-top:1%;
+	padding-left:0px;
+	padding-right:1.5%
+}
+
+#submit{
+	margin-top:5%;
+	margin-left:11.5%;
+}
+
+
+#upload_button_container{
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color: #2C783D;
+}
+
+#img_display_frame{
+	border-style: solid;
+	border-width: normal;
+	border-color: #2C783D;
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#textarea_container{
+	padding-left:0px;
+	padding-right:0px;
+	margin-right:0px;
+}
+
+.seperator_row{
+	height:3%;
+}
+
+#radio_and_title{
+	margin-top:1.5%;
+}

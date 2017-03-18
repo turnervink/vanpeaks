@@ -17,7 +17,7 @@ function checkUserLogin(id) {
     var text = "";
     checkLoginFormUser = true;
     if (user.length == 0) {
-        text = "Please enter your username";
+        text = "Enter your username";
         checkLoginFormUser = false;
     } else if (user.length < 5) {
         text = "Invalid username length";
@@ -31,7 +31,7 @@ function checkPassLogin(id) {
     var text = "";
     checkLoginFormPass = true;
     if (pass.length == 0) {
-        text = "Please enter your password";
+        text = "Enter your password";
         checkLoginFormPass = false;
     } else if (pass.length < 6) {
         text = "Invalid password length";
@@ -96,7 +96,7 @@ function checkPassRegi(id) {
     } else {
         text = "Please enter a new password";
     }
-    document.getElementById("passRegiWarn2").innerHTML = text;
+      document.getElementById("passRegiWarn2").innerHTML = text;
 }
 
 /* Checks to see if both passwords match */
