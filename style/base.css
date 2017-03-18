@@ -413,6 +413,8 @@ label {
     background-color: transparent;
     text-decoration: none;
     padding: 0;
+    padding-left: 1.5em;
+  	padding-right: 1.5em;
 }
 
 #dropdownButton, #dropdownButton:link, #dropdownButton:visited, #dropdownButton:hover, #dropdownButton:active {
