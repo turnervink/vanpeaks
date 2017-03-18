@@ -95,8 +95,7 @@ p {
 }
 
 .header-image {
-    /** Commented out to test if headerImage.js works
-	height: 760px;*/
+	height: 760px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
