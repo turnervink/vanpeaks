@@ -10,6 +10,11 @@
 
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="style/base.css">
+
+	<!-- Link JavaScript files -->
+	<script src="./javascript/login.js">
+	</script>
+
 </head>
 <body>
 
@@ -44,37 +49,47 @@
 	<div class="container">
 		<div class="page-content" id="content">
 			<div class="row">
-				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
 					<div class="col-xs-6" id="border_line">
 						<div id="loginForm">
 							<fieldset class="field">
 								<legend class="h3">Login</legend>
-									<label for="Username">Username: </label><br>
-								  	<input type="text" name="Username" id="userLogin"><br>
-							  	<label for="Password">Password: </label><br>
-							  		<input type="password" name="Password" id="passLogin">
-									<br><br>
-									<input type="submit" value="Login" id="Login">
-									<br><br>
+										<div id="loginError" class="red"></div>
+									<label for="userLogin">Username: </label><br>
+								  	<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+										<div id="userLoginWarn" class="red"></div>
+							  	<label for="passLogin">Password: </label><br>
+							  		<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+										<div id="passLoginWarn" class="red"></div>
+									<br>
+									<input type="submit" value="Login" id="loginButton">
 							</fieldset>
 						</div>
 					</div>
 				</form>
 
-				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return regiValidation()">
 					<div class="col-xs-6">
 						<div class="row">
 							<div id="registrationForm">
 								<fieldset class="field">
 									<legend class="h3">Registration</legend>
-										<label for="Email">Email: </label><br>
-											<input type="text" name="Email" id="Email"><br>
-										<label for="Username">Username :</label><br>
-									 	 <input type="text" name="userRegister" id="Username"><br>
-								  	<label for="Password">Password:</label><br>
-								  		<input type="password" name="passRegister" id="Password">
-										<br><br>
-										<input type="submit" value="Register">
+											<div id="regiError" class="red"></div>
+										<label for="emailRegister">Email: </label><br>
+											<input type="text" name="emailRegister" id="emailRegister" onblur="checkEmailRegi('emailRegister')" required>
+											<div id="emailRegiWarn" class="red"></div>
+										<label for="userRegister">Username :</label><br>
+									 	 <input type="text" name="userRegister" id="userRegister" onblur="checkUserRegi('userRegister')" required>
+										 <div id="userRegiWarn" class="red"></div>
+								  	<label for="passRegister1">Password:</label><br>
+								  		<input type="password" name="passRegister1" id="passRegister1" onblur="checkPassRegi('passRegister1')" required>
+											<div id="passRegiWarn1" class="red"></div>
+										<label for="passRegister2">Confirm Password:</label><br>
+											<input type="password" name="passRegister2" id="passRegister2" onblur="checkPassRegi('passRegister2'); checkPassRegiMatch(); return false;" required>
+											<div id="passRegiWarn2" class="red"></div>
+											<div id="passRegiWarn3" class="red"></div>
+										<br>
+										<input type="submit" value="Register" id="registerButton">
 										<br><br>
 								</fieldset>
 							</div>
