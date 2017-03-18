@@ -70,12 +70,14 @@ p {
   float:right;
   padding: 10px 0 10px 10px;
   max-width: 250px;
+  max-height: 250px;
 }
 
 .inline-image-left {
   float:left;
   padding: 10px 10px 10px 0;
   max-width: 250px;
+  max-height: 250px;
 }
 
 /* Banner image styles */
