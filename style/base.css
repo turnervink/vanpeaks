@@ -412,7 +412,7 @@ label {
     color: white;
     background-color: transparent;
     text-decoration: none;
-    padding: none;
+    padding: 0;
 }
 
 #dropdownButton, #dropdownButton:link, #dropdownButton:visited, #dropdownButton:hover, #dropdownButton:active {
@@ -420,7 +420,7 @@ label {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding: none;
+    padding: 0;
 
     color: white;
     font-size: 1em;

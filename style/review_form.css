@@ -40,7 +40,7 @@
 	color:white;
 }
 .inputfile + label{
-	font-size:1.25;
+	font-size:1.25em;
 	color:white;
 	background-color: #2C783D;
 	display:inline-block;
@@ -73,7 +73,7 @@
 
 #img_display_frame{
 	border-style: solid;
-	border-width: normal;
+	/*border-width: normal;*/
 	border-color: #2C783D;
 	padding-left:0px;
 	padding-right:0px;
