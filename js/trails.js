@@ -51,4 +51,3 @@ function checkReview(){
 		return true;
 	}	
 }
-	
