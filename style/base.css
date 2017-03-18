@@ -99,7 +99,6 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: table;
 	color: white;
 }
 
@@ -398,6 +397,7 @@ label {
 }
 
 #loginForm {
+  color: black;
   padding-right: 30px;
   float: right;
 }
@@ -407,6 +407,44 @@ label {
   float: left;
 }
 
+.navLink {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: none;
+}
+
+#dropdownButton, #dropdownButton:link, #dropdownButton:visited, #dropdownButton:hover, #dropdownButton:active {
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: none;
+
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+    text-decoration: none;
+    background-color: transparent;
+
+    border: none;
+    border-color: transparent;
+}
+
+#dropdownForm {
+    width: 212px;
+    height: 252px;
+}
+
+#loginForm {
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-left: auto;
+}
+
 #review_form {
 	display: none;
 }
+
