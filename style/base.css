@@ -338,6 +338,10 @@ table {
     display: inline-block;
 }
 
+.red {
+  color: red;
+}
+
 label {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
