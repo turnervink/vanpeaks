@@ -4,16 +4,17 @@
 	<title>VanPeaks - Login</title>
 	<meta charset="utf-8">
 
-  <!-- Link Bootstrap files -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <script src="bootstrap/js/bootstrap.js"></script>
-
-  <!-- Link base stylesheet -->
-  <link rel="stylesheet" href="style/base.css">
+	<!-- Link Bootstrap files -->
+	<script type="text/javascript" src="jquery/js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script src="bootstrap/js/bootstrap.js"></script>
 
 	<!-- Link JavaScript files -->
-	<script src="./javascript/login.js">
-	</script>
+	<script src="./javascript/login.js"></script>
+	<script type="text/javascript" src="headerImage.js"></script>
+
+	<!-- Link base stylesheet -->
+	<link rel="stylesheet" href="style/base.css">
 
 </head>
 <body>
@@ -35,8 +36,49 @@
 					<li class="listitem" id="about">
 						<a href="about.html" class="link">About</a>
 					</li>
-					<li class="listitem" id="login">
-						<a href="login.html" class="link">Login</a>
+					<li class="navLink">
+						<div class="dropdown">
+							<button
+									class="btn btn-default dropdown-toggle link"
+									id="dropdownButton"
+									type="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false" >
+								Login
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
+								<li id="loginForm">
+									<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+										<div>
+											<fieldset class="field">
+												<!-- Login Title -->
+												<legend class="h3">Login</legend>
+												<div id="loginError" class="red"></div>
+												<!-- Username Title -->
+												<label for="userLogin">Username:</label><br>
+												<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+												<div id="userLoginWarn" class="red"></div>
+												<!-- Password Title -->
+												<label for="passLogin">Password:</label><br>
+												<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+												<div id="passLoginWarn" class="red"></div>
+												<br>
+												<input type="submit" value="Login" id="loginButton">
+												<br><br>
+												<input
+														type="button"
+														value="or Register Here"
+														id="registerButton"
+														onclick="javascript:location.href='login.html'"
+												>
+											</fieldset>
+										</div>
+									</form>
+								</li>
+							</ul>
+						</div>
 					</li>
 				</ul>
 			</nav>
