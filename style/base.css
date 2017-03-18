@@ -403,8 +403,8 @@ label {
 }
 
 #registrationForm {
-  padding-left: 30px;
-  float: left;
+  /*padding-left: 30px;
+  float: left;*/
 }
 
 .navLink {
@@ -447,4 +447,3 @@ label {
 #review_form {
 	display: none;
 }
-
