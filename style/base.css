@@ -451,3 +451,40 @@ label {
 #review_form {
 	display: none;
 }
+
+/* Nav bar trail drop down */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdwn {
+    display: none;
+	color: white;
+    position: absolute;
+    background-color: rgb(68, 92, 103);
+    text-align: center;
+	padding: 0; 
+    z-index: 1;
+	min-width: 200px;
+	
+}
+
+.dropdwn li {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.dropdwn a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/*.dropdwn a:hover {background-color: #f1f1f1}*/
+
+.dropdown:hover .dropdwn {
+    display: block;
+}
+
