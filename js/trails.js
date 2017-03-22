@@ -47,7 +47,23 @@ function checkReview(){
 	} else if (review == "") {
 		document.getElementById('warnText').innerHTML = "Enter a brief review";
 		return false;
+	} else if (!testPicture()) {
+		return false;
 	} else {
 		return true;
 	}	
+}
+
+function testPicture() {
+	var str = document.getElementById('filupload').value;
+	if(str.substring(str.length-3) == "jpg") {
+		return true;
+	} else if(str.substring(str.length-3) == "png") {
+		return true;
+	} else if(str.substring(str.length-4) == "jpeg") {
+		return true;
+	} else {
+		document.getElementById('warnPicture').innerHTML = "Select a JPEG or PNG image";
+		return false;
+	}
 }
