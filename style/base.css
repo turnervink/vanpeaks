@@ -495,3 +495,8 @@ label {
 .dropdown:hover .dropdwn {
     display: block;
 }
+
+
+#js-login {
+  display: none;
+}
