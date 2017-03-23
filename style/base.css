@@ -154,7 +154,7 @@ nav ul {
 	text-align: center;
 	display: inline-block;
 
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	list-style-type: none;
 	background-color: rgb(68, 92, 103);
 
@@ -278,7 +278,7 @@ footer a:active {
 
 .image_border{
   background-color: #445c67;
-  padding:8px;
+  padding:4px;
 }
 
 .center_image{
@@ -459,6 +459,14 @@ label {
     display: inline-block;
 }
 
+#dropdownForm {
+  background-color: rgb(68, 92, 103);
+}
+
+#dropdownForm form legend, #dropdownForm form label {
+  color: white;
+}
+
 .dropdwn {
     display: none;
 	color: white;
@@ -487,6 +495,7 @@ label {
 .dropdown:hover .dropdwn {
     display: block;
 }
+
 
 #js-login {
   display: none;
