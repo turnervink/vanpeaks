@@ -498,3 +498,13 @@ label {
 #js-login {
   display: none;
 }
+
+.glyphicon-menu-down {
+    margin-top: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+    font-size: 6em;
+    color: white;
+}
