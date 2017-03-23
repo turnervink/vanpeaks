@@ -118,7 +118,7 @@ function checkPassRegiMatch() {
 function regiValidation() {
     var text = "";
     var valid = false;
-    if (checkRegiFormUser && checkRegiFormEmail && checkRegiFormPass1 && checkRegiFormPass2) {
+    if (checkRegiFormUser() && checkRegiFormEmail() && checkRegiFormPass1() && checkRegiFormPass2()) {
         valid = true;
     } else {
         text = "Please fix all errors";
