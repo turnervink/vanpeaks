@@ -13,7 +13,7 @@ var checkLoginFormPass = false;
 // }
 /* Check login */
 function checkUserLogin(id) {
-    var user = $(id).value;
+    var user = document.getElementById(id).value;
     var text = "";
     checkLoginFormUser = true;
     if (user.length == 0) {
@@ -27,7 +27,7 @@ function checkUserLogin(id) {
 }
 
 function checkPassLogin(id) {
-    var pass = $(id).value;
+    var pass = document.getElementById(id).value;
     var text = "";
     checkLoginFormPass = true;
     if (pass.length == 0) {
@@ -43,7 +43,7 @@ function checkPassLogin(id) {
 function loginValidation() {
     var text = "";
     var valid = false;
-    if (checkLoginFormPass() && checkLoginFormUser()) {
+    if (checkLoginFormPass && checkLoginFormUser) {
         valid = true;
     } else {
         text = "Please fix all errors";
@@ -54,7 +54,7 @@ function loginValidation() {
 
 /* Check Registration */
 function checkEmailRegi(id) {
-    var email = $(id).value;
+    var email = document.getElementById(id).value;
     var text = "";
     checkRegiFormEmail = true;
     if (email.length != 0) {
@@ -71,7 +71,7 @@ function checkEmailRegi(id) {
 }
 
 function checkUserRegi(id) {
-    var user = $(id).value;
+    var user = document.getElementById(id).value;
     var text = "";
     checkRegiFormUser = true;
     if (user.length != 0) {
@@ -87,7 +87,7 @@ function checkUserRegi(id) {
 
 /* Checks to see if password is longer than 6 characters */
 function checkPassRegi(id) {
-    var pass = $(id).value;
+    var pass = document.getElementById(id).value;
     var text = "";
     if (pass.length != 0) {
         if (pass.length < 6) {
@@ -114,11 +114,11 @@ function checkPassRegiMatch() {
     document.getElementById("passRegiWarn3").innerHTML = text;
 }
 
-/* Validates all forms all filled in properly, client-side */
+/* Validates all forms are filled in properly, client-side */
 function regiValidation() {
     var text = "";
     var valid = false;
-    if (checkRegiFormUser() && checkRegiFormEmail() && checkRegiFormPass1() && checkRegiFormPass2()) {
+    if (checkRegiFormUser && checkRegiFormEmail && checkRegiFormPass1 && checkRegiFormPass2) {
         valid = true;
     } else {
         text = "Please fix all errors";
