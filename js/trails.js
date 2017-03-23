@@ -7,6 +7,7 @@
 
 
 $(document).ready(function(){
+	$("#review_form").hide();
 	$("#show").click(function(){
 		$('#review_form').toggle(750);
 	});
@@ -37,7 +38,7 @@ function checkReview(){
 	var five = document.getElementById('radrating_4').checked;
 	var title = document.getElementById('reviewTitle').value;
 	var review = document.getElementById('txtreview').value;
-	
+
 	if(one == false && two == false && three == false && four == false && five == false){
 		document.getElementById('warnRating').innerHTML = "Select a rating";
 		return false;
@@ -51,7 +52,7 @@ function checkReview(){
 		return false;
 	} else {
 		return true;
-	}	
+	}
 }
 
 function testPicture() {
