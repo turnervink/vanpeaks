@@ -5,12 +5,12 @@ var checkRegiFormPass2 = false;
 var checkLoginFormUser = false;
 var checkLoginFormPass = false;
 
-function $(id) {
-    var element = document.getElementById(id);
-    if (element == null)
-        alert("Programmer error: " + id + " does not exist.");
-    return element;
-}
+// function $(id) {
+//     var element = document.getElementById(id);
+//     if (element == null)
+//         alert("Programmer error: " + id + " does not exist.");
+//     return element;
+// }
 /* Check login */
 function checkUserLogin(id) {
     var user = $(id).value;

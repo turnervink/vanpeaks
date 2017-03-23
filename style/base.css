@@ -465,10 +465,10 @@ label {
     position: absolute;
     background-color: rgb(68, 92, 103);
     text-align: center;
-	padding: 0; 
+	padding: 0;
     z-index: 1;
 	min-width: 200px;
-	
+
 }
 
 .dropdwn li {
@@ -488,3 +488,6 @@ label {
     display: block;
 }
 
+#js-login {
+  display: none;
+}
