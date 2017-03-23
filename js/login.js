@@ -43,7 +43,7 @@ function checkPassLogin(id) {
 function loginValidation() {
     var text = "";
     var valid = false;
-    if (checkLoginFormPass && checkLoginFormUser) {
+    if (checkLoginFormPass() && checkLoginFormUser()) {
         valid = true;
     } else {
         text = "Please fix all errors";

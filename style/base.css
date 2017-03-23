@@ -154,7 +154,7 @@ nav ul {
 	text-align: center;
 	display: inline-block;
 
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	list-style-type: none;
 	background-color: rgb(68, 92, 103);
 
@@ -459,16 +459,24 @@ label {
     display: inline-block;
 }
 
+#dropdownForm {
+  background-color: rgb(68, 92, 103);
+}
+
+#dropdownForm form legend, #dropdownForm form label {
+  color: white;
+}
+
 .dropdwn {
     display: none;
 	color: white;
     position: absolute;
     background-color: rgb(68, 92, 103);
     text-align: center;
-	padding: 0; 
+	padding: 0;
     z-index: 1;
 	min-width: 200px;
-	
+
 }
 
 .dropdwn li {
@@ -487,4 +495,3 @@ label {
 .dropdown:hover .dropdwn {
     display: block;
 }
-
