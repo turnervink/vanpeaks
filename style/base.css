@@ -70,12 +70,14 @@ p {
   float:right;
   padding: 10px 0 10px 10px;
   max-width: 250px;
+  max-height: 250px;
 }
 
 .inline-image-left {
   float:left;
   padding: 10px 10px 10px 0;
   max-width: 250px;
+  max-height: 250px;
 }
 
 /* Banner image styles */
@@ -99,7 +101,6 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: table;
 	color: white;
 }
 
@@ -109,7 +110,7 @@ p {
 }
 
 #cascade-falls-header {
-  background-image: url("../images/cascade_falls.jpg");
+  background-image: url("../images/cascade_falls/cascade_falls.jpg");
 }
 
 #garibaldi-lake-header {
@@ -117,11 +118,11 @@ p {
 }
 
 #jug-island-header {
-  background-image: url("../images/cascade_falls.jpg");
+  background-image: url("../images/jug_island/pageheader.jpg");
 }
 
 #lynn-peak-header {
-  background-image: url("../images/cascade_falls.jpg");
+  background-image: url("../images/lynn_peak/lynn_jumbo_noperson.jpg");
 }
 
 #mt-brunswick-header {
@@ -129,7 +130,7 @@ p {
 }
 
 #teapot-hill-header {
-  background-image: url("../images/teapot_hill_2.jpg");
+  background-image: url("../images/teapot_hill/pageheader.jpg");
   background-position: top;
 }
 
@@ -153,7 +154,7 @@ nav ul {
 	text-align: center;
 	display: inline-block;
 
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	list-style-type: none;
 	background-color: rgb(68, 92, 103);
 
@@ -196,10 +197,7 @@ nav a:active {
 }
 
 /* About page image */
-.about_img {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center-block {
 	padding: 1em;
 }
 
@@ -264,15 +262,30 @@ footer a:active {
 .img_grid_container{
         height:auto;
         width:100%;
-        padding-bottom:20px;
+        /*padding-bottom:20px;*/
 
 }
+
+.img_grid_title{
+  padding-left:15.5%;
+}
 .img_grid{
-        width:60%;
+        width:100%;
         height:100%;
         margin:0 auto;
 
 }
+
+.image_border{
+  background-color: #445c67;
+  padding:4px;
+}
+
+.center_image{
+  /*margin-left:5px;
+  margin-right:5px;*/
+}
+
 [class*="col-"] > a > img{
         width:100%;
         height:100%;
@@ -281,7 +294,36 @@ footer a:active {
 .label_row{
         width:105%;
         padding-bottom:20px;
+        /*margin-left:1%;*/
 }
+.view_more_row{
+  margin-bottom:10px;
+}
+
+.info_row > div{
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+
+}
+.info_row > p{
+padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.label_text{
+  /*text-align: center;*/
+}
+
+.view_more{
+  font-weight:bold;
+
+}
+.view_more:hover{
+  color:grey;
+}
+
 
 /* Trail pages styles */
 td {
@@ -341,6 +383,10 @@ table {
     display: inline-block;
 }
 
+.red {
+  color: red;
+}
+
 label {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -353,11 +399,112 @@ label {
 }
 
 #loginForm {
+  color: black;
   padding-right: 30px;
   float: right;
 }
 
 #registrationForm {
-  padding-left: 30px;
-  float: left;
+  /*padding-left: 30px;
+  float: left;*/
+}
+
+.navLink {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0;
+    padding-left: 1.5em;
+  	padding-right: 1.5em;
+}
+
+#dropdownButton, #dropdownButton:link, #dropdownButton:visited, #dropdownButton:hover, #dropdownButton:active {
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 0;
+
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+    text-decoration: none;
+    background-color: transparent;
+
+    border: none;
+    border-color: transparent;
+}
+
+#dropdownForm {
+    width: 212px;
+    height: 252px;
+}
+
+#loginForm {
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+
+
+/* Nav bar trail drop down */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownForm {
+  background-color: rgb(68, 92, 103);
+}
+
+#dropdownForm form legend, #dropdownForm form label {
+  color: white;
+}
+
+.dropdwn {
+    display: none;
+	color: white;
+    position: absolute;
+    background-color: rgb(68, 92, 103);
+    text-align: center;
+	padding: 0;
+    z-index: 1;
+	min-width: 200px;
+
+}
+
+.dropdwn li {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.dropdwn a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/*.dropdwn a:hover {background-color: #f1f1f1}*/
+
+.dropdown:hover .dropdwn {
+    display: block;
+}
+
+
+#js-login {
+  display: none;
+}
+
+.glyphicon-menu-down {
+    margin-top: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+    font-size: 6em;
+    color: white;
 }
