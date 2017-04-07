@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>VanPeaks - Teapot Hill</title>
+	<title>VanPeaks - Cascade Falls</title>
 	<meta charset="utf-8">
 
-	<!-- Link Bootstrap files -->
-	<script type="text/javascript" src="../jquery/js/jquery-3.1.1.js"></script>
-	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-	<script src="../bootstrap/js/bootstrap.js"></script>
+  <!-- Link Bootstrap files -->
+  <script type="text/javascript" src="../jquery/js/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src="../bootstrap/js/bootstrap.js"></script>
 
-	<!-- Link JavaScript files -->
+  <!-- Link JavaScript files -->
 	<script src="../js/logindropdown.js"></script>
-	<script type="text/javascript" src="../js/headerImage.js"></script>
+  <script type="text/javascript" src="../js/headerImage.js"></script>
 
-  <!-- Link base stylesheet -->
+  <!-- Link base and trails stylesheets -->
   <link rel="stylesheet" href="../style/base.css">
 	<link rel="stylesheet" href="../style/review_form.css">
 
-  <script src="../jquery/js/jquery-3.1.1.js"></script>
+	<script src="../jquery/js/jquery-3.1.1.js"></script>
   <script type="text/javascript" src="../js/trails.js"></script>
 
 </head>
@@ -29,28 +29,28 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../index.html" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
+						<a href="../index.php" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
 					</li>
 					<li class="dropdown" id="trails">
 					Trails
 					<span class="caret"></span>
 					<ul class="dropdwn">
-						<li><a href="cascade_falls.html">Cascade Falls</a></li>
-						<li><a href="garibaldi_lake.html">Garibaldi Lake</a></li>
-						<li><a href="jug_island.html">Jug Island</a></li>
-						<li><a href="lynn_peak.html">Lynn Peak</a></li>
-						<li><a href="mt_brunswick.html">Mount Brunswick</a></li>
-						<li><a href="teapot_hill.html">Teapot Hill</a></li>
+						<li><a href="cascade_falls.php">Cascade Falls</a></li>
+						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
+						<li><a href="jug_island.php">Jug Island</a></li>
+						<li><a href="lynn_peak.php">Lynn Peak</a></li>
+						<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
+						<li><a href="teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 					</li>
 					<li class="listitem" id="hikeprep">
-						<a href="../prepare.html" class="link">Hike Prep</a>
+						<a href="../prepare.php" class="link">Hike Prep</a>
 					</li>
 					<li class="listitem" id="about">
-						<a href="../about.html" class="link">About</a>
+						<a href="../about.php" class="link">About</a>
 					</li>
 					<li class="listitem" id="nojs-login">
-						<a href="../login.html" class="link">Login/Signup</a>
+						<a href="../login.php" class="link">Login/Signup</a>
 					</li>
 
 					<li class="navLink" id="js-login">
@@ -87,7 +87,7 @@
 														type="button"
 														value="or Register Here"
 														id="registerButton"
-														onclick="javascript:location.href='../login.html'"
+														onclick="javascript:location.href='../login.php'"
 												>
 											</fieldset>
 										</div>
@@ -103,8 +103,8 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 header-image" id="teapot-hill-header">
-					<h1 class="jumboMainHeader col-xs-12">Teapot Hill</h1>
+				<div class="col-xs-12 header-image" id="cascade-falls-header">
+					<h1 class="jumboMainHeader col-xs-12">Cascade Falls</h1>
 				</div>
 			</div>
 		</div>
@@ -124,9 +124,9 @@
           <tr>
 						<td></td>
             <td>Easy</td>
-            <td>60 minutes return</td>
+            <td>30 minutes</td>
             <td>250m</td>
-            <td>5km return</td>
+            <td>1.3km loop</td>
             <td>12&deg;</td>
 						<td></td>
           </tr>
@@ -148,7 +148,7 @@
 						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
 					</p>
 					<p class="col-xs-12">
-						<img src="../images/teapot_hill/sign.jpg" alt="An inline image" class="inline-image-right">
+						<img src="../images/cascade_falls/cascade_falls_2.jpg" alt="An inline image" class="inline-image-right">
 						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
 						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
 						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
@@ -183,7 +183,6 @@
 						fugiat veniam elit culpa commodo.
 					</p>
 					<p class="col-xs-12">
-						<img src="../images/teapot_hill/turner_teapot.jpg" alt="An inline image" class="inline-image-left">
 						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
 						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
 						amet.
@@ -204,7 +203,7 @@
 				<!-- Google Map -->
 				<div class="container-fluid">
 					<div class="row">
-						<iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14745.030611437456!2d-122.00021200437394!3d49.03669373537419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548445d68d9d0c95%3A0x59e93a46147dfa89!2sTeapot+Hill!5e0!3m2!1sen!2sca!4v1489867147205" width="600" height="450" style="border:0" allowfullscreen></iframe>
+						<iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.0922556763044!2d-122.21667768463826!3d49.274649079261366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548424c28c8e7423%3A0xf4861d5d9d36feae!2sCascade+Falls+Trail%2C+Fraser+Valley+F%2C+BC+V2V+7G7!5e0!3m2!1sen!2sca!4v1489890460274" width="600" height="450" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -319,38 +318,38 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
-		<footer class="container-fluid">
-		<div class="row">
-			<div class="col-xs-offset-2 col-xs-2">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../about.html">About</a></li>
-					<li><a href="../prepare.html">Hike Prep</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-2">
-				<ul>
-					<li><a href="cascade_falls.html">Cascade Falls</a></li>
-	 				<li><a href="garibaldi_lake.html">Garibaldi Lake</a></li>
-					<li><a href="jug_island.html">Jug Island</a></li>
-	 				<li><a href="lynn_peak.html">Lynn Peak</a></li>
-					<li><a href="mt_brunswick.html">Mount Brunswick</a></li>
-	 				<li><a href="teapot_hill.html">Teapot Hill</a></li>
-	 			</ul>
-			</div>
-			<div class="col-xs-4 col-xs-offset-1" id="social-icons">
-				<ul>
-					<li>Connect with VanPeaks:</li>
-					<li class="socialmedia"><a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
-	 				<li class="socialmedia"><a href="http://www.twitter.com"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
-	 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
-	 				<li class="socialmedia"><a href="http://www.youtube.com"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
-				</ul>
-			</div>
-
+	<!-- Footer -->
+	<footer class="container-fluid">
+	<div class="row">
+		<div class="col-xs-offset-2 col-xs-2">
+			<ul>
+				<li><a href="../index.php">Home</a></li>
+				<li><a href="../about.php">About</a></li>
+				<li><a href="../prepare.php">Hike Prep</a></li>
+			</ul>
 		</div>
-		<p>Copyright &copy; 2017 VanPeaks | Designed by <a href="#">TEAM</a></p>
-		</footer>
+		<div class="col-xs-2">
+			<ul>
+				<li><a href="cascade_falls.php">Cascade Falls</a></li>
+ 				<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
+				<li><a href="jug_island.php">Jug Island</a></li>
+ 				<li><a href="lynn_peak.php">Lynn Peak</a></li>
+				<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
+ 				<li><a href="teapot_hill.php">Teapot Hill</a></li>
+ 			</ul>
+		</div>
+		<div class="col-xs-4 col-xs-offset-1" id="social-icons">
+			<ul>
+				<li>Connect with VanPeaks:</li>
+				<li class="socialmedia"><a href="#"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
+			</ul>
+		</div>
+
+	</div>
+	<p>Copyright &copy; 2017 VanPeaks | Designed by <a href="#">TEAM</a></p>
+	</footer>
 </body>
 </html>

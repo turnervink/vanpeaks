@@ -29,28 +29,28 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../index.html" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
+						<a href="../index.php" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
 					</li>
 					<li class="dropdown" id="trails">
 					Trails
 					<span class="caret"></span>
 					<ul class="dropdwn">
-						<li><a href="cascade_falls.html">Cascade Falls</a></li>
-						<li><a href="garibaldi_lake.html">Garibaldi Lake</a></li>
-						<li><a href="jug_island.html">Jug Island</a></li>
-						<li><a href="lynn_peak.html">Lynn Peak</a></li>
-						<li><a href="mt_brunswick.html">Mount Brunswick</a></li>
-						<li><a href="teapot_hill.html">Teapot Hill</a></li>
+						<li><a href="cascade_falls.php">Cascade Falls</a></li>
+						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
+						<li><a href="jug_island.php">Jug Island</a></li>
+						<li><a href="lynn_peak.php">Lynn Peak</a></li>
+						<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
+						<li><a href="teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 					</li>
 					<li class="listitem" id="hikeprep">
-						<a href="../prepare.html" class="link">Hike Prep</a>
+						<a href="../prepare.php" class="link">Hike Prep</a>
 					</li>
 					<li class="listitem" id="about">
-						<a href="../about.html" class="link">About</a>
+						<a href="../about.php" class="link">About</a>
 					</li>
 					<li class="listitem" id="nojs-login">
-						<a href="../login.html" class="link">Login/Signup</a>
+						<a href="../login.php" class="link">Login/Signup</a>
 					</li>
 
 					<li class="navLink" id="js-login">
@@ -87,7 +87,7 @@
 														type="button"
 														value="or Register Here"
 														id="registerButton"
-														onclick="javascript:location.href='../login.html'"
+														onclick="javascript:location.href='../login.php'"
 												>
 											</fieldset>
 										</div>
@@ -324,19 +324,19 @@
 		<div class="row">
 			<div class="col-xs-offset-2 col-xs-2">
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../about.html">About</a></li>
-					<li><a href="../prepare.html">Hike Prep</a></li>
+					<li><a href="../index.php">Home</a></li>
+					<li><a href="../about.php">About</a></li>
+					<li><a href="../prepare.php">Hike Prep</a></li>
 				</ul>
 			</div>
 			<div class="col-xs-2">
 				<ul>
-					<li><a href="cascade_falls.html">Cascade Falls</a></li>
-	 				<li><a href="garibaldi_lake.html">Garibaldi Lake</a></li>
-					<li><a href="jug_island.html">Jug Island</a></li>
-	 				<li><a href="lynn_peak.html">Lynn Peak</a></li>
-					<li><a href="mt_brunswick.html">Mount Brunswick</a></li>
-	 				<li><a href="teapot_hill.html">Teapot Hill</a></li>
+					<li><a href="cascade_falls.php">Cascade Falls</a></li>
+	 				<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
+					<li><a href="jug_island.php">Jug Island</a></li>
+	 				<li><a href="lynn_peak.php">Lynn Peak</a></li>
+					<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
+	 				<li><a href="teapot_hill.php">Teapot Hill</a></li>
 	 			</ul>
 			</div>
 			<div class="col-xs-4 col-xs-offset-1" id="social-icons">
