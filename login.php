@@ -117,7 +117,7 @@
 					</div>
 				</form> -->
 
-				<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return regiValidation()">
+				<form method="post" action="php/forum/register.php" onsubmit="return regiValidation()">
 					<div class="col-xs-1 col-xs-offset-5">
 						<div class="row">
 							<div id="registrationForm">

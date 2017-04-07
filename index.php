@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="zxx">
+<?php
+	session_start();
+ ?>
 <head>
 	<title>VanPeaks - Home</title>
 	<meta charset="utf-8">
@@ -76,7 +79,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -129,7 +132,12 @@
 
     <div class="img_grid_container">
   		<div class="container img_grid">
+
+				<?php if (isset($_SESSION['SESS_LOGIN'])):?>
+				<h1 class="img_grid_title"><?php echo $_SESSION['SESS_LOGIN']?>, Choose Your Hike:</h1>
+				<?php else: ?>
     		<h1 class="img_grid_title">Choose Your Hike:</h1>
+				<?php endif; ?>
     			<div class="row">
     				<div class="col-xs-2 col-xs-offset-2 image_border" >
     					<a href="trails/cascade_falls.php">
