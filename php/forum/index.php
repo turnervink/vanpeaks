@@ -33,7 +33,7 @@
 <body>
 <div id="wrap">
 <div id="top">
-<h2><a href="#" title="Back to main page">LoadFoO [V2]</a></h2>
+<h2><a href="#" title="Back to main page">VanPeaks</a></h2>
 <div id="menu">
 <ul>
 <li><a href="#" class="current">home</a></li>
@@ -47,18 +47,7 @@
 <div style="float: right;"><a href="javascript:ts('body',1)">[+]</a> | <a
 href="javascript:ts('body',-1)">[-]</a></div>
 <div id="left">
-<h2>Welcome to LoadFoO [V1]</h2>
-<p>Text Content Text <a href="#">Content Text</a> Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content.</p>
- <ul>
- <li>ul-li test.</li>
- <li>ul-li test.</li>
- <li>ul-li test.</li>
- <li>ul-li test.</li>
- <li>ul-li test.</li>
- </ul>
- <h2>Functionality or performance</h2>
- <p>Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content Text Content.
- </p>
+<h2>Welcome to VanPeaks!</h2> <ul>
 </div>
 <div id="right">
 	<div class="box">
@@ -99,7 +88,6 @@ href="javascript:ts('body',-1)">[-]</a></div>
 </div>
 <div id="clear"></div></div>
 <div id="footer">
-<p>Copyright 2006 LoadFoO [V1]. Designed by <a href="http://loadfoo.org/" rel="external">LoadFoO</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="external">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer" rel="external">XHTML</a></p>
 </div>
 </div>
 
