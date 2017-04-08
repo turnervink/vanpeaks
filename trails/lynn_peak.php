@@ -72,7 +72,7 @@
 							</button>
 							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
 	                            <li id="loginForm">
-	                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
+	                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
 	                                    <div>
 	                                        <fieldset class="field">
 	                                            <!-- Login Title -->
@@ -184,98 +184,81 @@
 					<hr class="col-xs-12">
 				</div>
 
+				<?php if (isset($_SESSION['SESS_LOGIN'])): ?>
+				<!-- Review submission form -->
+					<div class="row">
 
-
-				<div class="row user-review">
-					<img src="../images/lynn_peak/lynn_review.jpg" alt="" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">Miranda Carew</h3>
-
-					<p class="col-xs-8">
-						Lynn's loop was a great family walk. Plenty of open areas for kids to explore while still in sight of the main path. Don't let your kids play in the water if they're going to fall in and complain for the entire drive home. Saw a bunch of teenagers making huge jumps off of one of the wooden bridges. Did they not see the "no passing this fence" sign?
-					</p>
-				</div>
-
-				<div class="row user-review">
-					<img src="../images/teapot_hill_2.jpg" alt="" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">Filip Forsberg</h3>
-
-					<p class="col-xs-8">
-						Lynn Peaks was a fantastic hike. Never going on the grind again.
-					</p>
-				</div>
-
-			<!-- Review submission form -->
-				<div class="row">
-
-					<button class="col-xs-offset-4 col-xs-4 button" id="show">Leave a review</button>
-					<div class="col-xs-4"></div>
-				</div>
-				<br>
-				<div>
-					<form class="col-xs-12" id="review_form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return checkReview()">
+						<button class="col-xs-offset-4 col-xs-4 button" id="show">Leave a review</button>
+						<div class="col-xs-4"></div>
+					</div>
 					<br>
+					<div>
+						<form class="col-xs-12" id="review_form" action="../php/forum/add_topic.php" method="post" onsubmit="return checkReview()">
+						<br>
 
-				<div class="container-fluid">
+					<div class="container-fluid">
+						<div class="row">
+
+						<div class="col-xs-offset-1 col-xs-3" id="img_frame_container">
+
+						<img id="img_display_frame" src="../images/reviewimageplaceholder.png" height="100" width="100" alt="">
+						</div>
+
+						<!-- <div class="col-xs-1"></div> -->
+							<div class="col-xs-offset-1 col-xs-6" id="radio_and_title">
+								<div class="row radio_buttons">
+									<div class="col-xs-2">
+										<label><input type="radio" name="rating" id="radrating_0">1<span><span></span></span></label>
+									</div>
+									<div class="col-xs-2">
+										<label><input type="radio" name="rating" id="radrating_1">2<span><span></span></span></label>
+									</div>
+									<div class="col-xs-2">
+										<label><input type="radio" name="rating" id="radrating_2">3<span><span></span></span></label>
+									</div>
+									<div class="col-xs-2">
+										<label><input type="radio" name="rating" id="radrating_3">4<span><span></span></span></label>
+									</div>
+									<div class="col-xs-2">
+										<label><input type="radio" name="rating" id="radrating_4">5<span><span></span></span></label>
+									</div>
+									<div class="col-xs-2"></div>
+								</div>
+								<div class="seperator_row row"></div>
+								<div class="row">
+									<input type="text" id="reviewTitle" name="reviewTitle" class="col-xs-12" placeholder="Review title" >
+								</div>
+							</div>
+						<div class="col-xs-2"></div>
+						</div>
+
 					<div class="row">
 
-					<div class="col-xs-offset-1 col-xs-3" id="img_frame_container">
-
-					<img id="img_display_frame" src="../images/reviewimageplaceholder.png" height="100" width="100" alt="">
-					</div>
-
-					<!-- <div class="col-xs-1"></div> -->
-						<div class="col-xs-offset-1 col-xs-6" id="radio_and_title">
-							<div class="row radio_buttons">
-								<div class="col-xs-2">
-									<label><input type="radio" name="rating" id="radrating_0">1<span><span></span></span></label>
-								</div>
-								<div class="col-xs-2">
-									<label><input type="radio" name="rating" id="radrating_1">2<span><span></span></span></label>
-								</div>
-								<div class="col-xs-2">
-									<label><input type="radio" name="rating" id="radrating_2">3<span><span></span></span></label>
-								</div>
-								<div class="col-xs-2">
-									<label><input type="radio" name="rating" id="radrating_3">4<span><span></span></span></label>
-								</div>
-								<div class="col-xs-2">
-									<label><input type="radio" name="rating" id="radrating_4">5<span><span></span></span></label>
-								</div>
-								<div class="col-xs-2"></div>
-							</div>
-							<div class="seperator_row row"></div>
-							<div class="row">
-								<input type="text" id="reviewTitle" name="reviewTitle" class="col-xs-12" placeholder="Review title" >
+						<div class="col-xs-offset-1 col-xs-2" id="form_buttons_container">
+							<div class="row" id="upload_button_container">
+								<input class="filupload_button " id="filupload" name="filupload" type="file" onchange="showPicture(); testPicture();"><label for="filupload" style="color:white;font-weight:normal;">&nbsp;Add A Picture</label>
 							</div>
 						</div>
-					<div class="col-xs-2"></div>
-					</div>
-
-				<div class="row">
-
-					<div class="col-xs-offset-1 col-xs-2" id="form_buttons_container">
-						<div class="row" id="upload_button_container">
-							<input class="filupload_button " id="filupload" name="filupload" type="file" onchange="showPicture(); testPicture();"><label for="filupload" style="color:white;font-weight:normal;">&nbsp;Add A Picture</label>
+						<div class="col-xs-offset-2 col-xs-6" id="textarea_container">
+							<textarea name="txtreview" id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
+						<div class="row">
+						<button class="button col-xs-9" type="submit" id="submit">Submit</button>
 						</div>
+						<div class="col-xs-9" id="warnRating"></div>
+						<div class="col-xs-9" id="warnTitle"></div>
+						<div class="col-xs-9" id="warnText"></div>
+						<div class="col-xs-9" id="warnPicture"></div>
+						</div>
+						<div class="col-xs-1"></div>
 					</div>
-					<div class="col-xs-offset-2 col-xs-6" id="textarea_container">
-						<textarea id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
-					<div class="row">
-					<button class="button col-xs-9" type="submit" id="submit">Submit</button>
 					</div>
-					<div class="col-xs-9" id="warnRating"></div>
-					<div class="col-xs-9" id="warnTitle"></div>
-					<div class="col-xs-9" id="warnText"></div>
-					<div class="col-xs-9" id="warnPicture"></div>
+						</form>
 					</div>
-					<div class="col-xs-1"></div>
-				</div>
-				</div>
-					</form>
-				</div>
-				<!-- End review form -->
+					<!-- End review form -->
+				<?php else: ?>
+					<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
+					<br><br>
+				<?php endif;?>
 			</div>
 		</div>
 

@@ -72,7 +72,7 @@
 							</button>
 							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
 	                            <li id="loginForm">
-	                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
+	                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
 	                                    <div>
 	                                        <fieldset class="field">
 	                                            <!-- Login Title -->
@@ -224,34 +224,8 @@
 					<hr class="col-xs-12">
 				</div>
 
-				<div class="row user-review">
-					<img src="../images/teapot_hill_1.jpg" alt="" class="col-xs-4 review-image">
 
-					<h3 class="col-xs-8">Review One</h3>
-
-					<p class="col-xs-8">
-						Officia irure sint magna enim magna cillum adipisicing laboris est culpa dolor
-						voluptate sunt reprehenderit laborum. Aliqua cillum nulla voluptate incididunt
-						eiusmod duis in. Tempor cillum laborum veniam velit velit est magna ut laborum
-						sit excepteur nisi esse consequat aliqua duis. Voluptate ullamco qui officia
-						laborum eu incididunt minim cillum duis culpa nisi nostrud nostrud veniam ut.
-					</p>
-				</div>
-
-				<div class="row user-review">
-					<img src="../images/teapot_hill_2.jpg" alt="" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">Review Two</h3>
-
-					<p class="col-xs-8">
-						Officia irure sint magna enim magna cillum adipisicing laboris est culpa dolor
-						voluptate sunt reprehenderit laborum. Aliqua cillum nulla voluptate incididunt
-						eiusmod duis in. Tempor cillum laborum veniam velit velit est magna ut laborum
-						sit excepteur nisi esse consequat aliqua duis. Voluptate ullamco qui officia
-						laborum eu incididunt minim cillum duis culpa nisi nostrud nostrud veniam ut.
-					</p>
-				</div>
-
+				<?php if (isset($_SESSION['SESS_LOGIN'])): ?>
 				<!-- Review submission form -->
 					<div class="row">
 
@@ -260,7 +234,7 @@
 					</div>
 					<br>
 					<div>
-						<form class="col-xs-12" id="review_form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return checkReview()">
+						<form class="col-xs-12" id="review_form" action="../php/forum/add_topic.php" method="post" onsubmit="return checkReview()">
 						<br>
 
 					<div class="container-fluid">
@@ -307,7 +281,7 @@
 							</div>
 						</div>
 						<div class="col-xs-offset-2 col-xs-6" id="textarea_container">
-							<textarea id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
+							<textarea name="txtreview" id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
 						<div class="row">
 						<button class="button col-xs-9" type="submit" id="submit">Submit</button>
 						</div>
@@ -322,6 +296,10 @@
 						</form>
 					</div>
 					<!-- End review form -->
+				<?php else: ?>
+					<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
+					<br><br>
+				<?php endif;?>
 
 			</div>
 		</div>

@@ -29,7 +29,7 @@
 </tr>
 
 <tr>
-<td bgcolor="#F8F7F1"><strong>By :</strong><?php echo $_SESSION['SESS_LAST_NAME'] ?> <strong></td>
+<td bgcolor="#F8F7F1"><strong>By :</strong><?php echo $_SESSION['SESS_LOGIN'] ?> <strong></td>
 </tr>
 
 <tr>
