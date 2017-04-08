@@ -66,6 +66,11 @@
 					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
+				<?php if (isset($_SESSION['SESS_LOGIN'])):?>
+					<li class="listitem">
+						<a href="php/forum/logout.php" class="link">Logout</a>
+					</li>
+				<?php else: ?>
 				<li class="navLink" id="js-login">
 					<div class="dropdown">
 						<button
@@ -109,6 +114,7 @@
 						</ul>
 					</div>
 				</li>
+			<?php endif; ?>
 			</ul>
 		</nav>
 	</div>

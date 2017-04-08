@@ -90,7 +90,7 @@
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','".md5($_POST['password'])."')";
+	$qry = "INSERT INTO members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','".md5($_POST['passRegister1'])."')";
 	$result = @mysqli_query($GLOBALS["___mysqli_ston"], $qry);
 
 	//Check whether the query was successful or not
