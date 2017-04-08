@@ -25,7 +25,7 @@
   <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
       <th>Email </th>
-      <td><input name="lname" type="emailRegister" class="textfield" id="lname" /></td>
+      <td><input name="emailRegister" type="text" class="textfield" id="lname" /></td>
     </tr>
     <tr>
       <th width="124">Login</th>

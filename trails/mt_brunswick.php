@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+<?php session_start() ?>
 <head>
 	<title>VanPeaks - Mt. Brunswick</title>
 	<meta charset="utf-8">
@@ -53,49 +54,55 @@
 						<a href="../login.php" class="link">Login/Signup</a>
 					</li>
 
+					<?php if (isset($_SESSION['SESS_LOGIN'])):?>
+						<li class="listitem">
+							<a href="../php/forum/logout.php" class="link">Logout</a>
+						</li>
+					<?php else: ?>
 					<li class="navLink" id="js-login">
 						<div class="dropdown">
 							<button
-									class="btn btn-default dropdown-toggle link"
-									id="dropdownButton"
+	                                class="btn btn-default dropdown-toggle link"
+	                                id="dropdownButton"
 									type="button"
-									data-toggle="dropdown"
+	                                data-toggle="dropdown"
 									aria-haspopup="true"
-									aria-expanded="false" >
+	                                aria-expanded="false" >
 								Login/Signup
 							</button>
 							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
-								<li id="loginForm">
-									<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
-										<div>
-											<fieldset class="field">
-												<!-- Login Title -->
-												<legend class="h3">Login</legend>
-												<div id="loginError" class="red"></div>
-												<!-- Username Title -->
-												<label for="userLogin">Username:</label><br>
-												<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
-												<div id="userLoginWarn" class="red"></div>
-												<!-- Password Title -->
-												<label for="passLogin">Password:</label><br>
-												<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
-												<div id="passLoginWarn" class="red"></div>
-												<br>
-												<input type="submit" value="Login" id="loginButton">
-												<br><br>
-												<input
-														type="button"
-														value="or Register Here"
-														id="registerButton"
-														onclick="javascript:location.href='../login.php'"
-												>
-											</fieldset>
-										</div>
-									</form>
-								</li>
+	                            <li id="loginForm">
+	                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
+	                                    <div>
+	                                        <fieldset class="field">
+	                                            <!-- Login Title -->
+	                                            <legend class="h3">Login</legend>
+	                                                <div id="loginError" class="red"></div>
+	                                            <!-- Username Title -->
+	                                            <label for="userLogin">Username:</label><br>
+	                                                <input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+	                                                <div id="userLoginWarn" class="red"></div>
+	                                            <!-- Password Title -->
+	                                            <label for="passLogin">Password:</label><br>
+	                                                <input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+	                                                <div id="passLoginWarn" class="red"></div>
+	                                            <br>
+	                                            <input type="submit" value="Login" id="loginButton">
+	                                            <br><br>
+	                                            <input
+	                                                    type="button"
+	                                                    value="or Register Here"
+	                                                    id="registerButton"
+	                                                    onclick="javascript:location.href='login.php'"
+	                                            >
+	                                        </fieldset>
+	                                    </div>
+	                                </form>
+	                            </li>
 							</ul>
 						</div>
 					</li>
+				<?php endif; ?>
 				</ul>
 			</nav>
 		</div>
