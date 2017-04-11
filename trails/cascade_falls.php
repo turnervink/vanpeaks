@@ -295,9 +295,9 @@
 					</div>
 					<!-- End review form -->
 				<?php else: ?>
-					<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
-					<br><br>
 				<?php endif;?>
+				<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
+				<br><br>
 
 			</div>
 		</div>
