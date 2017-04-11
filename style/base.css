@@ -377,19 +377,35 @@ table {
 
 /* Prepare styles */
 
-.imgSize {
-    width: 250px;
-    height: 175px;
-    padding-left: 30px;
+.imgSize1 {
+    width: 300px;
+    height: 250px;
+    padding-right: 75px;
     margin-top: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.imgSize2 {
+    width: 300px;
+    height: 300px;
+    padding-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.imgSize3 {
+    width: 300px;
+    height: 300px;
+    padding-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     display: block;
 }
 
 .prepare-bg-image {
-  background-image: url(../images/cathedral_pano.jpg);
+  background-image: url(../images/prepare/cathedral_pano.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -403,7 +419,6 @@ table {
   margin-bottom: 10%;
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
   max-width: 100%;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -469,7 +484,7 @@ label {
 }
 
 .login-bg-image {
-    background-image: url(../images/van_peaks.jpg);
+    background-image: url(../images/login/van_peaks.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
