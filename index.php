@@ -41,8 +41,8 @@
 					<a href="index.html" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
 				</li>
 				<li class="dropdown" id="trails">
-					Trails
-					<span class="caret"></span>
+					<span class="trail_hover">Trails
+					<span class="caret"></span></span>
 					<ul class="dropdwn">
 						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
@@ -52,19 +52,19 @@
 						<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 				</li>
-				<li class="listitem" id="hikeprep">
-					<a href="prepare.html" class="link">Hike Prep</a>
+				<li class="listitem button_hover" id="hikeprep">
+					<a href="prepare.html" class="link button_hover">Hike Prep</a>
 				</li>
-				<li class="listitem" id="about">
+				<li class="listitem button_hover" id="about">
 					<a href="about.php" class="link">About</a>
 				</li>
 
-				<li class="listitem" id="nojs-login">
+				<li class="listitem button_hover" id="nojs-login">
 					<a href="login.html" class="link">Login/Signup</a>
 				</li>
 
 				<li class="navLink" id="js-login">
-					<div class="dropdown">
+					<div class="dropdown button_hover">
 						<button
                                 class="btn btn-default dropdown-toggle link"
                                 id="dropdownButton"
@@ -72,7 +72,7 @@
                                 data-toggle="dropdown"
 								aria-haspopup="true"
                                 aria-expanded="false" >
-							Login/Signup
+							<span class = "button_hover">Login/Signup</span>
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">

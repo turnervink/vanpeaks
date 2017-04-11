@@ -24,83 +24,83 @@
 <body>
 
 	<!-- Navigation bar -->
-	<div class="container-fluid">
-		<div class="row">
-			<nav>
-				<ul>
-					<li>
-						<a href="../index.html" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
-					</li>
-					<li class="dropdown" id="trails">
-					Trails
-					<span class="caret"></span>
+<div class="container-fluid">
+	<div class="row">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
+				</li>
+				<li class="dropdown" id="trails">
+					<span class="trail_hover">Trails
+					<span class="caret"></span></span>
 					<ul class="dropdwn">
-						<li><a href="cascade_falls.html">Cascade Falls</a></li>
-						<li><a href="garibaldi_lake.html">Garibaldi Lake</a></li>
-						<li><a href="jug_island.html">Jug Island</a></li>
-						<li><a href="lynn_peak.html">Lynn Peak</a></li>
-						<li><a href="mt_brunswick.html">Mount Brunswick</a></li>
-						<li><a href="teapot_hill.html">Teapot Hill</a></li>
+						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
+						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
+						<li><a href="trails/jug_island.php">Jug Island</a></li>
+						<li><a href="trails/lynn_peak.php">Lynn Peak</a></li>
+						<li><a href="trails/mt_brunswick.php">Mount Brunswick</a></li>
+						<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
 					</ul>
-					</li>
-					<li class="listitem" id="hikeprep">
-						<a href="../prepare.html" class="link">Hike Prep</a>
-					</li>
-					<li class="listitem" id="about">
-						<a href="../about.html" class="link">About</a>
-					</li>
-					<li class="listitem" id="nojs-login">
-						<a href="../login.html" class="link">Login/Signup</a>
-					</li>
+				</li>
+				<li class="listitem button_hover" id="hikeprep">
+					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+				</li>
+				<li class="listitem button_hover" id="about">
+					<a href="about.php" class="link">About</a>
+				</li>
 
-					<li class="navLink" id="js-login">
-						<div class="dropdown">
-							<button
-									class="btn btn-default dropdown-toggle link"
-									id="dropdownButton"
-									type="button"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false" >
-								Login/Signup
-							</button>
-							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
-								<li id="loginForm">
-									<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
-										<div>
-											<fieldset class="field">
-												<!-- Login Title -->
-												<legend class="h3">Login</legend>
-												<div id="loginError" class="red"></div>
-												<!-- Username Title -->
-												<label for="userLogin">Username:</label><br>
-												<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
-												<div id="userLoginWarn" class="red"></div>
-												<!-- Password Title -->
-												<label for="passLogin">Password:</label><br>
-												<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
-												<div id="passLoginWarn" class="red"></div>
-												<br>
-												<input type="submit" value="Login" id="loginButton">
-												<br><br>
-												<input
-														type="button"
-														value="or Register Here"
-														id="registerButton"
-														onclick="javascript:location.href='../login.html'"
-												>
-											</fieldset>
-										</div>
-									</form>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
+				<li class="listitem button_hover" id="nojs-login">
+					<a href="login.html" class="link">Login/Signup</a>
+				</li>
+
+				<li class="navLink" id="js-login">
+					<div class="dropdown button_hover">
+						<button
+                                class="btn btn-default dropdown-toggle link"
+                                id="dropdownButton"
+								type="button"
+                                data-toggle="dropdown"
+								aria-haspopup="true"
+                                aria-expanded="false" >
+							<span class = "button_hover">Login/Signup</span>
+						</button>
+						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
+                            <li id="loginForm">
+                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                    <div>
+                                        <fieldset class="field">
+                                            <!-- Login Title -->
+                                            <legend class="h3">Login</legend>
+                                                <div id="loginError" class="red"></div>
+                                            <!-- Username Title -->
+                                            <label for="userLogin">Username:</label><br>
+                                                <input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+                                                <div id="userLoginWarn" class="red"></div>
+                                            <!-- Password Title -->
+                                            <label for="passLogin">Password:</label><br>
+                                                <input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+                                                <div id="passLoginWarn" class="red"></div>
+                                            <br>
+                                            <input type="submit" value="Login" id="loginButton">
+                                            <br><br>
+                                            <input
+                                                    type="button"
+                                                    value="or Register Here"
+                                                    id="registerButton"
+                                                    onclick="javascript:location.href='login.html'"
+                                            >
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
 	</div>
-
+</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 header-image" id="cascade-falls-header">
