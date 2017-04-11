@@ -38,29 +38,29 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="index.html" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
+					<a href="index.php" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
 				</li>
 				<li class="dropdown" id="trails">
 					Trails
 					<span class="caret"></span>
 					<ul class="dropdwn">
-						<li><a href="trails/cascade_falls.html">Cascade Falls</a></li>
-						<li><a href="trails/garibaldi_lake.html">Garibaldi Lake</a></li>
-						<li><a href="trails/jug_island.html">Jug Island</a></li>
-						<li><a href="trails/lynn_peak.html">Lynn Peak</a></li>
-						<li><a href="trails/mt_brunswick.html">Mount Brunswick</a></li>
-						<li><a href="trails/teapot_hill.html">Teapot Hill</a></li>
+						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
+						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
+						<li><a href="trails/jug_island.php">Jug Island</a></li>
+						<li><a href="trails/lynn_peak.php">Lynn Peak</a></li>
+						<li><a href="trails/mt_brunswick.php">Mount Brunswick</a></li>
+						<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 				</li>
 				<li class="listitem" id="hikeprep">
-					<a href="prepare.html" class="link">Hike Prep</a>
+					<a href="prepare.php" class="link">Hike Prep</a>
 				</li>
 				<li class="listitem" id="about">
-					<a href="about.html" class="link">About</a>
+					<a href="about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
 				<li class="navLink" id="js-login">
@@ -97,7 +97,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -118,7 +118,7 @@
             <h1>Choose Your Hike</h1>
             <div class="row">
                 <div class="col-xs-3 col-offsetimage_border" >
-                        <a href="trails/cascade_falls.html">
+                        <a href="trails/cascade_falls.php">
                             <img src="images/cascade_falls.jpg" alt="hike">
                         </a>
                 </div>
@@ -132,59 +132,59 @@
     		<h1 class="img_grid_title">Choose Your Hike:</h1>
     			<div class="row">
     				<div class="col-xs-2 col-xs-offset-2 image_border" >
-    					<a href="trails/cascade_falls.html">
+    					<a href="trails/cascade_falls.php">
     						<img src="images/cascade_falls.jpg" alt="hike"> <!-- Cascade Falls -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border center_image">
-    					<a href="trails/garibaldi_lake.html">
+    					<a href="trails/garibaldi_lake.php">
     						<img src="images/cascade_falls.jpg" alt="hike"> <!-- Garibaldi Lake -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border">
-    					<a href="trails/jug_island.html">
+    					<a href="trails/jug_island.php">
     						<img src="images/jug_island/pageheader.jpg" alt="hike"> <!-- Jug Island -->
     					</a>
     				</div>
     			</div>
     			<div class="row view_more_row info_row">
     				<div class="col-xs-2  col-xs-offset-2">
-    					<a href="trails/cascade_falls.html"><p class="view_more">Cascade Falls</p></a>
+    					<a href="trails/cascade_falls.php"><p class="view_more">Cascade Falls</p></a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1">
-                        <a href="trails/garibaldi_lake.html"><p class="view_more">Garibaldi Lake</p></a>
+                        <a href="trails/garibaldi_lake.php"><p class="view_more">Garibaldi Lake</p></a>
                     </div>
     				<div class="col-xs-2  col-xs-offset-1">
-                        <a href="trails/jug_island.html"><p class="view_more">Jug Island</p></a>
+                        <a href="trails/jug_island.php"><p class="view_more">Jug Island</p></a>
                     </div>
     			</div>
 
     			<div class="row">
     				<div class="col-xs-2  col-xs-offset-2 image_border">
-    					<a href="trails/lynn_peak.html">
+    					<a href="trails/lynn_peak.php">
     						<img src="images/lynn_peak/lynn_jumbo_noperson.jpg" alt="hike"> <!-- Lynn Peak -->
     					</a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border center_image">
-    					<a href="trails/mt_brunswick.html">
+    					<a href="trails/mt_brunswick.php">
     						<img src="images/mt_brunswick.jpg" alt="hike"> <!-- Mt. Brunswick -->
     					</a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border">
-    					<a href="trails/teapot_hill.html">
+    					<a href="trails/teapot_hill.php">
     						<img src="images/teapot_hill_1.jpg" alt="hike"> <!-- Teapot Hill -->
     					</a>
     				</div>
     			</div>
     			<div class="row view_more_row info_row">
                     <div class="col-xs-2  col-xs-offset-2">
-                        <a href="trails/lynn_peak.html"><p class="view_more">Lynn Peak</p></a>
+                        <a href="trails/lynn_peak.php"><p class="view_more">Lynn Peak</p></a>
                     </div>
                     <div class="col-xs-2  col-xs-offset-1">
-                        <a href="trails/mt_brunswick.html"><p class="view_more">Mount Brunswick</p></a>
+                        <a href="trails/mt_brunswick.php"><p class="view_more">Mount Brunswick</p></a>
                     </div>
                     <div class="col-xs-2  col-xs-offset-1">
-                        <a href="trails/teapot_hill.html"><p class="view_more">Teapot Hill</p></a>
+                        <a href="trails/teapot_hill.php"><p class="view_more">Teapot Hill</p></a>
                     </div>
                 </div>
 			</div><!-- Lynn Peak, Mount Brunswick, Teapot Hill -->
@@ -197,19 +197,19 @@
  	<div class="row">
  		<div class="col-xs-offset-2 col-xs-2">
  			<ul>
- 				<li><a href="index.html">Home</a></li>
- 				<li><a href="about.html">About</a></li>
- 				<li><a href="prepare.html">Hike Prep</a></li>
+ 				<li><a href="index.php">Home</a></li>
+ 				<li><a href="about.php">About</a></li>
+ 				<li><a href="prepare.php">Hike Prep</a></li>
  			</ul>
  		</div>
  		<div class="col-xs-2">
  			<ul>
-				<li><a href="trails/cascade_falls.html">Cascade Falls</a></li>
- 				<li><a href="trails/garibaldi_lake.html">Garibaldi Lake</a></li>
-				<li><a href="trails/jug_island.html">Jug Island</a></li>
- 				<li><a href="trails/lynn_peak.html">Lynn Peak</a></li>
-				<li><a href="trails/mt_brunswick.html">Mount Brunswick</a></li>
- 				<li><a href="trails/teapot_hill.html">Teapot Hill</a></li>
+				<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
+ 				<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
+				<li><a href="trails/jug_island.php">Jug Island</a></li>
+ 				<li><a href="trails/lynn_peak.php">Lynn Peak</a></li>
+				<li><a href="trails/mt_brunswick.php">Mount Brunswick</a></li>
+ 				<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
  			</ul>
  		</div>
  		<div class="col-xs-4 col-xs-offset-1" id="social-icons">
