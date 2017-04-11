@@ -39,3 +39,7 @@ table {
 hr {
   background-color: #FFFFFF;
 }
+
+.post_response {
+  border-top: 1px solid black;
+}

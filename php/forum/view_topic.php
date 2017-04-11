@@ -147,7 +147,7 @@ $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql2);
 while($rows=mysqli_fetch_array($result2)){
 ?>
 
-<table width="100%" border="0" bgcolor="#FFFFFF">
+<table class="post_response" width="100%" bgcolor="#FFFFFF">
 <tr>
 <td bgcolor="#F8F7F1"><strong>By:</strong> <?php echo $rows['firstname']; ?></td>
 </tr>
@@ -160,7 +160,6 @@ while($rows=mysqli_fetch_array($result2)){
 <td bgcolor="#F8F7F1"><strong>Date:</strong> <?php echo $rows['datetime']; ?></td>
 </tr>
 </table>
-<hr>
 
 <?php
 }
@@ -173,6 +172,7 @@ while($rows=mysqli_fetch_array($result2)){
 <form name="form1" method="post" action="add_response.php">
 	<textarea name="response" cols="60" rows="5" id="answer"></textarea><br><br>
 	<input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset">
+	<input name="id" type="hidden" value="<?php echo $id; ?>">
 </form>
 </div>
 <?php else: ?>
