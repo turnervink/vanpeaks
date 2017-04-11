@@ -118,7 +118,6 @@
             <td><img src="../images/stats_icons/long.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -127,7 +126,6 @@
             <td>6 hours</td>
             <td>1543 m</td>
             <td>14 km</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>

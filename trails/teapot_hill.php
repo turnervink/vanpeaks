@@ -118,7 +118,6 @@
             <td><img src="../images/stats_icons/short.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -127,7 +126,6 @@
             <td>60 minutes return</td>
             <td>250m</td>
             <td>5km return</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>

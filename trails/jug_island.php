@@ -117,7 +117,6 @@
             <td><img src="../images/stats_icons/medtime.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -126,7 +125,6 @@
             <td>90 minutes return</td>
             <td>100m</td>
             <td>5.5km one-way</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>
