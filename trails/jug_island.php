@@ -125,7 +125,6 @@
             <td><img src="../images/stats_icons/medtime.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -133,8 +132,7 @@
             <td>Easy</td>
             <td>90 minutes return</td>
             <td>100m</td>
-            <td>5.5km one-way</td>
-            <td>12&deg;</td>
+            <td>5.5km return</td>
 						<td></td>
           </tr>
         </table>
@@ -144,7 +142,8 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">A quick hike for all ages with great views</h4>
+					<h4 class="center-heading col-xs-12">A nice, easy hike
+					that everyone can enjoy</h4>
 				</div>
 
 				<div class="row">
