@@ -397,6 +397,8 @@ label {
 
 #loginForm {
   color: black;
+  padding-top: 10px;
+  padding-left: 15px;
   padding-right: 30px;
   float: right;
 }
@@ -494,12 +496,21 @@ label {
   display: none;
 }
 
-.glyphicon-menu-down {
+.glyphicon-menu-down, .glyphicon-menu-down:link, .glyphicon-menu-down:visited, .glyphicon-menu-down:hover, .glyphicon-menu-down:active {
     margin-top: 600px;
     margin-right: auto;
+    width: 50px;
     margin-left: auto;
     display: block;
     text-align: center;
     font-size: 6em;
     color: white;
+    text-decoration: none;
+    border: none;
+}
+
+#glyphAnchor, #glyphAnchor:link, #glyphAnchor:visited, #glyphAnchor:hover, #glyphAnchor:active {
+    color: white;
+    text-decoration: none;
+    border: none;
 }
