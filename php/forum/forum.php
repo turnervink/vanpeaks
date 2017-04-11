@@ -29,12 +29,12 @@
 				Trails
 				<span class="caret"></span>
 				<ul class="dropdwn">
-					<li><a href="../../itrails/cascade_falls.php">Cascade Falls</a></li>
-					<li><a href="../../itrails/garibaldi_lake.php">Garibaldi Lake</a></li>
-					<li><a href="../../itrails/jug_island.php">Jug Island</a></li>
-					<li><a href="../../itrails/lynn_peak.php">Lynn Peak</a></li>
-					<li><a href="../../itrails/mt_brunswick.php">Mount Brunswick</a></li>
-					<li><a href="../../itrails/teapot_hill.php">Teapot Hill</a></li>
+					<li><a href="../../trails/cascade_falls.php">Cascade Falls</a></li>
+					<li><a href="../../trails/garibaldi_lake.php">Garibaldi Lake</a></li>
+					<li><a href="../../trails/jug_island.php">Jug Island</a></li>
+					<li><a href="../../trails/lynn_peak.php">Lynn Peak</a></li>
+					<li><a href="../../trails/mt_brunswick.php">Mount Brunswick</a></li>
+					<li><a href="../../trails/teapot_hill.php">Teapot Hill</a></li>
 				</ul>
 				</li>
 				<li class="listitem" id="hikeprep">
