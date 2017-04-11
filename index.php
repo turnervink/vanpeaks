@@ -215,10 +215,10 @@
  		<div class="col-xs-4 col-xs-offset-1" id="social-icons">
  			<ul>
  				<li>Connect with VanPeaks:</li>
- 				<li class="socialmedia"><a href="#"><img src="images/facebook.png" alt="Facebook logo" /></a></li>
- 				<li class="socialmedia"><a href="#"><img src="images/twitter.png" alt="Twitter logo" /></a></li>
- 				<li class="socialmedia"><a href="#"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
- 				<li class="socialmedia"><a href="#"><img src="images/youtube.png" alt="YouTube logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://www.instagram.com/felixlinn/"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube logo" /></a></li>
  			</ul>
  		</div>
 
