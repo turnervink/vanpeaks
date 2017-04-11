@@ -23,7 +23,7 @@
 	<meta name="author" content="LoadFoO" />
 	<meta name="description" content="Site description" />
 	<meta name="keywords" content="key, words" />
-	<title>LoadFoO [V2]</title>
+	<title>VanPeaks Forum</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<script type="text/javascript" src="js/textsizer.js"></script>

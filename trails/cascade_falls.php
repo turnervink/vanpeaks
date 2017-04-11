@@ -227,7 +227,7 @@
 				<!-- Review submission form -->
 					<div class="row">
 
-						<button class="col-xs-offset-4 col-xs-4 button" id="show">Leave a review</button>
+						<button class="col-xs-offset-4 col-xs-4 button" id="show">Hey <?php echo $_SESSION['SESS_LOGIN'] ?>! Leave a review</button>
 						<div class="col-xs-4"></div>
 					</div>
 					<br>

@@ -1,0 +1,41 @@
+td {
+  text-align: left;
+  color: black;
+  width: 15px;
+}
+
+td:first-child {
+  text-align: left;
+  padding-left: 50px;
+}
+
+tr:first-child td {
+  color: black;
+}
+
+tr {
+  height: 50px;
+  padding: 15px;
+}
+
+table {
+  margin-bottom: 0;
+  background-color: rgb(68, 92, 103);
+  border: 0;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.topic_title {
+  font-size: 2em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#response_form {
+  margin-left: 50px;
+}
+
+hr {
+  background-color: #FFFFFF;
+}
