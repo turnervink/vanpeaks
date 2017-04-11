@@ -388,7 +388,18 @@ table {
     display: block;
 }
 
+.prepare-bg-image {
+  background-image: url(../images/cathedral_pano.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  border: 0px;
+}
 
+.prepareContent {
+  background-color: grey;
+}
 /* Login page styles */
 
 #content {
@@ -447,6 +458,15 @@ label {
     padding: 6px 20px;
     box-sizing: border-box;
     font-size: 14px;
+}
+
+.login-bg-image {
+    background-image: url(../images/van_peaks.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    border: 0px;
 }
 
 .registrationForm input[type=submit] {
