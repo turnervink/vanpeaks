@@ -41,14 +41,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
+					<a href="prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="../about.php" class="link">About</a>
+					<a href="about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="../login.php" class="link">Login/Signup</a>
+					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
