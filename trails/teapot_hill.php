@@ -123,7 +123,7 @@
           <tr>
 						<td></td>
             <td><img src="../images/stats_icons/easy.png" alt="Difficulty"></td>
-            <td><img src="../images/stats_icons/short.png" alt="Time"></td>
+            <td><img src="../images/stats_icons/medtime.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
 						<td></td>
@@ -133,7 +133,7 @@
             <td>Easy</td>
             <td>60 minutes return</td>
             <td>250m</td>
-            <td>5km return</td>
+            <td>2.3km one-way</td>
 						<td></td>
           </tr>
         </table>
@@ -143,67 +143,28 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">A quick hike for all ages with great views</h4>
+					<h4 class="center-heading col-xs-12">The real fun comes from trying to count the number of teapots
+					you see</h4>
 				</div>
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-					</p>
-					<p class="col-xs-12">
-						<img src="../images/teapot_hill/sign.jpg" alt="An inline image" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						Of all the hikes with a gimmick, Teapot Hill is definitely one of the more interesting ones.
+						It’s name is extremely accurate, as from the very moment you pass the trailhead marker you
+						will begin to see hundreds of teapots scattered through the forest.
+						<img src="../images/teapot_hill/turner_teapot.jpg" alt="A red teapot" class="inline-image-right">
+						<br><br>
+						The hike itself is very enjoyable. It winds its way up through the trees, mostly enclosed
+						until you get to the top. The real fun comes from trying to count the number of teapots
+						you see and taking pictures of the more interesting ones! If you have the extra cash, why
+						not bring your own to add to the collection?
+						<img src="../images/teapot_hill/sign.jpg" alt="The Teapot Hill trailhead" class="inline-image-left">
+						<br><br>
+						At the end of the trail is a large, more open space that features an awesome lookout point
+						over the forest. Yes, there are still teapots here… But what you should really care about is
+						the view! The distance you’ve ascended really becomes clear when you’re looking out over the
+						forest. On the way back downs double check your teapot count and see which of your friends found more!
 
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						<img src="../images/teapot_hill/turner_teapot.jpg" alt="An inline image" class="inline-image-left">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
 					</p>
 				</div>
 

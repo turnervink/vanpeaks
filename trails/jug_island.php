@@ -130,7 +130,7 @@
             <td>Easy</td>
             <td>90 minutes return</td>
             <td>100m</td>
-            <td>5.5km one-way</td>
+            <td>5.5km return</td>
 						<td></td>
           </tr>
         </table>
@@ -140,67 +140,37 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">A quick hike for all ages with great views</h4>
+					<h4 class="center-heading col-xs-12">A nice, easy hike
+					that everyone can enjoy</h4>
 				</div>
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-					</p>
-					<p class="col-xs-12">
+						Jug Island, located in beautiful Belcarra Park, is a nice and moderately easy hike
+						that everyone can enjoy. It starts out rather developed, featuring gravel paths that
+						snake upwards into the forest. Quickly it turns into more of a woods adventure as you
+						step over tree roots and climb up staircases made of rocks. Don’t worry though! Many
+						particularly steep sections are supplemented with constructed staircases that make
+						them much more manageable.
 						<img src="../images/jug_island/trailhead.jpg" alt="The Jug Island trailhead" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
+						<br><br>
+						About halfway to the end of the trail you will be greeting with some amazing rock faces that in
+						the rainy seasons are covered in dark green moss. As you walk beside and under these faces you
+						can look up and take them in (as well as grab a few photos too!). After this you begin to climb
+						up farther and will eventually come across a small lookout point over the ocean. This is a great
+						place to stop for a break and have a snack while looking out over the water.
+						<br><br>
+						The trail begins to shift downhill now, and you know you’re near the end when you hit a very
+						steep section. Protip: use the wooden retaining wall as a set of impromptu steps to make descending
+						this hill a bit easier! Once you’re at the bottom you’ll find yourself at Jug Island beach!
 						<img src="../images/jug_island/stairs.jpg" alt="Ascending stairs on the Jug Island trail" class="inline-image-left">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						<br><br>
+						Jug Island is the one immediately in front of you. If it’s a hot day and you’re feeling
+						adventurous maybe take a swim out to it as it isn’t too far. Watch out for birds, though.
+						Sometimes they can be quite territorial. Take a break and sit down on one of the many
+						pieces of driftwood while you enjoy your lunch by the ocean. It’s super easy to get back,
+						too! Just turn around and follow the same trail in reverse!
+
 					</p>
 				</div>
 
