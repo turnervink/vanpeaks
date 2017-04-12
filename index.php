@@ -24,11 +24,11 @@
 <body>
 
 <!-- Header image, Title, Motto -->
-<div class="container-fluid header-image" id="index-header" onload="indexHeader()">
+<div class="container-fluid header-image" id="index-header" onresize="indexHeader()">
 	<div class="row">
 		<div class="col-xs-12">
 			<h1 class="jumboMainHeader col-xs-12">VanPeaks</h1>
-			<h2 class="jumboMinHeader col-xs-12">Hike your hike</h2>
+			<h2 class="jumboMinHeader col-xs-12">Find your hike</h2>
             <a href="#nav" id="glyphAnchor"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 		</div>
 	</div>
@@ -152,7 +152,7 @@
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border center_image">
     					<a href="trails/garibaldi_lake.php">
-    						<img src="images/index_grid_images/cascade_falls_grid.png" alt="hike"> <!-- Garibaldi Lake -->
+    						<img src="images/garibaldi_lake/garibaldi_island.jpg" alt="hike"> <!-- Garibaldi Lake -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border">

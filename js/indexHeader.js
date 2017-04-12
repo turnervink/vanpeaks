@@ -1,21 +1,20 @@
-$(document).ready(function() {
-    function setHeight() {
-        windowHeight = $(window).innerHeight();
-        $('index-header').css('height', windowHeight);
-    };
+function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $("index-header").css("height", windowHeight);
+}
+function setWidth() {
+    windowWidth = $(window).innerWidth();
+    $("index-header").css("width", windowWidth);
+}
+
+$(window).resize(function() {
     setHeight();
-
-    $(window).resize(function() {
-        setHeight();
-    });
-
-    function setWidth() {
-        windowWidth = $(window).innerWidth();
-        $('index-header').css('width', windowWidth);
-    };
     setWidth();
+});
 
-    $(window).resize(function() {
+$(document).ready(function() {
+    function indexHeader() {
+        setHeight();
         setWidth();
-    });
+    }
 });
