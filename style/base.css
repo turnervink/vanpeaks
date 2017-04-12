@@ -129,7 +129,7 @@ p {
 }
 
 #garibaldi-lake-header {
-    background-image: url("../images/cascade_falls.jpg");
+  background-image: url("../images/garibaldi_lake/garibaldi_island.jpg");
 }
 
 #jug-island-header {
@@ -265,9 +265,9 @@ footer ul {
     padding-left: 10px;
 }
 
-footer li {
-    height: 130%;
-}
+/*footer li {
+  height: 130%;
+}*/
 
 footer a {
     text-decoration: none;
@@ -607,12 +607,43 @@ label {
     display: none;
 }
 
-.glyphicon-menu-down {
+.glyphicon-menu-down, .glyphicon-menu-down:link, .glyphicon-menu-down:visited, .glyphicon-menu-down:hover, .glyphicon-menu-down:active {
     margin-top: 600px;
     margin-right: auto;
+    width: 50px;
     margin-left: auto;
     display: block;
     text-align: center;
     font-size: 6em;
     color: white;
+    text-decoration: none;
+    border: none;
+}
+
+
+#glyphAnchor, #glyphAnchor:link, #glyphAnchor:visited, #glyphAnchor:hover, #glyphAnchor:active {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.button_hover:hover > a{
+    background-color: #FFFFFF;
+    color:#445B66;
+    border-radius:10px;
+    border-style:solid;
+    border-width:thick;
+    border-color:#FFFFFF;
+}
+.button_hover:hover{
+    background-color: #FFFFFF;
+    color:#445B66;
+    border-radius:10px;
+    border-style:solid;
+    border-width:thick;
+    border-color:#FFFFFF;
+}
+
+.trail_hover:hover{
+    text-decoration:underline;
 }
