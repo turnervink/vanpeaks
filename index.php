@@ -37,6 +37,7 @@
 <!-- Navigation bar -->
 <div class="container-fluid">
 <div class="row">
+	<a name="nav"><nav></a>
 	<nav>
 		<ul>
 			<li>
