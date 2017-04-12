@@ -137,67 +137,40 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">A quick hike for all ages with great views</h4>
+					<h4 class="center-heading col-xs-12">Unparalleled alpine panoramas of crystal-blue waters.</h4>
 				</div>
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+                        The crystal-blue waters, alpine vistas, and panoramic views that Garibaldi Lake offers make it
+                        one of the most scenic destinations in British Columbia. With trails available to adventurers
+                        of any level of daring, Garibaldi Lake has been a cherished favourite of hikers for over
+                        90 years.
 					</p>
 					<p class="col-xs-12">
-						<img src="../images/teapot_hill_2.jpg" alt="An inline image" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
+						<img src="../images/garibaldi_lake/garibaldi_bird.jpg" alt="Garibaldi Lake Bird" class="inline-image-right">
+                        Garibaldi Lake offers steep, rugged, and glacier-capped mountains; and meandering, grassy, and
+                        low-cut meadows. The first 6km of hiking into Garibaldi Lake will find you ascending through
+                        dense forests filled with Douglas Fir trees. After this entrance, a park map will guide hikers
+                        on towards their preferred destination. Trail options include Taylor Meadows, Black Tusk,
+                        Panorama Ridge, or Garibaldi Lake. We recommend Garibaldi Lake! The trail to Garibaldi Lake
+                        covers another 3km of distance, while gaining approximately 920m of elevation. This trail is
+                        the second easiest hike in Garibaldi park, and so it offers full access to the beauty of the
+                        waters of Garibaldi in a way that's accessible to most hikers.
 					</p>
 					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
+                        Located along the Sea to Sky Highway between Squamish and Whistler, Garibaldi Lake sits within
+                        Garibaldi Provincial Park - a wilderness area that covers 2,000 square kilometres. There are
+                        five park entrance points along the highway, with each entrance providing access to hiking
+                        trails with backcountry camping opportunities. Hikers who have visited Golden Ears Provincial
+                        Park will be familiar with this region, as the two parks are located beside each other.
+                    </p>
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						<img src="../images/teapot_hill_2.jpg" alt="An inline image" class="inline-image-left">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						<img src="../images/garibaldi_lake/garibaldi_water.jpg" alt="Garibaldi Lake Rocky Outcrop" class="inline-image-left">
+                        Park wildlife include black bear, mountain goat, deer, marmot, pika, golden eagle, bald eagle,
+                        and ptarmagin. Many fish can be found in the waters of Lake Garibaldi.
+                        <br><br>
+                        We hope you enjoy your trip!
 					</p>
 				</div>
 
