@@ -230,9 +230,9 @@ footer ul {
 	padding-left: 10px;
 }
 
-footer li {
+/*footer li {
   height: 130%;
-}
+}*/
 
 footer a {
   text-decoration: none;
@@ -510,8 +510,30 @@ label {
     border: none;
 }
 
+
 #glyphAnchor, #glyphAnchor:link, #glyphAnchor:visited, #glyphAnchor:hover, #glyphAnchor:active {
     color: white;
     text-decoration: none;
     border: none;
+}
+
+.button_hover:hover > a{
+    background-color: #FFFFFF;
+    color:#445B66;
+    border-radius:10px;
+    border-style:solid;
+    border-width:thick;
+    border-color:#FFFFFF;
+}
+.button_hover:hover{
+    background-color: #FFFFFF;
+    color:#445B66;
+    border-radius:10px;
+    border-style:solid;
+    border-width:thick;
+    border-color:#FFFFFF;
+}
+
+.trail_hover:hover{
+    text-decoration:underline;
 }
