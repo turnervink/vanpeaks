@@ -222,7 +222,6 @@
 				<div class="row">
 					<hr class="col-xs-12">
 				</div>
-
 				<?php if (isset($_SESSION['SESS_LOGIN'])): ?>
 				<!-- Review submission form -->
 					<div class="row">

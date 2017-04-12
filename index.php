@@ -44,8 +44,8 @@
 					<a href="index.php" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
 				</li>
 				<li class="dropdown" id="trails">
-					Trails
-					<span class="caret"></span>
+					<span class="trail_hover">Trails
+					<span class="caret"></span></span>
 					<ul class="dropdwn">
 						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
@@ -55,6 +55,7 @@
 						<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 				</li>
+
 				<li class="listitem" id="hikeprep">
 					<a href="prepare.php" class="link">Hike Prep</a>
 				</li>
@@ -152,12 +153,12 @@
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border center_image">
     					<a href="trails/garibaldi_lake.php">
-    						<img src="images/cascade_falls.jpg" alt="hike"> <!-- Garibaldi Lake -->
+    						<img src="images/index_grid_images/cascade_falls_grid.png" alt="hike"> <!-- Garibaldi Lake -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border">
     					<a href="trails/jug_island.php">
-    						<img src="images/jug_island/pageheader.jpg" alt="hike"> <!-- Jug Island -->
+    						<img src="images/index_grid_images/jug_island_grid.png" alt="hike"> <!-- Jug Island -->
     					</a>
     				</div>
     			</div>
@@ -176,17 +177,17 @@
     			<div class="row">
     				<div class="col-xs-2  col-xs-offset-2 image_border">
     					<a href="trails/lynn_peak.php">
-    						<img src="images/lynn_peak/lynn_jumbo_noperson.jpg" alt="hike"> <!-- Lynn Peak -->
+    						<img src="images/index_grid_images/lynn_grid.png" alt="hike"> <!-- Lynn Peak -->
     					</a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border center_image">
     					<a href="trails/mt_brunswick.php">
-    						<img src="images/mt_brunswick.jpg" alt="hike"> <!-- Mt. Brunswick -->
+    						<img src="images/index_grid_images/mt_brunswick_grid.png" alt="hike"> <!-- Mt. Brunswick -->
     					</a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border">
     					<a href="trails/teapot_hill.php">
-    						<img src="images/teapot_hill_1.jpg" alt="hike"> <!-- Teapot Hill -->
+    						<img src="images/index_grid_images/teapot_hill_grid.png" alt="hike"> <!-- Teapot Hill -->
     					</a>
     				</div>
     			</div>
