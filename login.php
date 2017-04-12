@@ -69,7 +69,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -111,7 +111,7 @@
 	<div class="container">
 		<div class="page-content" id="content">
 			<div class="row">
-				<!-- <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+				<!-- <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
 					<div class="col-xs-6" id="border_line">
 						<div id="loginForm">
 							<fieldset class="field">
