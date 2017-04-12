@@ -14,7 +14,6 @@
 	<script src="js/logindropdown.js"></script>
 	<script src="js/login.js"></script>
 	<script type="text/javascript" src="js/indexHeader.js"></script>
-
 	<!-- Link base stylesheet -->
 	<link rel="stylesheet" href="style/base.css">
 </head>
@@ -30,8 +29,7 @@
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
-					<span class="caret"></span></span>
-					<ul class="dropdwn">
+					<span class="caret"></span></span>					<ul class="dropdwn">
 						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
 						<li><a href="trails/jug_island.php">Jug Island</a></li>
@@ -41,14 +39,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+					<a href="prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
 					<a href="about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
@@ -69,7 +67,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -90,7 +88,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -104,9 +102,11 @@
 		</nav>
 	</div>
 </div>
-
+  
 <!-- Content -->
+	<div class="prepare-bg-image">
 	<div class="container">
+		<div class="prepareContent">
 		<div class="page-content">
 			<div class="row">
 				<div>
@@ -128,7 +128,7 @@
 					</p>
 
 					<div class="col-xs-1 col-md-offset-4">
-						<img src="images/slippers.jpg" alt="slippers" class="imgSize">
+						<img src="images/prepare/safetyfirst.png" alt="safety first" class="imgSize1">
 					</div>
 
 					<h2 class="coloured-heading center-heading col-xs-12">
@@ -143,7 +143,7 @@
 					</p>
 
 					<div class="col-xs-1 col-md-offset-4">
-						<img src="images/slippers.jpg" alt="slippers" class="imgSize">
+						<img src="images/prepare/food.jpg" alt="food" class="imgSize2">
 					</div>
 
 					<h2 class="coloured-heading center-heading col-xs-12">
@@ -156,13 +156,14 @@
 						</p>
 
 						<div class="col-xs-1 col-md-offset-4">
-							<img src="images/slippers.jpg" alt="slippers" class="imgSize">
+							<img src="images/prepare/tips.jpg" alt="Tips from Felix" class="imgSize3">
 						</div>
-
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 	<!-- Footer -->
  	<footer class="container-fluid">
@@ -189,7 +190,7 @@
  				<li>Connect with VanPeaks:</li>
  				<li class="socialmedia"><a href="http://www.facebook.com"><img src="images/facebook.png" alt="Facebook logo" /></a></li>
  				<li class="socialmedia"><a href="http://www.twitter.com"><img src="images/twitter.png" alt="Twitter logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://www.instagram.com/felixlinn/"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
  				<li class="socialmedia"><a href="http://www.youtube.com"><img src="images/youtube.png" alt="YouTube logo" /></a></li>
  			</ul>
  		</div>

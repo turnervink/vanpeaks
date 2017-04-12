@@ -45,14 +45,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="about.php" class="link">About</a>
+					<a href="../about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="../login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
@@ -73,7 +73,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -94,7 +94,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='../login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -122,20 +122,18 @@
         <table class="col-xs-12">
           <tr>
 						<td></td>
-            <td><img src="../images/stats_icons/easy.png" alt="Difficulty"></td>
-            <td><img src="../images/stats_icons/short.png" alt="Time"></td>
+            <td><img src="../images/stats_icons/hard.png" alt="Difficulty"></td>
+            <td><img src="../images/stats_icons/long.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
 						<td></td>
-            <td>Easy</td>
-            <td>30 minutes</td>
-            <td>250m</td>
-            <td>1.3km loop</td>
-            <td>12&deg;</td>
+            <td>Hard</td>
+            <td>6 hours</td>
+            <td>1543 m</td>
+            <td>14 km</td>
 						<td></td>
           </tr>
         </table>
@@ -150,62 +148,45 @@
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						Mount Brunswick is a fantastic hike if you are looking for an amazing view over Lion's Bay. Due to the length
+						of the hike, it is recommended to have snacks and a meal as the hike will definitely take over 5 hours. As well,
+						have proper gear according to the weather as it is much cooler and there is a lot more wind as you get to the top.
+						Be prepared for a long and beautiful hike!
 					</p>
 					<p class="col-xs-12">
 						<img src="../images/mt_brunswick/mt_brunswick_1.jpg" alt="An inline image" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
+						On the drive to Mount Brunswick, you will encounter the beautiful Lion's Bay to excite you for what is to come
+						at the end. When you arrive at the parking lot, there is a map of the trails around Mount Brunswick, and you can clearly
+						find where the start of the trail begins. There really isn't any way of getting too lost as there is one path that goes up,
+						however when you get closer to the top the trail splits to a loop, and as long as you read the signs, you will be fine.
 					</p>
 					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
+						As you begin the hike, there is not much to see except lots of trees, and trail markers on the way up. Make sure you follow
+						them so you do not wander off-trail. Again, the first hour or two, is a peaceful hike, the trail will start inclining more and more
+						as your elevation increases. After about 30 minutes of hiking you will reach Magnesia Creek, and depending on the season, you may or may
+						not see a wooden bridge to cross as snow could be covering it. Though it is recommended to cross that as the wooden bridge
+						takes you over a stream, however you can cross the stream without going on the bridge if you walk over exposed boulders in the stream.
 					</p>
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
+						After about an hour or two of further hiking, you will come to a fork in the road that splits between Hat Mountain and Tunnel Bluffs. You
+						would want to go right, heading uphill onto an old, overgrown road. At around the 5 km mark, you will start seeing views of Howe Sound open
+						up, and you will have chances at the glimpses of the bay. Soon you will reach another junction for Howe Sound Crest Trail, what you want to do
+						is continue heading straight up the trail as marked by the sign.
 					</p>
 					<p class="col-xs-12">
 						<img src="../images/mt_brunswick/mt_brunswick_2.jpg" alt="An inline image" class="inline-image-left">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
+						The summit is not too far after the junction however, this is when some technical 'scrambling' is required. The grade of the slope increases, and
+						there is not a clear route the higher you go up, but rest assured, just continue going upwards. There is quite a bit of loose rocks, so be careful and
+						keep spacing when climbing. If you do reach this point, look behind you as you will see an amazing view of the bay. Continue, climbing and exercise caution
+						of the weather and snow as well as ice since it is cooler, and weather can change quickly at high elevations.
 					</p>
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						You will eventually reach the saddle which leads to the Brunswick Mountain summit. Becareful as the ridge is very exposed and the other side is a steep drop,
+						you will pass a wooden helicopter landing pad along the ridge right before the summit.
+					</p>
+					<p class="col-xs-12">
+						Once you reach the summit, the view is simply incredible, and it is probably one of the best views from the Lower Mainland. You will be able to see Grouse Mountain,
+						Crown Mountain, the Lions, Howe Sound and its islands, as well as Vancouver Island. Make sure you bring a camera as it is a view you do not want to forget!
 					</p>
 				</div>
 

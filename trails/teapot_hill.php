@@ -45,14 +45,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="about.php" class="link">About</a>
+					<a href="../about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="../login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
@@ -73,7 +73,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -94,7 +94,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='../login.php'"
                                             >
                                         </fieldset>
                                     </div>

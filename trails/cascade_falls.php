@@ -45,14 +45,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="about.php" class="link">About</a>
+					<a href="../about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="../login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
@@ -73,7 +73,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -94,7 +94,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='../login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -126,7 +126,6 @@
             <td><img src="../images/stats_icons/short.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -135,7 +134,6 @@
             <td>30 minutes</td>
             <td>250m</td>
             <td>1.3km loop</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>
@@ -150,61 +148,17 @@
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						Located Northeast of Mission, BC, Cascade Falls is a scenic waterfall that can be viewed from a suspension bridge that crosses the river, just in front of the falls. The short walk uphill to the falls makes the long drive worth the trip.
 					</p>
 					<p class="col-xs-12">
-						<img src="../images/cascade_falls/cascade_falls_2.jpg" alt="An inline image" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
+						<img src="../images/cascade_falls/cascade_falls_2.jpg" alt="Suspension bridge at Cascade Falls" class="inline-image-right">
+						From the parking lot, walk towards the metal gate by the hill (note: sometimes the gate is not noticeable if it is open) and walk up towards a trail that begins on the right. Follow the trail up a steep hill as it winds to the right and within minutes you reach a set of wooden stairs. Climb the wooden stairs until you are just underneath the suspension bridge, where you get the first scenic view of Cascade Falls. Walk up the remaining stairs and cross the suspension bridge. During the early spring months and after a rainfall, an enormous amount of water flows over the rocks and into the canyon down below. Continue across the bridge to the wooden platform on the far side.
 					</p>
 					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
+						The wooden platform is as close as you can get to the falls and when a lot of water is dropping into the canyon, you can feel the mist from this platform. For those with strollers or wheelchairs, you can continue on the wide, gravel road to reach the falls. That route is slightly longer and less scenic. But the road will still reach the falls at the top so you can still access the viewing platform without navigating the stairs.
 					</p>
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+						After enjoying the view, cross back over the suspension bridge and walk back down the wooden stairs, returning to the parking lot via the gravel trail.
 					</p>
 				</div>
 

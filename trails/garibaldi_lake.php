@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<?php session_start() ?>
-<head>
+<?php session_start() ?><head>
 	<title>VanPeaks - Garbaldi Lake</title>
 	<meta charset="utf-8">
 
@@ -13,7 +12,6 @@
 	<!-- Link JavaScript files -->
 	<script src="../js/logindropdown.js"></script>
 	<script type="text/javascript" src="../js/indexHeader.js"></script>
-
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="../style/base.css">
 	<link rel="stylesheet" href="../style/review_form.css">
@@ -34,8 +32,7 @@
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
-					<span class="caret"></span></span>
-					<ul class="dropdwn">
+					<span class="caret"></span></span>					<ul class="dropdwn">
 						<li><a href="cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
 						<li><a href="jug_island.php">Jug Island</a></li>
@@ -45,14 +42,14 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="about.php" class="link">About</a>
+					<a href="../about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+					<a href="../login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
@@ -73,7 +70,7 @@
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -94,7 +91,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='../login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -108,7 +105,6 @@
 		</nav>
 	</div>
 </div>
-
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 header-image" id="garibaldi-lake-header">
@@ -126,7 +122,6 @@
             <td><img src="../images/stats_icons/short.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -135,7 +130,6 @@
             <td>30 minutes</td>
             <td>250m</td>
             <td>1.3km loop</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>
@@ -145,8 +139,7 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">Unparalleled alpine panoramas of crystal-blue waters.</h4>
-				</div>
+					<h4 class="center-heading col-xs-12">Unparalleled alpine panoramas of crystal-blue waters.</h4>				</div>
 
 				<div class="row">
 					<p class="col-xs-12">
@@ -179,7 +172,7 @@
                         and ptarmagin. Many fish can be found in the waters of Lake Garibaldi.
                         <br><br>
                         We hope you enjoy your trip!
-					</p>
+          </p>
 				</div>
 
 				<!-- Google Map -->
@@ -204,7 +197,7 @@
 					<div class="row">
 
 						<button class="col-xs-offset-4 col-xs-4 button" id="show">Hey <?php echo $_SESSION['SESS_LOGIN'] ?>! Leave a review</button>
-						<div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>
 					</div>
 					<br>
 					<div>
