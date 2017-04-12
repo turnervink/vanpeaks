@@ -106,7 +106,7 @@
 </div>
 
  <!-- Header image, Title -->
-<div about="about-bg-image">
+<div class="about-bg-image">
 <div class="container">
 	<div class="aboutContent">
 	<div class="page-content">
