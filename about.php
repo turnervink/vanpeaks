@@ -41,23 +41,23 @@
 					</ul>
 				</li>
 				<li class="listitem button_hover" id="hikeprep">
-					<a href="../prepare.php" class="link button_hover">Hike Prep</a>
+					<a href="prepare.php" class="link button_hover">Hike Prep</a>
 				</li>
 				<li class="listitem button_hover" id="about">
-					<a href="../about.php" class="link">About</a>
+					<a href="about.php" class="link">About</a>
 				</li>
 
 				<li class="listitem button_hover" id="nojs-login">
-					<a href="../login.php" class="link">Login/Signup</a>
+					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
 						<li class="listitem">
-							<a href="php/forum/logout.php" class="link">Logout</a>
+							<a href="php/forum/logout.php" class="link"><span class="button_hover">Logout</span></a>
 						</li>
 					<?php else: ?>
 				<li class="navLink" id="js-login">
-					<div class="dropdown button_hover">
+					<div class="dropdown">
 						<button
                                 class="btn btn-default dropdown-toggle link"
                                 id="dropdownButton"
