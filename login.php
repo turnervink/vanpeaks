@@ -131,9 +131,9 @@
 				</form> -->
 
 				<form method="post" action="php/forum/register.php" onsubmit="return regiValidation()">
-					<div class="col-xs-1 col-xs-offset-5">
+					<div class="col-xs-5 col-xs-offset-5">
 						<div class="row">
-							<div id="registrationForm">
+							<div class="registrationForm">
 								<fieldset class="field">
 									<legend class="h3">Registration</legend>
 											<div id="regiError" class="red"></div>

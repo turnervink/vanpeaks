@@ -106,7 +106,9 @@
 </div>
 
  <!-- Header image, Title -->
+<div about="about-bg-image">
 <div class="container">
+	<div class="aboutContent">
 	<div class="page-content">
 		<div class="row">
 			<div class="col-xs-12">
@@ -123,6 +125,8 @@
 	    </div>
 		</div>
 	</div>
+	</div>
+</div>
 </div>
 
 
