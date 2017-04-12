@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="zxx">
+<?php
+	session_start();
+ ?>
 <head>
 	<title>VanPeaks - Home</title>
 	<meta charset="utf-8">
@@ -38,7 +41,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="index.html" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
+					<a href="index.php" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
@@ -52,19 +55,25 @@
 						<li><a href="trails/teapot_hill.php">Teapot Hill</a></li>
 					</ul>
 				</li>
-				<li class="listitem button_hover" id="hikeprep">
-					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+
+				<li class="listitem" id="hikeprep">
+					<a href="prepare.php" class="link">Hike Prep</a>
 				</li>
-				<li class="listitem button_hover" id="about">
+				<li class="listitem" id="about">
 					<a href="about.php" class="link">About</a>
 				</li>
 
-				<li class="listitem button_hover" id="nojs-login">
-					<a href="login.html" class="link">Login/Signup</a>
+				<li class="listitem" id="nojs-login">
+					<a href="login.php" class="link">Login/Signup</a>
 				</li>
 
+				<?php if (isset($_SESSION['SESS_LOGIN'])):?>
+					<li class="listitem">
+						<a href="php/forum/logout.php" class="link">Logout</a>
+					</li>
+				<?php else: ?>
 				<li class="navLink" id="js-login">
-					<div class="dropdown button_hover">
+					<div class="dropdown">
 						<button
                                 class="btn btn-default dropdown-toggle link"
                                 id="dropdownButton"
@@ -72,11 +81,11 @@
                                 data-toggle="dropdown"
 								aria-haspopup="true"
                                 aria-expanded="false" >
-							<span class = "button_hover">Login/Signup</span>
+							Login/Signup
 						</button>
 						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
                             <li id="loginForm">
-                                <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
+                                <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
                                     <div>
                                         <fieldset class="field">
                                             <!-- Login Title -->
@@ -97,7 +106,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='login.html'"
+                                                    onclick="javascript:location.href='login.php'"
                                             >
                                         </fieldset>
                                     </div>
@@ -106,6 +115,7 @@
 						</ul>
 					</div>
 				</li>
+			<?php endif; ?>
 			</ul>
 		</nav>
 	</div>
@@ -118,7 +128,7 @@
             <h1>Choose Your Hike</h1>
             <div class="row">
                 <div class="col-xs-3 col-offsetimage_border" >
-                        <a href="tracascade_falls.phphtml">
+                        <a href="trails/cascade_falls.php">
                             <img src="images/cascade_falls.jpg" alt="hike">
                         </a>
                 </div>
@@ -129,11 +139,16 @@
 
     <div class="img_grid_container">
   		<div class="container img_grid">
+
+				<?php if (isset($_SESSION['SESS_LOGIN'])):?>
+				<h1 class="img_grid_title"><?php echo $_SESSION['SESS_LOGIN']?>, Choose Your Hike:</h1>
+				<?php else: ?>
     		<h1 class="img_grid_title">Choose Your Hike:</h1>
+				<?php endif; ?>
     			<div class="row">
     				<div class="col-xs-2 col-xs-offset-2 image_border" >
     					<a href="trails/cascade_falls.php">
-    						<img src="images/index_grid_images/cascade_falls_grid.png" alt="hike"> <!-- Cascade Falls -->
+    						<img src="images/cascade_falls.jpg" alt="hike"> <!-- Cascade Falls -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border center_image">
@@ -197,9 +212,9 @@
  	<div class="row">
  		<div class="col-xs-offset-2 col-xs-2">
  			<ul>
- 				<li><a href="index.html">Home</a></li>
+ 				<li><a href="index.php">Home</a></li>
  				<li><a href="about.php">About</a></li>
- 				<li><a href="prepare.html">Hike Prep</a></li>
+ 				<li><a href="prepare.php">Hike Prep</a></li>
  			</ul>
  		</div>
  		<div class="col-xs-2">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+<?php session_start() ?>
 <head>
 	<title>VanPeaks - About</title>
 	<meta charset="utf-8">
@@ -25,7 +26,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="index.html" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
+					<a href="index.php" class="link"><img src="images/Logo.png" id="logo" alt="Home"></a>
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
@@ -50,6 +51,11 @@
 					<a href="login.html" class="link">Login/Signup</a>
 				</li>
 
+        <?php if (isset($_SESSION['SESS_LOGIN'])):?>
+						<li class="listitem">
+							<a href="php/forum/logout.php" class="link">Logout</a>
+						</li>
+					<?php else: ?>
 				<li class="navLink" id="js-login">
 					<div class="dropdown button_hover">
 						<button
@@ -93,6 +99,7 @@
 						</ul>
 					</div>
 				</li>
+        <?php endif; ?>
 			</ul>
 		</nav>
 	</div>
@@ -124,9 +131,9 @@
 <div class="row">
 	<div class="col-xs-offset-2 col-xs-2">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="prepare.html">Hike Prep</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="about.php">About</a></li>
+			<li><a href="prepare.php">Hike Prep</a></li>
 		</ul>
 	</div>
 	<div class="col-xs-2">
