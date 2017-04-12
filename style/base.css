@@ -110,7 +110,8 @@ p {
 }
 
 .header-image {
-    height: 760px;
+    /*height: 760px;*/
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
