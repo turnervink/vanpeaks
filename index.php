@@ -15,16 +15,17 @@
   <!-- Link JavaScript files -->
   <script src="js/logindropdown.js"></script>
   <script src="js/login.js"></script>
-  <script type="text/javascript" src="js/indexHeader.js"></script>
+
 
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="style/base.css">
+	<script type="text/javascript" src="js/indexHeader.js"></script>
 
 </head>
 <body>
 
 <!-- Header image, Title, Motto -->
-<div class="container-fluid header-image" id="index-header" onresize="indexHeader()">
+<div class="container-fluid header-image" id="index-header">
 	<div class="row">
 		<div class="col-xs-12">
 			<h1 class="jumboMainHeader col-xs-12">VanPeaks</h1>
