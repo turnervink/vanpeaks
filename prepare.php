@@ -13,7 +13,7 @@
 	<!-- Link JavaScript files -->
 	<script src="js/logindropdown.js"></script>
 	<script src="js/login.js"></script>
-	<script type="text/javascript" src="js/headerImage.js"></script>
+	<script type="text/javascript" src="js/indexHeader.js"></script>
 
 	<!-- Link base stylesheet -->
 	<link rel="stylesheet" href="style/base.css">

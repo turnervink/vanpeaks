@@ -13,10 +13,9 @@
   <script src="bootstrap/js/bootstrap.js"></script>
 
   <!-- Link JavaScript files -->
-	<script src="js/logindropdown.js"></script>
+  <script src="js/logindropdown.js"></script>
   <script src="js/login.js"></script>
-
-  <script type="text/javascript" src="js/headerImage.js"></script>
+  <script type="text/javascript" src="js/indexHeader.js"></script>
 
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="style/base.css">
@@ -25,12 +24,12 @@
 <body>
 
 <!-- Header image, Title, Motto -->
-<div class="container-fluid header-image" id="index-header" onload="headerImage()">
+<div class="container-fluid header-image" id="index-header" onload="indexHeader()">
 	<div class="row">
 		<div class="col-xs-12">
 			<h1 class="jumboMainHeader col-xs-12">VanPeaks</h1>
 			<h2 class="jumboMinHeader col-xs-12">Hike your hike</h2>
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            <a href="#nav" id="glyphAnchor"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
 		</div>
 	</div>
 </div>
