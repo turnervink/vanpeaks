@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
+<?php session_start() ?><head>
 	<title>VanPeaks - Garbaldi Lake</title>
 	<meta charset="utf-8">
 
@@ -11,8 +11,7 @@
 
 	<!-- Link JavaScript files -->
 	<script src="../js/logindropdown.js"></script>
-	<script type="text/javascript" src="../js/headerImage.js"></script>
-
+	<script type="text/javascript" src="../js/indexHeader.js"></script>
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="../style/base.css">
 	<link rel="stylesheet" href="../style/review_form.css">
@@ -24,18 +23,16 @@
 <body>
 
 	<!-- Navigation bar -->
-	<div class="container-fluid">
-		<div class="row">
-			<nav>
-				<ul>
-					<li>
-						<a href="../index.php
-						" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
-					</li>
-					<li class="dropdown" id="trails">
-					Trails
-					<span class="caret"></span>
-					<ul class="dropdwn">
+<div class="container-fluid">
+	<div class="row">
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.php" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
+				</li>
+				<li class="dropdown" id="trails">
+					<span class="trail_hover">Trails
+					<span class="caret"></span></span>					<ul class="dropdwn">
 						<li><a href="cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
 						<li><a href="jug_island.php">Jug Island</a></li>
@@ -43,61 +40,71 @@
 						<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
 						<li><a href="teapot_hill.php">Teapot Hill</a></li>
 					</ul>
-					</li>
-					<li class="listitem" id="hikeprep">
-						<a href="../prepare.php" class="link">Hike Prep</a>
-					</li>
-					<li class="listitem" id="about">
-						<a href="../about.php" class="link">About</a>
-					</li>
-					<li class="navLink">
-						<div class="dropdown">
-							<button
-									class="btn btn-default dropdown-toggle link"
-									id="dropdownButton"
-									type="button"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false" >
-								Login/Signup
-							</button>
-							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
-								<li id="loginForm">
-									<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
-										<div>
-											<fieldset class="field">
-												<!-- Login Title -->
-												<legend class="h3">Login</legend>
-												<div id="loginError" class="red"></div>
-												<!-- Username Title -->
-												<label for="userLogin">Username:</label><br>
-												<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
-												<div id="userLoginWarn" class="red"></div>
-												<!-- Password Title -->
-												<label for="passLogin">Password:</label><br>
-												<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
-												<div id="passLoginWarn" class="red"></div>
-												<br>
-												<input type="submit" value="Login" id="loginButton">
-												<br><br>
-												<input
-														type="button"
-														value="or Register Here"
-														id="registerButton"
-														onclick="javascript:location.href='login.php'"
-												>
-											</fieldset>
-										</div>
-									</form>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+				</li>
+				<li class="listitem button_hover" id="hikeprep">
+					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+				</li>
+				<li class="listitem button_hover" id="about">
+					<a href="about.php" class="link">About</a>
+				</li>
 
+				<li class="listitem button_hover" id="nojs-login">
+					<a href="login.html" class="link">Login/Signup</a>
+				</li>
+
+        <?php if (isset($_SESSION['SESS_LOGIN'])):?>
+						<li class="listitem">
+							<a href="php/forum/logout.php" class="link">Logout</a>
+						</li>
+					<?php else: ?>
+				<li class="navLink" id="js-login">
+					<div class="dropdown button_hover">
+						<button
+                                class="btn btn-default dropdown-toggle link"
+                                id="dropdownButton"
+								type="button"
+                                data-toggle="dropdown"
+								aria-haspopup="true"
+                                aria-expanded="false" >
+							<span class = "button_hover">Login/Signup</span>
+						</button>
+						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
+                            <li id="loginForm">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
+                                    <div>
+                                        <fieldset class="field">
+                                            <!-- Login Title -->
+                                            <legend class="h3">Login</legend>
+                                                <div id="loginError" class="red"></div>
+                                            <!-- Username Title -->
+                                            <label for="userLogin">Username:</label><br>
+                                                <input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+                                                <div id="userLoginWarn" class="red"></div>
+                                            <!-- Password Title -->
+                                            <label for="passLogin">Password:</label><br>
+                                                <input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+                                                <div id="passLoginWarn" class="red"></div>
+                                            <br>
+                                            <input type="submit" value="Login" id="loginButton">
+                                            <br><br>
+                                            <input
+                                                    type="button"
+                                                    value="or Register Here"
+                                                    id="registerButton"
+                                                    onclick="javascript:location.href='login.html'"
+                                            >
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </li>
+						</ul>
+					</div>
+				</li>
+        <?php endif; ?>
+			</ul>
+		</nav>
+	</div>
+</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 header-image" id="garibaldi-lake-header">
@@ -132,68 +139,40 @@
 		<div class="container">
 			<div class="page-content">
 				<div class="row">
-					<h4 class="center-heading col-xs-12">A quick hike for all ages with great views</h4>
-				</div>
+					<h4 class="center-heading col-xs-12">Unparalleled alpine panoramas of crystal-blue waters.</h4>				</div>
 
 				<div class="row">
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
+                        The crystal-blue waters, alpine vistas, and panoramic views that Garibaldi Lake offers make it
+                        one of the most scenic destinations in British Columbia. With trails available to adventurers
+                        of any level of daring, Garibaldi Lake has been a cherished favourite of hikers for over
+                        90 years.
 					</p>
 					<p class="col-xs-12">
-						<img src="../images/teapot_hill_2.jpg" alt="An inline image" class="inline-image-right">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
+						<img src="../images/garibaldi_lake/garibaldi_bird.jpg" alt="Garibaldi Lake Bird" class="inline-image-right">
+                        Garibaldi Lake offers steep, rugged, and glacier-capped mountains; and meandering, grassy, and
+                        low-cut meadows. The first 6km of hiking into Garibaldi Lake will find you ascending through
+                        dense forests filled with Douglas Fir trees. After this entrance, a park map will guide hikers
+                        on towards their preferred destination. Trail options include Taylor Meadows, Black Tusk,
+                        Panorama Ridge, or Garibaldi Lake. We recommend Garibaldi Lake! The trail to Garibaldi Lake
+                        covers another 3km of distance, while gaining approximately 920m of elevation. This trail is
+                        the second easiest hike in Garibaldi park, and so it offers full access to the beauty of the
+                        waters of Garibaldi in a way that's accessible to most hikers.
 					</p>
 					<p class="col-xs-12">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet. Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
+                        Located along the Sea to Sky Highway between Squamish and Whistler, Garibaldi Lake sits within
+                        Garibaldi Provincial Park - a wilderness area that covers 2,000 square kilometres. There are
+                        five park entrance points along the highway, with each entrance providing access to hiking
+                        trails with backcountry camping opportunities. Hikers who have visited Golden Ears Provincial
+                        Park will be familiar with this region, as the two parks are located beside each other.
+                    </p>
 					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-
-					</p>
-					<p class="col-xs-12">
-						Quis in aliquip tempor minim ut do nisi esse. Officia do ad deserunt pariatur commodo
-						amet sunt. Sit ex incididunt sit consequat nisi nulla consectetur. Cillum laboris ex
-						pariatur culpa consequat irure consequat deserunt ea excepteur. Sint reprehenderit
-						labore nulla irure id incididunt amet sit commodo. Eu elit exercitation sint qui enim
-						eiusmod cupidatat magna non exercitation sunt qui adipisicing officia nulla aliquip
-						labore. Nulla id sunt ut dolor in aute sit fugiat anim reprehenderit laborum incididunt
-						fugiat veniam elit culpa commodo.
-					</p>
-					<p class="col-xs-12">
-						<img src="../images/teapot_hill_2.jpg" alt="An inline image" class="inline-image-left">
-						Exercitation nisi qui sint occaecat est culpa adipisicing. Aliqua adipisicing id officia
-						laboris laboris consequat magna laborum occaecat excepteur occaecat consequat amet ullamco
-						amet.
-						Mollit minim nulla cillum nulla ullamco eu ullamco enim non ut officia sint sunt
-						adipisicing. In dolore non in ullamco nostrud Lorem officia tempor voluptate pariatur aute
-						nostrud proident. Nisi reprehenderit ea veniam laboris laborum veniam aute voluptate consectetur
-						eu dolor laboris adipisicing nulla. Reprehenderit duis duis aliqua reprehenderit aliquip eu ex
-						qui aliquip reprehenderit.
-					</p>
-					<p class="col-xs-12">
-						Lorem esse sint elit mollit nulla eiusmod cupidatat minim pariatur
-						et proident cupidatat duis. Ipsum elit sint sint tempor est irure Lorem labore sint
-						magna commodo. Et aliqua duis officia veniam velit id est. Ullamco enim et ad ipsum
-						culpa eiusmod nulla ullamco labore dolor nisi enim sit.
-					</p>
+						<img src="../images/garibaldi_lake/garibaldi_water.jpg" alt="Garibaldi Lake Rocky Outcrop" class="inline-image-left">
+                        Park wildlife include black bear, mountain goat, deer, marmot, pika, golden eagle, bald eagle,
+                        and ptarmagin. Many fish can be found in the waters of Lake Garibaldi.
+                        <br><br>
+                        We hope you enjoy your trip!
+          </p>
 				</div>
 
 				<!-- Google Map -->
@@ -212,43 +191,17 @@
 					<hr class="col-xs-12">
 				</div>
 
-				<div class="row user-review">
-					<img src="../images/teapot_hill_1.jpg" alt="" class="col-xs-4 review-image">
 
-					<h3 class="col-xs-8">Review One</h3>
-
-					<p class="col-xs-8">
-						Officia irure sint magna enim magna cillum adipisicing laboris est culpa dolor
-						voluptate sunt reprehenderit laborum. Aliqua cillum nulla voluptate incididunt
-						eiusmod duis in. Tempor cillum laborum veniam velit velit est magna ut laborum
-						sit excepteur nisi esse consequat aliqua duis. Voluptate ullamco qui officia
-						laborum eu incididunt minim cillum duis culpa nisi nostrud nostrud veniam ut.
-					</p>
-				</div>
-
-				<div class="row user-review">
-					<img src="../images/teapot_hill_2.jpg" alt="" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">Review Two</h3>
-
-					<p class="col-xs-8">
-						Officia irure sint magna enim magna cillum adipisicing laboris est culpa dolor
-						voluptate sunt reprehenderit laborum. Aliqua cillum nulla voluptate incididunt
-						eiusmod duis in. Tempor cillum laborum veniam velit velit est magna ut laborum
-						sit excepteur nisi esse consequat aliqua duis. Voluptate ullamco qui officia
-						laborum eu incididunt minim cillum duis culpa nisi nostrud nostrud veniam ut.
-					</p>
-				</div>
-
+				<?php if (isset($_SESSION['SESS_LOGIN'])): ?>
 				<!-- Review submission form -->
 					<div class="row">
 
-						<button class="col-xs-offset-4 col-xs-4 button" id="show">Leave a review</button>
-						<div class="col-xs-4"></div>
+						<button class="col-xs-offset-4 col-xs-4 button" id="show">Hey <?php echo $_SESSION['SESS_LOGIN'] ?>! Leave a review</button>
+            <div class="col-xs-4"></div>
 					</div>
 					<br>
 					<div>
-						<form class="col-xs-12" id="review_form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return checkReview()">
+						<form class="col-xs-12" id="review_form" action="../php/forum/add_topic.php" method="post" onsubmit="return checkReview()">
 						<br>
 
 					<div class="container-fluid">
@@ -295,7 +248,7 @@
 							</div>
 						</div>
 						<div class="col-xs-offset-2 col-xs-6" id="textarea_container">
-							<textarea id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
+							<textarea name="txtreview" id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
 						<div class="row">
 						<button class="button col-xs-9" type="submit" id="submit">Submit</button>
 						</div>
@@ -310,42 +263,46 @@
 						</form>
 					</div>
 					<!-- End review form -->
+				<?php else: ?>
+				<?php endif;?>
+				<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
+				<br><br>
 
 			</div>
 		</div>
 
 		<!-- Footer -->
-	<footer class="container-fluid">
-	<div class="row">
-		<div class="col-xs-offset-2 col-xs-2">
-			<ul>
-				<li><a href="../index.php">Home</a></li>
-				<li><a href="../about.php">About</a></li>
-				<li><a href="../prepare.php">Hike Prep</a></li>
-			</ul>
-		</div>
-		<div class="col-xs-2">
-			<ul>
-				<li><a href="cascade_falls.php">Cascade Falls</a></li>
- 				<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
-				<li><a href="jug_island.php">Jug Island</a></li>
- 				<li><a href="lynn_peak.php">Lynn Peak</a></li>
-				<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
- 				<li><a href="teapot_hill.php">Teapot Hill</a></li>
- 			</ul>
-		</div>
-		<div class="col-xs-4 col-xs-offset-1" id="social-icons">
-			<ul>
-				<li>Connect with VanPeaks:</li>
-				<li class="socialmedia"><a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.twitter.com"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.youtube.com"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
-			</ul>
-		</div>
+		<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-offset-2 col-xs-2">
+				<ul>
+					<li><a href="../index.php">Home</a></li>
+					<li><a href="../about.php">About</a></li>
+					<li><a href="../prepare.php">Hike Prep</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-2">
+				<ul>
+					<li><a href="cascade_falls.php">Cascade Falls</a></li>
+	 				<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
+					<li><a href="jug_island.php">Jug Island</a></li>
+	 				<li><a href="lynn_peak.php">Lynn Peak</a></li>
+					<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
+	 				<li><a href="teapot_hill.php">Teapot Hill</a></li>
+	 			</ul>
+			</div>
+			<div class="col-xs-4 col-xs-offset-1" id="social-icons">
+				<ul>
+					<li>Connect with VanPeaks:</li>
+					<li class="socialmedia"><a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
+	 				<li class="socialmedia"><a href="http://www.twitter.com"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
+	 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
+	 				<li class="socialmedia"><a href="http://www.youtube.com"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
+				</ul>
+			</div>
 
-	</div>
-	<p>Copyright &copy; 2017 VanPeaks | Designed by <a href="#">TEAM</a></p>
-	</footer>
+		</div>
+		<p>Copyright &copy; 2017 VanPeaks | Designed by <a href="#">TEAM</a></p>
+		</footer>
 </body>
 </html>

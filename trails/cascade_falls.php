@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+<?php session_start() ?>
 <head>
 	<title>VanPeaks - Cascade Falls</title>
 	<meta charset="utf-8">
@@ -10,7 +11,8 @@
   <script src="../bootstrap/js/bootstrap.js"></script>
 
   <!-- Link JavaScript files -->
-  <script type="text/javascript" src="../js/headerImage.js"></script>
+	<script src="../js/logindropdown.js"></script>
+  <script type="text/javascript" src="../js/indexHeader.js"></script>
 
   <!-- Link base and trails stylesheets -->
   <link rel="stylesheet" href="../style/base.css">
@@ -23,17 +25,16 @@
 <body>
 
 	<!-- Navigation bar -->
-	<div class="container-fluid">
-		<div class="row">
-			<nav>
-				<ul>
-					<li>
-						<a href="../index.php
-						" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
-					</li>
-					<li class="dropdown" id="trails">
-					Trails
-					<span class="caret"></span>
+<div class="container-fluid">
+	<div class="row">
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.php" class="link"><img src="../images/Logo.png" id="logo" alt="Home"></a>
+				</li>
+				<li class="dropdown" id="trails">
+					<span class="trail_hover">Trails
+					<span class="caret"></span></span>
 					<ul class="dropdwn">
 						<li><a href="cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
@@ -42,60 +43,71 @@
 						<li><a href="mt_brunswick.php">Mount Brunswick</a></li>
 						<li><a href="teapot_hill.php">Teapot Hill</a></li>
 					</ul>
-					</li>
-					<li class="listitem" id="hikeprep">
-						<a href="../prepare.php" class="link">Hike Prep</a>
-					</li>
-					<li class="listitem" id="about">
-						<a href="../about.php" class="link">About</a>
-					</li>
-					<li class="navLink">
-						<div class="dropdown">
-							<button
-									class="btn btn-default dropdown-toggle link"
-									id="dropdownButton"
-									type="button"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false" >
-								Login/Signup
-							</button>
-							<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
-								<li id="loginForm">
-									<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
-										<div>
-											<fieldset class="field">
-												<!-- Login Title -->
-												<legend class="h3">Login</legend>
-												<div id="loginError" class="red"></div>
-												<!-- Username Title -->
-												<label for="userLogin">Username:</label><br>
-												<input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
-												<div id="userLoginWarn" class="red"></div>
-												<!-- Password Title -->
-												<label for="passLogin">Password:</label><br>
-												<input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
-												<div id="passLoginWarn" class="red"></div>
-												<br>
-												<input type="submit" value="Login" id="loginButton">
-												<br><br>
-												<input
-														type="button"
-														value="or Register Here"
-														id="registerButton"
-														onclick="javascript:location.href='login.php'"
-												>
-											</fieldset>
-										</div>
-									</form>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
+				</li>
+				<li class="listitem button_hover" id="hikeprep">
+					<a href="prepare.html" class="link button_hover">Hike Prep</a>
+				</li>
+				<li class="listitem button_hover" id="about">
+					<a href="about.php" class="link">About</a>
+				</li>
+
+				<li class="listitem button_hover" id="nojs-login">
+					<a href="login.html" class="link">Login/Signup</a>
+				</li>
+
+        <?php if (isset($_SESSION['SESS_LOGIN'])):?>
+						<li class="listitem">
+							<a href="php/forum/logout.php" class="link">Logout</a>
+						</li>
+					<?php else: ?>
+				<li class="navLink" id="js-login">
+					<div class="dropdown button_hover">
+						<button
+                                class="btn btn-default dropdown-toggle link"
+                                id="dropdownButton"
+								type="button"
+                                data-toggle="dropdown"
+								aria-haspopup="true"
+                                aria-expanded="false" >
+							<span class = "button_hover">Login/Signup</span>
+						</button>
+						<ul class="dropdown-menu" id="dropdownForm" aria-labelledby="dropdownButton">
+                            <li id="loginForm">
+                                <form method="post" action="../php/forum/login.php" onsubmit="return loginValidation()">
+                                    <div>
+                                        <fieldset class="field">
+                                            <!-- Login Title -->
+                                            <legend class="h3">Login</legend>
+                                                <div id="loginError" class="red"></div>
+                                            <!-- Username Title -->
+                                            <label for="userLogin">Username:</label><br>
+                                                <input type="text" name="userLogin" id="userLogin" onblur="checkUserLogin('userLogin')" required>
+                                                <div id="userLoginWarn" class="red"></div>
+                                            <!-- Password Title -->
+                                            <label for="passLogin">Password:</label><br>
+                                                <input type="password" name="passLogin" id="passLogin" onblur="checkPassLogin('passLogin')" required="">
+                                                <div id="passLoginWarn" class="red"></div>
+                                            <br>
+                                            <input type="submit" value="Login" id="loginButton">
+                                            <br><br>
+                                            <input
+                                                    type="button"
+                                                    value="or Register Here"
+                                                    id="registerButton"
+                                                    onclick="javascript:location.href='login.html'"
+                                            >
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </li>
+						</ul>
+					</div>
+				</li>
+        <?php endif; ?>
+			</ul>
+		</nav>
 	</div>
+</div>
 
 		<div class="container-fluid">
 			<div class="row">
@@ -166,35 +178,16 @@
 					<hr class="col-xs-12">
 				</div>
 
-				<div class="row user-review">
-					<img src="../images/cascade_falls/cascade_review1.jpg" alt="User submitted image of falls" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">A Natural Beauty</h3>
-
-					<p class="col-xs-8">
-						Cascade Falls is a nice walk and great location for a family outing. The waterfall is gorgeous and well worth the drive out. The trail is relatively short, so it's not a great destination if you're looking for a full day of exercise. Picnic area just besides the parking lot has beautiful views. The more adventurous can have a dip in the refreshingly cold water on a warm day. 
-					</p>
-				</div>
-
-				<div class="row user-review">
-					<img src="../images/cascade_falls/cascade_review2.jpg" alt="User submitted image of falls" class="col-xs-4 review-image">
-
-					<h3 class="col-xs-8">Very Impressive!</h3>
-
-					<p class="col-xs-8">
-						Cascade Falls is easy to get to, yet still impressive. This autumn has been very wet with lots of rain and snowmelt from the mountains and there is a LOT of water coming over the falls right now. It's an easy walk from the parking lot, whether you take the trail or the gravel road but it's only about 10 minutes either way. There's a really nice suspension bridge over Cascade Creek to see the falls.
-					</p>
-				</div>
-
+				<?php if (isset($_SESSION['SESS_LOGIN'])): ?>
 				<!-- Review submission form -->
 					<div class="row">
 
-						<button class="col-xs-offset-4 col-xs-4 button" id="show">Leave a review</button>
+						<button class="col-xs-offset-4 col-xs-4 button" id="show">Hey <?php echo $_SESSION['SESS_LOGIN'] ?>! Leave a review</button>
 						<div class="col-xs-4"></div>
 					</div>
 					<br>
 					<div>
-						<form class="col-xs-12" id="review_form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return checkReview()">
+						<form class="col-xs-12" id="review_form" action="../php/forum/add_topic.php" method="post" onsubmit="return checkReview()">
 						<br>
 
 					<div class="container-fluid">
@@ -241,7 +234,7 @@
 							</div>
 						</div>
 						<div class="col-xs-offset-2 col-xs-6" id="textarea_container">
-							<textarea id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
+							<textarea name="txtreview" id="txtreview" rows="5" cols="44" placeholder="   Tell us about your hike!"></textarea>
 						<div class="row">
 						<button class="button col-xs-9" type="submit" id="submit">Submit</button>
 						</div>
@@ -256,6 +249,10 @@
 						</form>
 					</div>
 					<!-- End review form -->
+				<?php else: ?>
+				<?php endif;?>
+				<button class="col-xs-offset-4 col-xs-4 button" id="show" onclick="location.href='../php/forum/forum.php'">View reviews</button>
+				<br><br>
 
 			</div>
 		</div>
@@ -283,10 +280,10 @@
 		<div class="col-xs-4 col-xs-offset-1" id="social-icons">
 			<ul>
 				<li>Connect with VanPeaks:</li>
-				<li class="socialmedia"><a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.twitter.com"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.youtube.com"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/facebook.png" alt="Facebook logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/twitter.png" alt="Twitter logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/instagram.png" alt="Instagram logo" /></a></li>
+				<li class="socialmedia"><a href="#"><img src="../images/youtube.png" alt="YouTube logo" /></a></li>
 			</ul>
 		</div>
 
