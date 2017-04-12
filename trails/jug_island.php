@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<?php session_start() ?>
-<head>
+<?php session_start() ?><head>
 	<title>VanPeaks - Jug Island</title>
 	<meta charset="utf-8">
 
@@ -13,7 +12,7 @@
 	<!-- Link JavaScript files -->
 	<script src="../js/logindropdown.js"></script>
 	<script type="text/javascript" src="../js/indexHeader.js"></script>
-
+  
   <!-- Link base stylesheet -->
   <link rel="stylesheet" href="../style/base.css">
 	<link rel="stylesheet" href="../style/review_form.css">
@@ -33,8 +32,7 @@
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
-					<span class="caret"></span></span>
-					<ul class="dropdwn">
+					<span class="caret"></span></span>					<ul class="dropdwn">
 						<li><a href="cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="garibaldi_lake.php">Garibaldi Lake</a></li>
 						<li><a href="jug_island.php">Jug Island</a></li>
@@ -125,7 +123,6 @@
             <td><img src="../images/stats_icons/medtime.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -134,7 +131,6 @@
             <td>90 minutes return</td>
             <td>100m</td>
             <td>5.5km one-way</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>

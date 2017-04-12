@@ -157,6 +157,7 @@
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border">
     					<a href="trails/jug_island.php">
+
     						<img src="images/index_grid_images/jug_island_grid.png" alt="hike"> <!-- Jug Island -->
     					</a>
     				</div>
@@ -181,8 +182,7 @@
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border center_image">
     					<a href="trails/mt_brunswick.php">
-    						<img src="images/index_grid_images/mt_brunswick_grid.png" alt="hike"> <!-- Mt. Brunswick -->
-    					</a>
+    						<img src="images/index_grid_images/mt_brunswick_grid.png" alt="hike"> <!-- Mt. Brunswick -->    					</a>
     				</div>
     				<div class="col-xs-2  col-xs-offset-1 image_border">
     					<a href="trails/teapot_hill.php">

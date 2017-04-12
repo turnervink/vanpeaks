@@ -108,7 +108,7 @@
 		</nav>
 	</div>
 </div>
-
+  
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 header-image" id="mt-brunswick-header">
@@ -126,7 +126,6 @@
             <td><img src="../images/stats_icons/short.png" alt="Time"></td>
             <td><img src="../images/stats_icons/elevation.png" alt="Elevation"></td>
             <td><img src="../images/stats_icons/length.png" alt="Distance"></td>
-            <td><img src="../images/stats_icons/cloudy.png" alt="Current Weather Conditions"></td>
 						<td></td>
           </tr>
           <tr>
@@ -135,7 +134,6 @@
             <td>30 minutes</td>
             <td>250m</td>
             <td>1.3km loop</td>
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>

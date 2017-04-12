@@ -14,7 +14,6 @@
 	<script src="js/logindropdown.js"></script>
 	<script src="js/login.js"></script>
 	<script type="text/javascript" src="js/indexHeader.js"></script>
-
 	<!-- Link base stylesheet -->
 	<link rel="stylesheet" href="style/base.css">
 </head>
@@ -30,8 +29,7 @@
 				</li>
 				<li class="dropdown" id="trails">
 					<span class="trail_hover">Trails
-					<span class="caret"></span></span>
-					<ul class="dropdwn">
+					<span class="caret"></span></span>					<ul class="dropdwn">
 						<li><a href="trails/cascade_falls.php">Cascade Falls</a></li>
 						<li><a href="trails/garibaldi_lake.php">Garibaldi Lake</a></li>
 						<li><a href="trails/jug_island.php">Jug Island</a></li>
@@ -104,7 +102,7 @@
 		</nav>
 	</div>
 </div>
-
+  
 <!-- Content -->
 	<div class="container">
 		<div class="page-content">
