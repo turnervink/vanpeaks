@@ -1,115 +1,131 @@
-/**//* Import Overpass and Open Sans fonts */
+/**/
+
+
+/* Import Overpass and Open Sans fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Overpass:100i,400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Add margins to sides of page */
+
 .page-content {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /* Headings and body text */
+
 h1 {
-  font-weight: bold;
-  font-family: 'Overpass', sans-serif;
-  font-size: 3em;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    font-size: 3em;
 }
 
+
 /* Header for hikes*/
+
 h2 {
-  font-family: 'Overpass', sans-serif;
-  font-weight: bold;
-  font-size: 2.25em;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 2.25em;
 }
 
 h3 {
-  font-family: 'Overpass', sans-serif;
-  font-style: normal;
-  font-size: 1.6em;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-size: 1.6em;
 }
 
 h4 {
-  font-family: 'Overpass', sans-serif;
-  font-size: 2.25em;
-  font-style: italic;
-  font-weight: 100;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2.25em;
+    font-style: italic;
+    font-weight: 100;
 }
 
 h5 {
-  font-family: 'Overpass', sans-serif;
-  font-size: 1.6em;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6em;
 }
 
 h6 {
-  font-family: 'Overpass', sans-serif;
-  font-weight: 100;
-  font-size: 1.6em;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
 }
 
 .coloured-heading {
-  color: #2C783D;
+    color: #2C783D;
 }
 
 .center-heading {
-  text-align: center;
+    text-align: center;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  color: #000000;
-  padding-left: 20%;
-  padding-right: 20%;
-  font-weight: normal;
-  font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-weight: normal;
+    font-size: 1em;
 }
 
+
 /* Inline image styling */
+
 .inline-image-right {
-  float:right;
-  padding: 10px 0 10px 10px;
-  max-width: 250px;
-  max-height: 250px;
+    float: right;
+    padding: 10px 0 10px 10px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 .inline-image-left {
-  float:left;
-  padding: 10px 10px 10px 0;
-  max-width: 250px;
-  max-height: 250px;
+    float: left;
+    padding: 10px 10px 10px 0;
+    max-width: 250px;
+    max-height: 250px;
 }
 
+
 /* Banner image styles */
+
 .jumboMainHeader {
-  color: #FFFFFF;
-  font-size: 4em;
-  text-shadow: 0.02em 0.02em 0.02em #000000;
-  text-align: center;
-  margin-top: 300px; /* To align somewhat vertically center */
+    color: #FFFFFF;
+    font-size: 4em;
+    text-shadow: 0.02em 0.02em 0.02em #000000;
+    text-align: center;
+    margin-top: 300px;
+    /* To align somewhat vertically center */
 }
 
 .jumboMinHeader {
-  color: #FFFFFF;
-  font-size: 2em;
-  text-shadow: 0.02em 0.02em 0.02em #000000;
-  text-align: center;
+    color: #FFFFFF;
+    font-size: 2em;
+    text-shadow: 0.02em 0.02em 0.02em #000000;
+    text-align: center;
 }
 
 .header-image {
-	height: 760px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: white;
+    height: 760px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
+
 /* Unique header photos for each page */
+
 #index-header {
-  background-image: url("../images/home_header_2.jpg");
+    background-image: url("../images/home_header_2.jpg");
 }
 
 #cascade-falls-header {
-  background-image: url("../images/cascade_falls/cascade_falls.jpg");
+    background-image: url("../images/cascade_falls/cascade_falls.jpg");
 }
 
 #garibaldi-lake-header {
@@ -117,116 +133,136 @@ p {
 }
 
 #jug-island-header {
-  background-image: url("../images/jug_island/pageheader.jpg");
+    background-image: url("../images/jug_island/pageheader.jpg");
 }
 
 #lynn-peak-header {
-  background-image: url("../images/lynn_peak/lynn_jumbo_noperson.jpg");
+    background-image: url("../images/lynn_peak/lynn_jumbo_noperson.jpg");
 }
 
 #mt-brunswick-header {
-  background-image: url("../images/mt_brunswick.jpg");
+    background-image: url("../images/mt_brunswick.jpg");
 }
 
 #teapot-hill-header {
-  background-image: url("../images/teapot_hill/pageheader.jpg");
-  background-position: top;
+    background-image: url("../images/teapot_hill/pageheader.jpg");
+    background-position: top;
 }
 
+
 /* Nav styling */
+
 nav {
-	margin-right: auto;
-	margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #logo {
-	height: 45px;
-	width: auto;
+    height: 45px;
+    width: auto;
 }
 
 nav ul {
-	width: 100%;
-
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
-
-	text-align: center;
-	display: inline-block;
-
-	/*border: 3px solid black;*/
-	list-style-type: none;
-	background-color: rgb(68, 92, 103);
-
-  margin-bottom: 0;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    text-align: center;
+    display: inline-block;
+    /*border: 3px solid black;*/
+    list-style-type: none;
+    background-color: rgb(68, 92, 103);
+    margin-bottom: 0;
 }
 
 nav li {
-	display: inline;
-	text-align: center;
-
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-
-	text-decoration: none;
-	color: white;
-	font-size: 1.5em;
-	font-weight: bold;
+    display: inline;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav a:hover {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 nav a:link {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 nav a:visited {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 nav a:active {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
+
 
 /* About page image */
+
 .center-block {
-	padding: 1em;
+    padding: 1em;
 }
 
+.about-bg-image {
+  background-image: url(../images/about/okanagan.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  border: 0px;
+}
+
+.aboutContent {
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
 /* Footer styling */
+
 footer {
-  background-color: #445B66;
-	color: white;
-	width: 100%;
-	height: 220px;
-	padding-top: 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	border-top: 3px solid black;
+    background-color: #445B66;
+    color: white;
+    width: 100%;
+    height: 220px;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    border-top: 3px solid black;
 }
 
 footer li.socialmedia {
-  clear: both;
-  display: inline;
-  padding-right: 4px;
+    clear: both;
+    display: inline;
+    padding-right: 4px;
 }
 
 footer p {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
 }
 
 footer ul {
-  list-style-type: none;
-	margin-top: 0;
-	padding-left: 10px;
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 10px;
 }
 
 /*footer li {
@@ -234,178 +270,258 @@ footer ul {
 }*/
 
 footer a {
-  text-decoration: none;
-	font-weight: bold;
-	color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 footer a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
-  color: black;
+    text-decoration: underline;
+    color: black;
 }
 
 footer a:active {
-  text-decoration: underline;
-  color: white;
+    text-decoration: underline;
+    color: white;
 }
 
 #social-icons {
-  /*float: right;*/
+    /*float: right;*/
 }
 
-
-.img_grid_container{
-        height:auto;
-        width:100%;
-        /*padding-bottom:20px;*/
-
+.img_grid_container {
+    height: auto;
+    width: 100%;
+    /*padding-bottom:20px;*/
 }
 
-.img_grid_title{
-  padding-left:15.5%;
-}
-.img_grid{
-        width:100%;
-        height:100%;
-        margin:0 auto;
-
+.img_grid_title {
+    padding-left: 15.5%;
 }
 
-.image_border{
-  background-color: #445c67;
-  padding:4px;
+.img_grid {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
-.center_image{
-  /*margin-left:5px;
+.image_border {
+    background-color: #445c67;
+    padding: 4px;
+}
+
+.center_image {
+    /*margin-left:5px;
   margin-right:5px;*/
 }
 
-[class*="col-"] > a > img{
-        width:100%;
-        height:100%;
+[class*="col-"]>a>img {
+    width: 100%;
+    height: 100%;
 }
+
+
 /*only use this class if extra space between rows is nessecary*/
-.label_row{
-        width:105%;
-        padding-bottom:20px;
-        /*margin-left:1%;*/
-}
-.view_more_row{
-  margin-bottom:10px;
+
+.label_row {
+    width: 105%;
+    padding-bottom: 20px;
+    /*margin-left:1%;*/
 }
 
-.info_row > div{
-  padding-left: 0px;
-  padding-right: 0px;
-  text-align: center;
-
-}
-.info_row > p{
-padding-left: 0px;
-  padding-right: 0px;
+.view_more_row {
+    margin-bottom: 10px;
 }
 
-
-.label_text{
-  /*text-align: center;*/
+.info_row>div {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
 }
 
-.view_more{
-  font-weight:bold;
-
+.info_row>p {
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.view_more:hover{
-  color:grey;
+
+.label_text {
+    /*text-align: center;*/
+}
+
+.view_more {
+    font-weight: bold;
+}
+
+.view_more:hover {
+    color: grey;
 }
 
 
 /* Trail pages styles */
+
 td {
-  text-align: center;
-  color: white;
-  width: 100px;
+    text-align: center;
+    color: white;
+    width: 100px;
 }
 
 td img {
-  width: 50px;
+    width: 50px;
 }
 
 table {
-  margin-bottom: 15px;
-  background-color: rgb(68, 92, 103);
-  border-top: 5px solid rgb(68, 92, 103);
-  border-bottom: 5px solid rgb(68, 92, 103);
-
-  font-family: "Open Sans", sans-serif;
+    margin-bottom: 15px;
+    background-color: rgb(68, 92, 103);
+    border-top: 5px solid rgb(68, 92, 103);
+    border-bottom: 5px solid rgb(68, 92, 103);
+    font-family: "Open Sans", sans-serif;
 }
 
 .user-review {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .user-review h3 {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 .user-review img {
-  max-width: 250px;
-  float: left;
+    max-width: 250px;
+    float: left;
 }
+
 
 /* Prepare styles */
-.imgSize {
-  width: 250px;
-  height: 175px;
-  padding-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  display: block;
+
+.imgSize1 {
+    width: 300px;
+    height: 250px;
+    padding-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
 }
 
-/* Login page styles */
-#content {
-  padding-bottom: 18%;
-  padding-top: 18%;
+.imgSize2 {
+    width: 300px;
+    height: 300px;
+    padding-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
 }
+
+.imgSize3 {
+    width: 300px;
+    height: 300px;
+    padding-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.prepare-bg-image {
+  background-image: url(../images/prepare/cathedral_pano.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  border: 0px;
+}
+
+.prepareContent {
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/* Login page styles */
+
+#content {
+    padding-bottom: 18%;
+    padding-top: 18%;
+}
+
 
 /* Login Content */
+
 .field {
     display: inline-block;
 }
 
 .red {
-  color: red;
+    color: red;
 }
 
 label {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
+
 /* divider line */
+
 #border_line {
-  border-right: solid 2px;
-  border-color: #D3D3D3;
+    border-right: solid 2px;
+    border-color: #D3D3D3;
 }
 
 #loginForm {
-  color: black;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 30px;
-  float: right;
+    color: black;
+    padding-right: 30px;
+    float: right;
 }
 
-#registrationForm {
-  /*padding-left: 30px;
-  float: left;*/
+.registrationForm {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.registrationForm input {
+    font-family: "Overpass", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-bg-image {
+    background-image: url(../images/login/van_peaks.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    border: 0px;
+}
+
+.registrationForm input[type=submit] {
+    padding: 10px 40px;
+    background: #445B66;
+    border: 0 none;
+    cursor: pointer;
+    color: white;
+}
+
+.registrationForm input[type=submit]:hover {
+    background: #448B66;
 }
 
 .navLink {
@@ -414,7 +530,7 @@ label {
     background-color: transparent;
     text-decoration: none;
     padding-left: 1.5em;
-  	padding-right: 1.5em;
+    padding-right: 1.5em;
 }
 
 #dropdownButton, #dropdownButton:link, #dropdownButton:visited, #dropdownButton:hover, #dropdownButton:active {
@@ -423,14 +539,11 @@ label {
     margin-left: auto;
     text-align: center;
     padding: 0;
-
     color: white;
     font-size: 1em;
     font-weight: bold;
-
     text-decoration: none;
     background-color: transparent;
-
     border: none;
     border-color: transparent;
 }
@@ -446,7 +559,6 @@ label {
 }
 
 
-
 /* Nav bar trail drop down */
 
 .dropdown {
@@ -455,28 +567,27 @@ label {
 }
 
 #dropdownForm {
-  background-color: rgb(68, 92, 103);
+    background-color: rgb(68, 92, 103);
 }
 
 #dropdownForm form legend, #dropdownForm form label {
-  color: white;
+    color: white;
 }
 
 .dropdwn {
     display: none;
-	color: white;
+    color: white;
     position: absolute;
     background-color: rgb(68, 92, 103);
     text-align: center;
-	padding: 0;
+    padding: 0;
     z-index: 1;
-	min-width: 200px;
-
+    min-width: 200px;
 }
 
 .dropdwn li {
-	font-size: 0.8em;
-	font-weight: bold;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .dropdwn a {
@@ -485,15 +596,15 @@ label {
     display: block;
 }
 
+
 /*.dropdwn a:hover {background-color: #f1f1f1}*/
 
 .dropdown:hover .dropdwn {
     display: block;
 }
 
-
 #js-login {
-  display: none;
+    display: none;
 }
 
 .glyphicon-menu-down, .glyphicon-menu-down:link, .glyphicon-menu-down:visited, .glyphicon-menu-down:hover, .glyphicon-menu-down:active {

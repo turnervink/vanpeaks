@@ -104,14 +104,14 @@
 		</nav>
 	</div>
 </div>
-
 	<!-- Content -->
 
 <!-- Content -->
+	<div class="login-bg-image">
 	<div class="container">
 		<div class="page-content" id="content">
 			<div class="row">
-				<!-- <form method="post" action="php/forum/login.php" onsubmit="return loginValidation()">
+				<!-- <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return loginValidation()">
 					<div class="col-xs-6" id="border_line">
 						<div id="loginForm">
 							<fieldset class="field">
@@ -161,7 +161,7 @@
 
 			</div>
 		</div>
-
+	</div>
 	</div>
 
 	<!-- Footer -->
@@ -189,7 +189,7 @@
  				<li>Connect with VanPeaks:</li>
  				<li class="socialmedia"><a href="http://www.facebook.com"><img src="images/facebook.png" alt="Facebook logo" /></a></li>
  				<li class="socialmedia"><a href="http://www.twitter.com"><img src="images/twitter.png" alt="Twitter logo" /></a></li>
- 				<li class="socialmedia"><a href="http://www.instagram.com"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
+ 				<li class="socialmedia"><a href="https://www.instagram.com/felixlinn/"><img src="images/instagram.png" alt="Instagram logo" /></a></li>
  				<li class="socialmedia"><a href="http://www.youtube.com"><img src="images/youtube.png" alt="YouTube logo" /></a></li>
  			</ul>
  		</div>
