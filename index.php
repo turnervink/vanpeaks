@@ -147,7 +147,7 @@
     			<div class="row">
     				<div class="col-xs-2 col-xs-offset-2 image_border" >
     					<a href="trails/cascade_falls.php">
-    						<img src="images/cascade_falls.jpg" alt="hike"> <!-- Cascade Falls -->
+    						<img src="images/index_grid_images/cascade_falls_grid.png" alt="hike"> <!-- Cascade Falls -->
     					</a>
     				</div>
     				<div class="col-xs-2 col-xs-offset-1 image_border center_image">
