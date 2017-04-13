@@ -629,22 +629,13 @@ label {
 }
 
 .button_hover:hover > a{
-    background-color: #FFFFFF;
-    color:#445B66;
-    border-radius:10px;
-    border-style:solid;
-    border-width:thick;
-    border-color:#FFFFFF;
+  color:#27343B;
 }
+
 .button_hover:hover{
-    background-color: #FFFFFF;
-    color:#445B66;
-    border-radius:10px;
-    border-style:solid;
-    border-width:thick;
-    border-color:#FFFFFF;
+    color: #27343B;
 }
 
 .trail_hover:hover{
-    text-decoration:underline;
+    color: #27343B;
 }
