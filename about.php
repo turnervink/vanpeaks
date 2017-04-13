@@ -14,6 +14,7 @@
 	<script src="js/logindropdown.js"></script>
 	<script src="js/login.js"></script>
 	<script type="text/javascript" src="js/indexHeader.js"></script>
+	<script src="js/easter.js"></script>
 
 	<!-- Link base stylesheet -->
 	<link rel="stylesheet" href="style/base.css">
@@ -117,10 +118,10 @@
 					Our mission at VanPeaks is simple: help everyone who is passionate about hiking find their next trail. We have assembled our collective knowledge and experiences from the past to create a streamlined interface to discover and discuss local trails.
 				</p>
 
-				<h1 class="col-xs-12 coloured-heading center-heading">-About VanPeaks-</h1>
+				<h1 id="abouttitle" class="col-xs-12 coloured-heading center-heading">-About VanPeaks-</h1>
 				<p class="col-xs-12">We are a small team of experts who love to get out and hike around the greater Vancouver area, in beautiful BC. Rain or shine, on any given weekend you will find at least one member of our team working up a sweat on a quest up an amazing hiking trail. We feel the greatest payoff, regardless of trail length or difficulty, is the spectacular views our diverse location has to offer.</p>
 			<div class="col-xs-12">
-				<img src="images/about_temp.jpg" alt="VanPeaks team picture" class="img-responsive center-block"/>
+				<img id="teamphoto" src="images/teamphoto.jpg" alt="VanPeaks team picture" class="img-responsive center-block" onclick="dab()"/>
 			</div>
 	    </div>
 		</div>
