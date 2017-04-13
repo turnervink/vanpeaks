@@ -1,19 +1,14 @@
-// var clicks;
-//
-// function dab() {
-//   clicks++;
-//
-//   if (clicks >= 10) {
-//     $("#teamphoto").attr("src", "images/easteregg.jpg");
-//     $("#abouttitle").text("-About DabPeaks-");
-//   }
-// }
+var clicks;
 
-$("#teamphoto").hover(function() {
-  console.log("Hover");
-  this.attr("src", "images/easteregg.jpg");
-});
+function dab() {
+  clicks++;
+
+  if (clicks >= 10) {
+    $("#teamphoto").attr("src", "images/easteregg.jpg");
+    $("#abouttitle").text("-About DabPeaks-");
+  }
+}
 
 $(document).ready(function() {
-    //clicks = 0;
+    clicks = 0;
 });

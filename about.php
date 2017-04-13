@@ -91,7 +91,7 @@
                                                     type="button"
                                                     value="or Register Here"
                                                     id="registerButton"
-                                                    onclick="javascript:location.href='../login.php'"
+                                                    onclick="javascript:location.href='login.php'"
                                             >
                                         </fieldset>
                                     </div>
