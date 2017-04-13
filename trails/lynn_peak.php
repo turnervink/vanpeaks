@@ -134,8 +134,6 @@
             <td>4 hours</td>
             <td>760m</td>
             <td>9km loop</td>
-
-            <td>12&deg;</td>
 						<td></td>
           </tr>
         </table>
