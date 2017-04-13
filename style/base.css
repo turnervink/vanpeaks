@@ -632,10 +632,10 @@ label {
   color:#27343B;
 }
 
-.button_hover:hover{
+.button_hover:hover {
     color: #27343B;
+}
+.trail_hover:hover{
+    color:#27343B;
 }
 
-.trail_hover:hover{
-    color: #27343B;
-}
