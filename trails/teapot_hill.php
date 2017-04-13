@@ -57,7 +57,7 @@
 
         <?php if (isset($_SESSION['SESS_LOGIN'])):?>
 						<li class="listitem">
-							<a href="php/forum/logout.php" class="link"><span class="button_hover">Logout</span></a>
+							<a href="../php/forum/logout.php" class="link"><span class="button_hover">Logout</span></a>
 						</li>
 					<?php else: ?>
 				<li class="navLink" id="js-login">
